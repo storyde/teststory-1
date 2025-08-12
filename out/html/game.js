@@ -144,22 +144,7 @@
         }
       });
       
-      // Add ARIA labels for better accessibility
-      if (!button.getAttribute('aria-label')) {
-        var icon = button.querySelector('i');
-        if (icon) {
-          var iconClasses = icon.className;
-          if (iconClasses.includes('ph-chart-bar')) {
-            button.setAttribute('aria-label', 'Toggle Status Panel');
-          } else if (iconClasses.includes('ph-compass')) {
-            button.setAttribute('aria-label', 'Toggle Context Panel');
-          } else if (iconClasses.includes('ph-sun') || iconClasses.includes('ph-moon')) {
-            button.setAttribute('aria-label', 'Toggle Theme');
-          } else if (iconClasses.includes('ph-floppy-disk')) {
-            button.setAttribute('aria-label', 'Save and Load Game');
-          }
-        }
-      }
+      // ARIA labels are already defined in HTML
     });
 
     // Add escape key to close sidebars
@@ -379,45 +364,45 @@
 
   function toggleTheme() {
     var body = document.body;
-    var sidebarThemeIcon = document.querySelector('#sidebar-theme-toggle i');
+    var sidebarThemeIcon = document.querySelector('#sidebar-theme-toggle span');
     
     if (body.classList.contains('theme-light')) {
       body.classList.remove('theme-light');
       body.classList.add('theme-dark');
       if (sidebarThemeIcon) {
-        sidebarThemeIcon.className = 'ph ph-sun';
+        sidebarThemeIcon.setAttribute('uk-icon', 'icon: bolt');
       }
       currentTheme = 'dark';
     } else {
       body.classList.remove('theme-dark');
       body.classList.add('theme-light');
       if (sidebarThemeIcon) {
-        sidebarThemeIcon.className = 'ph ph-moon';
+        sidebarThemeIcon.setAttribute('uk-icon', 'icon: star');
       }
       currentTheme = 'light';
     }
     
     // Save theme preference
-    localStorage.setItem('fullquest-theme', currentTheme);
+    localStorage.setItem('game-theme', currentTheme);
   }
 
   function loadTheme() {
-    var savedTheme = localStorage.getItem('fullquest-theme') || 'light';
+    var savedTheme = localStorage.getItem('game-theme') || 'light';
     var body = document.body;
-    var sidebarThemeIconElement = document.querySelector('#sidebar-theme-toggle i');
+    var sidebarThemeIconElement = document.querySelector('#sidebar-theme-toggle span');
     
     if (savedTheme === 'dark') {
       body.classList.remove('theme-light');
       body.classList.add('theme-dark');
       if (sidebarThemeIconElement) {
-        sidebarThemeIconElement.className = 'ph ph-sun';
+        sidebarThemeIconElement.setAttribute('uk-icon', 'icon: bolt');
       }
       currentTheme = 'dark';
     } else {
       body.classList.remove('theme-dark');
       body.classList.add('theme-light');
       if (sidebarThemeIconElement) {
-        sidebarThemeIconElement.className = 'ph ph-moon';
+        sidebarThemeIconElement.setAttribute('uk-icon', 'icon: star');
       }
       currentTheme = 'light';
     }

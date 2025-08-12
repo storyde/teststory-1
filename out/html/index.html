@@ -7,8 +7,7 @@
     <meta name="theme-color" content="#1e293b">
     <title>TestStory - storyde</title>
     
-    <!-- Phosphor Icons - Modern, lightweight icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.0.3/src/regular/style.css">
+    <!-- UIKit Icons are loaded via JavaScript below -->
     
     <!-- UIKit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
@@ -35,7 +34,7 @@
         <div class="header-content">
           <div class="header-left">
             <button id="progress-toggle" class="header-btn" aria-label="Toggle Progress" tabindex="0">
-              <i class="ph ph-chart-bar"></i>
+              <span uk-icon="icon: table"></span>
               <span class="sr-only">Toggle Status Panel</span>
             </button>
             <div class="game-title">
@@ -44,7 +43,7 @@
           </div>
           <div class="header-right">
             <button id="context-toggle" class="header-btn" aria-label="Toggle Context" tabindex="0">
-              <i class="ph ph-compass"></i>
+              <span uk-icon="icon: world"></span>
               <span class="sr-only">Toggle Context Panel</span>
             </button>
           </div>
@@ -58,11 +57,11 @@
         <aside id="progress-sidebar" class="sidebar sidebar-left">
           <div class="sidebar-header">
             <h3>
-              <i class="ph ph-list-checks"></i>
+              <span uk-icon="icon: list"></span>
               Status
             </h3>
             <button class="sidebar-header-btn" onclick="window.showSaveSlots();" aria-label="Save/Load Game" tabindex="0">
-              <i class="ph ph-floppy-disk"></i>
+              <span uk-icon="icon: download"></span>
               <span class="sr-only">Save/Load Game</span>
             </button>
           </div>
@@ -94,11 +93,11 @@
         <aside id="context-sidebar" class="sidebar sidebar-right">
           <div class="sidebar-header">
             <h3>
-              <i class="ph ph-map-pin"></i>
+              <span uk-icon="icon: world"></span>
               Context
             </h3>
             <button id="sidebar-theme-toggle" class="sidebar-header-btn" aria-label="Toggle Theme" tabindex="0">
-              <i class="ph ph-moon"></i>
+              <span uk-icon="icon: bolt"></span>
               <span class="sr-only">Toggle Theme</span>
             </button>
           </div>
@@ -121,7 +120,7 @@
         <div class="modal-header">
           <h2 id="save-modal-title">Save & Load Game</h2>
           <button onclick="window.hideSaveSlots();" class="modal-close" aria-label="Close Save Dialog">
-            <i class="ph ph-x"></i>
+            <span uk-icon="icon: close"></span>
           </button>
         </div>
         <div class="modal-body">
