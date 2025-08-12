@@ -30,7 +30,7 @@
   function initializeInterface() {
     // Initialize sidebar toggles
     document.getElementById('progress-toggle').addEventListener('click', toggleProgressSidebar);
-    document.getElementById('context-toggle').addEventListener('click', toggleContextSidebar);
+    document.getElementById('info-toggle').addEventListener('click', toggleInfoSidebar);
     document.getElementById('sidebar-theme-toggle').addEventListener('click', toggleTheme);
 
     // Initialize sidebar overlay
@@ -209,17 +209,17 @@
   function handleResize() {
     var isMobile = window.innerWidth <= 768;
     var progressSidebar = document.getElementById('progress-sidebar');
-    var contextSidebar = document.getElementById('context-sidebar');
+    var infoSidebar = document.getElementById('info-sidebar');
     
     if (isMobile) {
       // On mobile, sidebars are hidden by default
       progressSidebar.classList.remove('active');
-      contextSidebar.classList.remove('active');
+      infoSidebar.classList.remove('active');
       closeSidebars();
     } else {
       // On desktop, show sidebars by default
       progressSidebar.classList.remove('hidden');
-      contextSidebar.classList.remove('hidden');
+      infoSidebar.classList.remove('hidden');
       closeSidebars();
     }
   }
@@ -243,13 +243,13 @@
       
       // Check if touch started on a sidebar
       var progressSidebar = document.getElementById('progress-sidebar');
-      var contextSidebar = document.getElementById('context-sidebar');
+      var infoSidebar = document.getElementById('info-sidebar');
       
       if (progressSidebar.classList.contains('active') && startX < 260) {
         activeElement = progressSidebar;
         isDragging = true;
-      } else if (contextSidebar.classList.contains('active') && startX > window.innerWidth - 260) {
-        activeElement = contextSidebar;
+      } else if (infoSidebar.classList.contains('active') && startX > window.innerWidth - 260) {
+        activeElement = infoSidebar;
         isDragging = true;
       }
     }
@@ -274,7 +274,7 @@
       // Apply transform based on swipe direction
       if (activeElement.id === 'progress-sidebar' && deltaX < -50) {
         activeElement.style.transform = 'translateX(' + Math.min(0, deltaX) + 'px)';
-      } else if (activeElement.id === 'context-sidebar' && deltaX > 50) {
+      } else if (activeElement.id === 'info-sidebar' && deltaX > 50) {
         activeElement.style.transform = 'translateX(' + Math.max(0, deltaX) + 'px)';
       }
     }
@@ -290,7 +290,7 @@
       
       // Close sidebar if swiped far enough
       if ((activeElement.id === 'progress-sidebar' && deltaX < -threshold) ||
-          (activeElement.id === 'context-sidebar' && deltaX > threshold)) {
+          (activeElement.id === 'info-sidebar' && deltaX > threshold)) {
         closeSidebars();
       }
       
@@ -328,8 +328,8 @@
     }
   }
 
-  function toggleContextSidebar() {
-    var sidebar = document.getElementById('context-sidebar');
+  function toggleInfoSidebar() {
+    var sidebar = document.getElementById('info-sidebar');
     var overlay = document.getElementById('sidebar-overlay');
     var chatMain = document.querySelector('.chat-main');
     var isMobile = window.innerWidth <= 768;
@@ -354,11 +354,11 @@
 
   function closeSidebars() {
     var progressSidebar = document.getElementById('progress-sidebar');
-    var contextSidebar = document.getElementById('context-sidebar');
+    var infoSidebar = document.getElementById('info-sidebar');
     var overlay = document.getElementById('sidebar-overlay');
     
     progressSidebar.classList.remove('active');
-    contextSidebar.classList.remove('active');
+    infoSidebar.classList.remove('active');
     overlay.classList.remove('active');
   }
 
@@ -496,19 +496,8 @@
     }
   };
     
-  // This function updates the game left sidebar (status/qualities).
-  window.updateSidebar = function() {
-      var qualitiesElement = document.getElementById('qualities');
-      if (qualitiesElement) {
-          qualitiesElement.innerHTML = '';
-          var scene = dendryUI.game.scenes.status;
-          var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-          qualitiesElement.innerHTML = dendryUI.contentToHTML.convert(displayContent);
-      }
-  };
-
-  // This function updates the game right sidebar (context/holtext).
-  window.updateRightSidebar = function() {
+  // This function updates the game left sidebar (progress/holtext).
+  window.updateProgressSidebar = function() {
       var holtextElement = document.getElementById('holtext');
       if (holtextElement) {
           holtextElement.innerHTML = '';
@@ -517,11 +506,22 @@
           holtextElement.innerHTML = dendryUI.contentToHTML.convert(displayContent);
       }
   };
+
+  // This function updates the game right sidebar (info/qualities).
+  window.updateInfoSidebar = function() {
+      var qualitiesElement = document.getElementById('qualities');
+      if (qualitiesElement) {
+          qualitiesElement.innerHTML = '';
+          var scene = dendryUI.game.scenes.status;
+          var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+          qualitiesElement.innerHTML = dendryUI.contentToHTML.convert(displayContent);
+      }
+  };
   
   // This function runs on every new content display. Currently, all it does is update the sidebars.
   window.onDisplayContent = function() {
-      window.updateSidebar();
-      window.updateRightSidebar();
+      window.updateProgressSidebar();
+      window.updateInfoSidebar();
       
       // Hide loading indicator
       hideLoadingIndicator();

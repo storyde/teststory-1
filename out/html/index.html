@@ -34,17 +34,17 @@
         <div class="header-content">
           <div class="header-left">
             <button id="progress-toggle" class="header-btn" aria-label="Toggle Progress" tabindex="0">
-              <span uk-icon="icon: table"></span>
-              <span class="sr-only">Toggle Status Panel</span>
+              <span uk-icon="icon: world"></span>
+              <span class="sr-only">Toggle Progress Panel</span>
             </button>
             <div class="game-title">
               <h1>TestStory</h1>
             </div>
           </div>
           <div class="header-right">
-            <button id="context-toggle" class="header-btn" aria-label="Toggle Context" tabindex="0">
-              <span uk-icon="icon: world"></span>
-              <span class="sr-only">Toggle Context Panel</span>
+            <button id="info-toggle" class="header-btn" aria-label="Toggle Info" tabindex="0">
+              <span uk-icon="icon: list"></span>
+              <span class="sr-only">Toggle Info Panel</span>
             </button>
           </div>
         </div>
@@ -53,21 +53,17 @@
       <!-- Content Wrapper -->
       <div class="content-wrapper">
         
-        <!-- Left Sidebar - Progress/Status -->
+        <!-- Left Sidebar - Progress -->
         <aside id="progress-sidebar" class="sidebar sidebar-left">
           <div class="sidebar-header">
             <h3>
-              <span uk-icon="icon: list"></span>
-              Status
+              <span uk-icon="icon: world"></span>
+              Progress
             </h3>
-            <button class="sidebar-header-btn" onclick="window.showSaveSlots();" aria-label="Save/Load Game" tabindex="0">
-              <span uk-icon="icon: download"></span>
-              <span class="sr-only">Save/Load Game</span>
-            </button>
           </div>
           <div class="sidebar-content">
-            <div id="qualities" role="region" aria-label="Game Status Information">
-              <!-- Dendry status content will be populated here -->
+            <div id="holtext" role="region" aria-label="Game Progress Information">
+              <!-- Dendry progress content will be populated here -->
             </div>
           </div>
         </aside>
@@ -89,21 +85,25 @@
           <div class="bottom-spacer"></div>
         </main>
 
-        <!-- Right Sidebar - Context -->
-        <aside id="context-sidebar" class="sidebar sidebar-right">
+        <!-- Right Sidebar - Info -->
+        <aside id="info-sidebar" class="sidebar sidebar-right">
           <div class="sidebar-header">
             <h3>
-              <span uk-icon="icon: world"></span>
-              Context
+              <span uk-icon="icon: list"></span>
+              Info
             </h3>
             <button id="sidebar-theme-toggle" class="sidebar-header-btn" aria-label="Toggle Theme" tabindex="0">
               <span uk-icon="icon: bolt"></span>
               <span class="sr-only">Toggle Theme</span>
             </button>
+            <button class="sidebar-header-btn" onclick="window.showSaveSlots();" aria-label="Save/Load Game" tabindex="0">
+              <span uk-icon="icon: download"></span>
+              <span class="sr-only">Save/Load Game</span>
+            </button>
           </div>
           <div class="sidebar-content">
-            <div id="holtext" role="region" aria-label="Game Context Information">
-              <!-- Dendry context content will be populated here -->
+            <div id="qualities" role="region" aria-label="Game Info Information">
+              <!-- Dendry info content will be populated here -->
             </div>
           </div>
         </aside>

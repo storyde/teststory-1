@@ -288,6 +288,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--space-sm);
 }
 
 .sidebar-header h3 {
@@ -309,7 +310,7 @@ body {
 
 .sidebar-content {
   flex: 1;
-  padding: var(--space-lg);
+  padding: var(--space-xl) var(--space-lg);
   overflow-y: auto;
   height: 0;
   position: relative;
@@ -445,7 +446,7 @@ body {
 .chat-messages {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-lg);
   min-height: 100%;
 }
 
@@ -576,7 +577,7 @@ body {
 
 /* Dendry Choices Styling */
 .choices-container {
-  padding: var(--space-lg);
+  padding: var(--space-xl) var(--space-lg);
   background: var(--secondary-bg);
   border-top: 1px solid var(--border-color);
 }
@@ -594,7 +595,7 @@ ul.choices {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-md);
 }
 
 ul.choices li {
@@ -760,7 +761,7 @@ blockquote.attribution {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-lg);
+  padding: var(--space-xl) var(--space-lg);
   background: var(--secondary-bg);
   color: var(--text-primary);
   border-bottom: 1px solid var(--border-color);
@@ -794,7 +795,7 @@ blockquote.attribution {
 }
 
 .modal-body {
-  padding: var(--space-lg);
+  padding: var(--space-xl) var(--space-lg);
   overflow-y: auto;
   max-height: calc(80vh - 100px);
 }
@@ -806,7 +807,7 @@ blockquote.attribution {
 
 .saves-table th,
 .saves-table td {
-  padding: var(--space-md);
+  padding: var(--space-lg) var(--space-md);
   border-bottom: 1px solid var(--border-color);
   vertical-align: middle;
   text-align: left;
@@ -828,7 +829,7 @@ blockquote.attribution {
   cursor: pointer;
   font-weight: 500;
   transition: all var(--transition-fast);
-  margin-right: var(--space-sm);
+  margin-right: var(--space-md);
 }
 
 .save-button:hover,
