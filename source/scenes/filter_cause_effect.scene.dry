@@ -1,0 +1,18 @@
+title: Cause and Effect Check
+subtitle: Addressing Root Causes, Not Just Symptoms
+new-page: true
+on-arrival: filter_current_check_id = "ce"
+
+Narration: The first context check is **Cause and Effect**. This check is essential when you're trying to solve a problem.
+
+Narration: The question you ask is: **"Does this action address the root cause of the problem?"**
+
+Narration: A maintenance robot nearby is spraying pesticide on cockroaches while completely ignoring the pile of food scraps that attracted them in the first place. Classic symptom treatment instead of cause addressing.
+
+Narration: This check helps you avoid quick fixes that only suppress symptoms. If the problem keeps returning, you probably haven't addressed the real cause.
+
+- @ce_complete: I understand this check
+
+@ce_complete
+on-arrival: filter_ce_status = 1; filter_checks_completed_count += 1
+go-to: filter_weak_link_social

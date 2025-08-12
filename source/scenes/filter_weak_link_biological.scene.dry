@@ -1,0 +1,18 @@
+title: Weak Link Check - Biological
+subtitle: Understanding Life Cycles
+new-page: true
+on-arrival: filter_current_check_id = "wlb"
+
+Narration: The **Biological Weak Link** check applies when dealing with plant or animal populations.
+
+Narration: The question you ask is: **"Does this action address the weakest point in the life cycle of this organism?"**
+
+Narration: A pest control robot is methodically spraying adult mosquitoes one by one while ignoring the stagnant water where they breed. It's working very hard at the wrong point in the life cycle.
+
+Narration: Every organism has a point of greatest vulnerability during its life cycle. Target that point, and you maximize your effectiveness with minimum effort.
+
+- @wlb_complete: I understand this check
+
+@wlb_complete
+on-arrival: filter_wlb_status = 1; filter_checks_completed_count += 1
+go-to: filter_weak_link_financial

@@ -1,0 +1,20 @@
+title: Gut Feel Check
+subtitle: The Final Integration
+new-page: true
+on-arrival: filter_current_check_id = "gf"
+
+Narration: The **Gut Feel** check is always done last because it builds on the analysis from all other checks.
+
+Narration: The questions you ask are: **"How do we feel about this action now? Will it lead to the quality of life we desire? Will it adversely affect the lives of others?"**
+
+Narration: Where other checks ask what you *think*, this asks how you *feel*. It's based on your values and sense of what's right.
+
+Narration: An intuition robot nearby is trying to calculate feelings using complex algorithms. It's missing the point that some things can't be reduced to pure logic - they require human wisdom and values.
+
+Narration: This check acknowledges that you might choose not to do something that passes all other checks because it doesn't feel right. Trust your intuition - it integrates everything you've learned.
+
+- @gf_complete: I understand this check
+
+@gf_complete
+on-arrival: filter_gf_status = 1; filter_checks_completed_count += 1
+go-to: filter_checks_complete

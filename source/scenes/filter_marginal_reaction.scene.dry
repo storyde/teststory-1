@@ -1,0 +1,18 @@
+title: Marginal Reaction Check
+subtitle: Getting the Biggest Bang for Your Buck
+new-page: true
+on-arrival: filter_current_check_id = "mr"
+
+Narration: The **Marginal Reaction** check applies when comparing multiple actions that have passed other checks.
+
+Narration: The question you ask is: **"Which action will provide the greatest return toward the goal for each additional unit of money or time invested?"**
+
+Narration: Which action gets you the most progress per dollar or hour spent? Since resources are limited, you want maximum impact from every investment.
+
+Narration: An efficiency robot nearby is calculating the precise optimal angle for stacking pebbles to maximize aesthetic appeal per unit of effort. Its dedication to marginal optimization is admirable, if somewhat misplaced.
+
+- @mr_complete: I understand this check
+
+@mr_complete
+on-arrival: filter_mr_status = 1; filter_checks_completed_count += 1
+go-to: filter_gross_profit_analysis

@@ -1,0 +1,51 @@
+title: Your Holistic Context
+subtitle: The Foundation for All Decisions
+new-page: true
+on-arrival: context_progress = 7
+
+Narration: Congratulations! You have created your draft holistic context - the foundation that will guide all your future decisions. This draft is now displayed in the right sidebar where you can reference it at any time.
+
+Narration: Let's review what you've built:
+
+= Your Statement of Purpose
+
+
+
+= Your Whole Under Management
+
+
+
+= How You Want Your Life to Be
+
+
+
+= Your Future Resource Base
+
+
+
+= Conditions Needed for the Future
+
+
+
+= How You Must Behave
+
+
+
+Narration: This is your holistic context. From now on, when you face any decision - big or small - you can ask: "Which choice better supports my holistic context? Which option moves me toward the life I want while strengthening my resource base and maintaining the conditions I need?"
+
+Narration: A celebration robot rolls by, apparently throwing confetti made of recycled circuit boards while playing a slightly off-key version of "Congratulations." The sentiment is genuine, even if the execution is questionable.
+
+Narration: You now have the foundation for holistic management. Every choice you make can be evaluated against this context. You're ready to navigate this complex world with clarity and purpose.
+
+- @begin_application: Practice applying your holistic context to real decisions
+- @side_context_importance: Tell me more about the importance and privacy of my holistic context
+- @review_framework: Review how this framework works in practice
+
+@begin_application
+go-to: framework_application_scenarios
+
+@side_context_importance
+go-to: side_context_importance
+
+@review_framework  
+go-to: framework_review_placeholder

@@ -1,0 +1,18 @@
+title: Sustainability Check
+subtitle: Considering Long-Term Consequences
+new-page: true
+on-arrival: filter_current_check_id = "sus"
+
+Narration: The **Sustainability** check considers long-term environmental and social consequences.
+
+Narration: The question you ask is: **"If we take this action, will it lead toward or away from the future resource base described in our holistic context?"**
+
+Narration: This ensures your short-term actions support your long-term vision.
+
+Narration: A planning robot nearby is optimizing today's efficiency by burning tomorrow's resources. It's achieving excellent short-term metrics while undermining long-term sustainability.
+
+- @sus_complete: I understand this check
+
+@sus_complete
+on-arrival: filter_sus_status = 1; filter_checks_completed_count += 1
+go-to: filter_gut_feel

@@ -1,0 +1,81 @@
+title: Statement of Purpose
+subtitle: Your Organization's Core Drive
+new-page: true
+on-arrival: time_in_story += 1
+
+Narration: Since you're here representing an organization, we need to be clear about its fundamental purpose. Not your mission statement or marketing copy, but the real reason your organization exists.
+
+Narration: If your organization disappeared tomorrow, what would the world lose?
+
+Narration: A cleaning robot rolls by, spraying the sidewalk with what appears to be orange juice instead of disinfectant. Its cheerful voice announces:
+
+Robotvoice: CLEANING COMPLETE! HAVE A CITRUSY DAY!
+
+Narration: That's an organization that's lost sight of its real purpose. What is your organization's true contribution to the world?
+
+- @producing_goods: Producing and selling goods or services
+- @financial_services: Providing financial and investment services
+- @digital_tech: Developing digital technologies and platforms
+- @consulting: Offering professional advice and consulting
+- @education: Educating and cultivating skills
+- @healthcare: Promoting health and delivering medical services
+- @advocacy: Advocating for social or environmental causes
+- @culture: Preserving arts, culture, and heritage
+- @safety: Ensuring public safety and emergency response
+- @community_support: Supporting communities through engagement and aid
+- @side_purpose_examples: Can you give me examples of good purpose statements?
+
+@producing_goods
+on-arrival: purpose = "production"; context_progress = 2
+go-to: purpose_deeper
+
+@financial_services
+on-arrival: purpose = "finance"; context_progress = 2
+go-to: purpose_deeper
+
+@digital_tech
+on-arrival: purpose = "technology"; context_progress = 2
+go-to: purpose_deeper
+
+@consulting
+on-arrival: purpose = "consulting"; context_progress = 2
+go-to: purpose_deeper
+
+@education
+on-arrival: purpose = "education"; context_progress = 2
+go-to: purpose_deeper
+
+@healthcare
+on-arrival: purpose = "health"; context_progress = 2
+go-to: purpose_deeper
+
+@advocacy
+on-arrival: purpose = "advocacy"; context_progress = 2
+go-to: purpose_deeper
+
+@culture
+on-arrival: purpose = "culture"; context_progress = 2
+go-to: purpose_deeper
+
+@safety
+on-arrival: purpose = "safety"; context_progress = 2
+go-to: purpose_deeper
+
+@community_support
+on-arrival: purpose = "community"; context_progress = 2
+go-to: purpose_deeper
+
+@side_purpose_examples
+title: Examples of Purpose Statements
+tags: side_conversations
+
+Narration: A hospital's purpose isn't "to make money from sick people" - it's "to heal and restore health." A school's purpose isn't "to process students" - it's "to develop human potential and knowledge."
+
+Narration: A good purpose statement captures the positive change your organization creates in the world. It's the "why" behind everything you do.
+
+Narration: Even a factory's purpose isn't just "to make things" - it might be "to create tools that improve people's lives" or "to transform raw materials into useful products."
+
+- @back_to_purpose: I understand. Let me choose our purpose.
+
+@back_to_purpose
+go-to: statement_of_purpose

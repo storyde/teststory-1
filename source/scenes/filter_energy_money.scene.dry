@@ -1,0 +1,18 @@
+title: Energy/Money Source and Use Check
+subtitle: Sustainable Resource Management
+new-page: true
+on-arrival: filter_current_check_id = "eme"
+
+Narration: The **Energy/Money Source and Use** check examines both sources and patterns of resource use.
+
+Narration: The questions you ask are: **"Is the energy or money to be used derived from the most appropriate source in terms of our holistic context? Will the way the energy or money is used be in line with our holistic context?"**
+
+Narration: A resource management robot nearby is powering itself by burning furniture to run a program that orders new furniture online. It demonstrates the importance of considering both source and use of resources.
+
+Narration: This check helps you avoid addictive dependencies and choose sustainable resource patterns.
+
+- @eme_complete: I understand this check
+
+@eme_complete
+on-arrival: filter_eme_status = 1; filter_checks_completed_count += 1
+go-to: filter_sustainability

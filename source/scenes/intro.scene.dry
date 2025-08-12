@@ -1,0 +1,36 @@
+title: Intro Scene
+subtitle: The Beginning of Understanding
+new-page: true
+
+
+= Welcome to the **near future**...
+
+...where streets crack under inequality. Climate trembles. Trust fades. And the economy is all over the place. Also, the robots are having an existential crisis.
+
+---
+
+Narration: You—just someone who got curious one day—arrive in the middle of it all. A delivery drone circles overhead, apparently trying to deliver a package to a cloud. 
+
+You are:
+
+- @by_yourself: Just by myself
+- @with_family: With my family
+- @for_organization: Here as part of an organisation
+
+@by_yourself
+title: Solo Journey
+subtitle: I travel alone
+on-arrival: part_of = "alone"
+go-to: arrival
+
+@with_family
+title: Family Unit
+subtitle: It's not only me, I'm here with my family
+on-arrival: part_of = "family"
+go-to: arrival
+
+@for_organization
+title: Organizational Representative
+subtitle: I need to take my organisation into account
+on-arrival: part_of = "organization"
+go-to: arrival

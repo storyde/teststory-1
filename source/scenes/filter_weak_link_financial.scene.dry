@@ -1,0 +1,20 @@
+title: Weak Link Check - Financial
+subtitle: Strengthening Your Chain of Production
+new-page: true
+on-arrival: filter_current_check_id = "wlf"
+
+Narration: The **Financial Weak Link** check helps you identify where to invest limited resources for maximum impact on income.
+
+Narration: The question you ask is: **"Does this action strengthen the weakest link in the chain of production?"**
+
+Narration: Your chain of production has three links: **Resource Conversion** (raw materials to products), **Product Conversion** (refining for market), and **Marketing** (products to money).
+
+Narration: A business optimization robot nearby is polishing an already perfect product while completely ignoring the fact that nobody knows the product exists. Classic strong-link investment instead of weak-link focus.
+
+Narration: Like any chain, your business is only as strong as its weakest link. Investing in already-strong links won't improve overall performance.
+
+- @wlf_complete: I understand this check
+
+@wlf_complete
+on-arrival: filter_wlf_status = 1; filter_checks_completed_count += 1
+go-to: filter_marginal_reaction

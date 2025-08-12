@@ -1,0 +1,18 @@
+title: Weak Link Check - Social
+subtitle: Maintaining Crucial Relationships
+new-page: true
+on-arrival: filter_current_check_id = "wls"
+
+Narration: The **Social Weak Link** check helps you avoid damaging crucial relationships.
+
+Narration: The question you ask is: **"Could this action, due to prevailing attitudes or beliefs, create a weak link between us and those whose support we need?"**
+
+Narration: A communication robot nearby is trying to build consensus by shouting the same message louder and louder. It hasn't grasped that volume doesn't overcome fundamental disagreement.
+
+Narration: Like a chain, your success depends on the weakest link in your network of relationships. This check reminds you to consider whose support you need and whether your action might damage those relationships.
+
+- @wls_complete: I understand this check
+
+@wls_complete
+on-arrival: filter_wls_status = 1; filter_checks_completed_count += 1
+go-to: filter_weak_link_biological
