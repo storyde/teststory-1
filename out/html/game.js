@@ -513,18 +513,24 @@
     
   // This function updates the game left sidebar (status/qualities).
   window.updateSidebar = function() {
-      $('#qualities').empty();
-      var scene = dendryUI.game.scenes.status;
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
+      var qualitiesElement = document.getElementById('qualities');
+      if (qualitiesElement) {
+          qualitiesElement.innerHTML = '';
+          var scene = dendryUI.game.scenes.status;
+          var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+          qualitiesElement.innerHTML = dendryUI.contentToHTML.convert(displayContent);
+      }
   };
 
   // This function updates the game right sidebar (context/holtext).
   window.updateRightSidebar = function() {
-      $('#holtext').empty();
-      var scene = dendryUI.game.scenes.holtext;
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#holtext').append(dendryUI.contentToHTML.convert(displayContent));
+      var holtextElement = document.getElementById('holtext');
+      if (holtextElement) {
+          holtextElement.innerHTML = '';
+          var scene = dendryUI.game.scenes.holtext;
+          var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+          holtextElement.innerHTML = dendryUI.contentToHTML.convert(displayContent);
+      }
   };
   
   // This function runs on every new content display. Currently, all it does is update the sidebars.
