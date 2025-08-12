@@ -1,0 +1,137 @@
+title: Holistic Futures
+new-page: true
+on-arrival: understanding = 0; social = 0; economic = 0; ecological = 0; empathy = 0; resilience = 0; achievement_intro = false; achievement_context = false; {! console.log("Initialized qualities: understanding, social, economic, ecological, empathy, resilience, achievements") !}
+
+= In a time not so far into the future…
+
+Society battles with the symptoms of the *polycrises*, staggering under the weight of interconnected challenges. Streets crack under inequality. Climate trembles. Trust fades.
+
+You—an explorer by nature, or perhaps just someone who got curious one day—arrive in the middle of it all. A solar-charged wristpad beeps. The air smells like static and regret.
+
+- @polywhat: "The polycri—what?"
+- @solutionseek: Search for a solution to the crisis
+- @somethingelse: Look for a different path
+
+@polywhat
+title: First Glimpse of Collapse
+new-page: true
+on-arrival: empathy += 1; {! console.log("Entered @polywhat scene. empathy += 1") !}
+
+You mutter to yourself as you stumble through a half-deserted plaza, looking for shelter. A local info-hub flickers, offering outdated alerts about riots and drought.
+
+A street vendor nearby offers water for crypto. You hand over your last bit. It tastes metallic.
+
+A dust storm looms. You're stuck—alone, confused, slowly beginning to grasp what *polycrisis* really means.
+
+- @polycrisis_side: What is the polycrisis?
+- @humanmade: Is this human-made?
+- @stay: Stay inside and reflect
+- @solutionseek: Search for a solution to the crisis
+
+@polycrisis_side
+title: Side Conversation: Polycrisis
+new-page: false
+on-arrival: understanding += 1; achievement_intro = true; {! console.log("Unlocked achievement_intro. understanding += 1") !}
+
+= What is the Polycrisis?
+
+A polycrisis is when many crises—economic, ecological, social—converge and compound each other. One crisis amplifies another. Unstable politics worsen inequality. Soil degradation weakens food systems. Trust erodes. Everything is connected.
+
+You watch a child draw on cracked pavement: a house, a river, a family. The dust blows it all away.
+
+- @polywhat: Return
+
+@humanmade
+title: Cause or Consequence?
+new-page: false
+
+Some blame nature. Others point at humanity. Looking around—the failing infrastructure, the gated communities, the dead wetlands—you feel a tug in your gut.
+
+Yes. This was made. Decision by decision. System by system.
+
+- @solutionseek: Search for a solution to the crisis
+
+@solutionseek
+title: Glimpse of Hope
+new-page: true
+on-arrival: empathy += 1; {! console.log("Entered @solutionseek scene. empathy += 1") !}
+
+You venture forward. Above, surveillance drones buzz softly. A mural reads: “We Had the Tools.”
+
+Someone stands in the shadow of an old community center. Hooded, quiet. A screen on their arm glows blue.
+
+*Facilitator*: "You look like someone asking better questions. Walk with me. Let’s begin again."
+
+- @complexity_q: "What do you mean by another way?"
+- @lookaround: Take in more of this strange, broken future
+
+@lookaround
+title: Observation
+new-page: false
+on-arrival: empathy += 1; {! console.log("Observed future environment. empathy += 1") !}
+
+You see delivery bots stuck in potholes. Advertisements project onto broken windows. Kids sell purifiers made from old tech parts. A farmer pleads with drones overhead.
+
+This is not just poverty. It’s managed collapse.
+
+- @complexity_q: What is complexity?
+
+@complexity_q
+title: Side Conversation: Complexity
+new-page: false
+on-arrival: understanding += 1; {! console.log("Learned about complexity. understanding += 1") !}
+
+= What is Complexity?
+
+Living systems—like nature, societies, economies—are *complex* and *self-organizing*. You can’t pause them. You can’t fix them like you’d fix a broken phone.
+
+They adapt, evolve, surprise.
+
+- @mgmt_vs_prod: Difference between management and production?
+- @begin_holistic: Continue with the Facilitator
+
+@mgmt_vs_prod
+title: Side Conversation: Management vs Production
+new-page: false
+on-arrival: understanding += 1; {! console.log("Explored management vs production. understanding += 1") !}
+
+= Management vs Production
+
+Production is mechanical: break, fix, resume.
+
+Management of complexity? That’s surgery on a living patient while the patient runs a marathon. You manage as you go. You adapt constantly.
+
+- @begin_holistic: Continue with the Facilitator
+
+@begin_holistic
+title: Begin the Process
+new-page: true
+on-arrival: achievement_context = true; {! console.log("Entered Holistic Context Builder. achievement_context = true") !}
+
+*Facilitator*: “Let me show you something different. A way to manage complexity holistically.”
+
+They hand you an old datapad. The title blinks: *Holistic Context Builder.*
+
+= Step 0: Are you acting for yourself or an organization?
+
+- @step1: “As part of an organization”
+- @step2: “Only me / my family”
+
+# Remaining scenes follow unchanged, but consider enriching their tone similarly.
+
+# Add visual details, emotional reflections, and cultural quirks.
+# Add a rival perspective or critical voice later in the game for contrast.
+
+# Ending scene already reflects the tone well; optionally expand facilitator's arc.
+
+@ending
+title: Finale
+new-page: true
+
+*Facilitator* (smiling faintly): “Your civilization won’t be saved by algorithms or ideology alone. Living systems will always surprise us. But now—you have a compass.”
+
+They pause.
+
+“Assume you’re wrong. Monitor closely. Re-plan. Resilience isn't certainty—it's readiness.”
+
+- @start: Restart the experience
