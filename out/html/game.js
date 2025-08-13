@@ -496,25 +496,25 @@
     }
   };
     
-  // This function updates the game left sidebar (progress/holtext).
+  // This function updates the game left sidebar (progress).
   window.updateProgressSidebar = function() {
-      var holtextElement = document.getElementById('holtext');
-      if (holtextElement) {
-          holtextElement.innerHTML = '';
-          var scene = dendryUI.game.scenes.holtext;
+      var progressElement = document.getElementById('progress');
+      if (progressElement) {
+          progressElement.innerHTML = '';
+          var scene = dendryUI.game.scenes.progress;
           var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-          holtextElement.innerHTML = dendryUI.contentToHTML.convert(displayContent);
+          progressElement.innerHTML = dendryUI.contentToHTML.convert(displayContent);
       }
   };
 
-  // This function updates the game right sidebar (info/qualities).
+  // This function updates the game right sidebar (info).
   window.updateInfoSidebar = function() {
-      var qualitiesElement = document.getElementById('qualities');
-      if (qualitiesElement) {
-          qualitiesElement.innerHTML = '';
-          var scene = dendryUI.game.scenes.status;
+      var infoElement = document.getElementById('info');
+      if (infoElement) {
+          infoElement.innerHTML = '';
+          var scene = dendryUI.game.scenes.info;
           var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-          qualitiesElement.innerHTML = dendryUI.contentToHTML.convert(displayContent);
+          infoElement.innerHTML = dendryUI.contentToHTML.convert(displayContent);
       }
   };
   
