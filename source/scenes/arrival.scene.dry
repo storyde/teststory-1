@@ -43,11 +43,11 @@ Her voice is calm, reassuring—a stark contrast to the anxiety you feel watchin
 
 @ask_about_polycrisis
 title: Understanding Polycrisis
-go-to: polycrisis-faq.ask_about_polycrisis
+go-to: polycrisis-faq
 
 @ask_about_facilyn
 title: About Facilyn
-go-to: systems-faq.ask_about_facilyn
+go-to: systems-faq
 
 @accept_shelter
 title: Seeking Shelter
