@@ -4,21 +4,21 @@ new-page: true
 tags: exploration
 on-arrival: understanding += 1
 
-Narration: The air tastes metallic. A delivery drone circles overhead, confused by broken GPS signals. It's been trying to deliver the same package for three hours. The package is addressed to "The Future" with no street number.
+The air tastes metallic. A delivery drone circles overhead, confused by broken GPS signals. It's been trying to deliver the same package for three hours. The package is addressed to "The Future" with no street number.
 
-Narration: Street vendors hawk water purifiers made from old smartphone parts. A cleaning robot rolls by, spraying the sidewalk with what appears to be orange juice instead of disinfectant. Its cheerful voice announces:
+Street vendors hawk water purifiers made from old smartphone parts. 
 
-Robotvoice: CLEANING COMPLETE! HAVE A CITRUSY DAY!
-
-Narration: A holographic advertisement flickers against a cracked wall:
+A holographic advertisement flickers against a cracked wall:
 
 Infosign: SOLUTIONS FOR TOMORROW, TODAY!
 
-Narration: But the projector sparks and dies. You hear someone nearby mention something about a "polycrisis" and you can't help but wonder...
+But the projector sparks and dies. 
 
 [? if player_background = "family" : You think about how this chaotic world affects families like yours. ?]
 [? if player_background = "organization" or player_background = "school" or player_background = "company" : You wonder how organizations can function in this environment. ?]
-[? if player_background = "individual" : You're grateful to be navigating this alone, without others depending on you. ?]
+[? if player_background = "individual" : You're feeling lost while navigating this alone, without company. ?]
+
+You hear someone nearby mention something about a "polycrisis" and you can't help but wonder...
 
 - @poly_what: "The poly-what?"
 
@@ -29,13 +29,13 @@ on-arrival: curiosity += 1
 
 Me: "The poly-what?"
 
-Narration: ...you mutter to yourself as you stumble through a half-deserted plaza, looking for shelter. A local info-hub flickers, offering outdated alerts about riots and drought. A street vendor nearby offers water for crypto. You hand over your last bit. It tastes metallic. A dust storm looms. You're slowly beginning to grasp what polycrisis really means.
+...you mutter to yourself as you stumble through a half-deserted plaza, looking for shelter. A local info-hub flickers, offering outdated alerts about riots and drought. A street vendor nearby offers water for crypto. You hand over your last bit. It tastes metallic. A dust storm looms. You're slowly beginning to grasp what polycrisis really means.
 
-Narration: As you seek shelter from the approaching dust storm, a woman approaches you. She moves with purpose despite the chaos around her, carrying a worn leather satchel and wearing practical clothes that have seen better days.
+As you seek shelter from the approaching dust storm, a woman approaches you. She moves with purpose despite the chaos around her, carrying a worn leather satchel and wearing practical clothes that have seen better days.
 
 Facilyn: "Looking for somewhere to wait out the storm? There's a community shelter just ahead. I'm Facilyn, by the way."
 
-Narration: Her voice is calm, reassuring—a stark contrast to the anxiety you feel watching the world seemingly fall apart around you.
+Her voice is calm, reassuring—a stark contrast to the anxiety you feel watching the world seemingly fall apart around you.
 
 - @ask_about_polycrisis: "What exactly is a polycrisis?"
 - @ask_about_facilyn: "Are you from around here?"
@@ -43,123 +43,11 @@ Narration: Her voice is calm, reassuring—a stark contrast to the anxiety you f
 
 @ask_about_polycrisis
 title: Understanding Polycrisis
-subtitle: Learning about interconnected crises
-on-arrival: understanding += 1
-
-Facilyn: "A polycrisis is when multiple crises happen at the same time and make each other worse. Economic collapse stresses the power grid. Power failures crash supply chains. Supply chain disruptions increase social tensions. Social tensions make it harder to cooperate on solutions."
-
-Narration: She gestures at the scene around you—the broken infrastructure, the improvised economy, the dust storm approaching.
-
-Facilyn: "Climate change, economic instability, social breakdown, technological failures—they're all connected. One crisis amplifies another, creating a cascade of problems that traditional management approaches can't handle."
-
-Narration: A maintenance drone flies by upside down, apparently convinced that gravity is optional, while people below try to catch packages falling from its cargo bay.
-
-Facilyn: "See that? Someone programmed it to optimize delivery speed without considering weather conditions or system failures. That's the kind of thinking that got us into this mess."
-
-- @ask_human_made: "Is this crisis human-made?"
-- @ask_about_facilyn: "Are you some kind of expert on this?"
-- @ask_about_solutions: "Is there a way to manage this complexity?"
-
-@ask_human_made
-title: Human-Made Crisis
-subtitle: Understanding our role in the polycrisis
-on-arrival: systems_awareness += 1
-
-Facilyn: "Absolutely. This isn't a natural disaster—it's the result of how we've been making decisions for decades. We've been managing society, economy, and nature as if they were separate things, but they're not."
-
-Narration: She picks up a piece of debris—part of a solar panel mixed with plastic waste.
-
-Facilyn: "We created economic systems that ignore environmental costs. Environmental policies that ignore social impacts. Social programs that ignore economic realities. Each decision seemed logical in isolation, but together they created this mess."
-
-Narration: A group of children nearby are playing with broken tablets, stacking them like building blocks while their parents try to fix a water purifier made from smartphone parts.
-
-Facilyn: "The problem is reductionist thinking—breaking complex problems into simple parts and trying to solve each part separately. But complex living systems don't work that way."
-
-- @ask_about_complexity: "What's the difference between complicated and complex?"
-- @ask_about_facilyn: "How do you know all this?"
-- @ask_about_solutions: "So how do we manage complexity instead?"
-
-@ask_about_complexity
-title: Complexity vs Complicated
-subtitle: Understanding the difference
-on-arrival: systems_awareness += 1
-
-Facilyn: "Great question. A complicated system, like a car engine, has many parts, but they work in predictable ways. You can take it apart, fix each piece, and put it back together."
-
-Narration: She points to the malfunctioning maintenance drone still flying upside down.
-
-Facilyn: "But a complex system, like an ecosystem or a community, is alive and adaptive. The parts interact in unpredictable ways. Change one thing, and everything else changes too—sometimes in ways you never expected."
-
-Narration: A food truck powered by pedaling customers rolls by, the AI chef inside apologizing for burning everything while people laugh and help anyway.
-
-Facilyn: "We're dealing with three complex, living systems: society, economy, and nature. They're not separate—they're all part of one interconnected whole. You can't manage one without affecting the others."
-
-Facilyn: "Try to boost the economy without considering environmental costs? You get pollution that makes people sick, which crashes healthcare systems. Try to protect nature without considering social needs? You get policies that hurt communities and create backlash."
-
-- @ask_about_facilyn: "You seem to know a lot about this. Are you a researcher?"
-- @ask_about_solutions: "So how do we manage all three together?"
-- @ask_three_areas: "Tell me more about these three areas."
+go-to: polycrisis-faq.ask_about_polycrisis
 
 @ask_about_facilyn
-title: Learning About Facilyn
-subtitle: Understanding her background
-on-arrival: curiosity += 1
-
-Facilyn: "I'm a traveller, actually. I move from community to community, helping people learn to manage complexity instead of fighting it. I've seen this same pattern everywhere—the same mistakes, the same struggles."
-
-Narration: She adjusts her worn leather satchel, and you notice it's covered with patches from different places—some you recognize, others completely foreign.
-
-Facilyn: "I learned about holistic management from communities that were already practicing it, often without knowing the formal name. Indigenous communities, regenerative farmers, resilient neighborhoods—they understand that everything is connected."
-
-Narration: A group of people nearby are arguing about whether to fix a broken streetlight or use the materials for something else. Their voices rise as each person defends their priority.
-
-Facilyn: "See that argument? They're each focused on their piece of the puzzle, but they're not asking what they're all trying to create together. That's exactly the kind of thinking that creates polycrises."
-
-- @ask_about_solutions: "So what would you ask them?"
-- @ask_three_areas: "Tell me more about managing the three areas together."
-- @accept_shelter: "This is fascinating, but shouldn't we get to shelter?"
-
-@ask_three_areas
-title: The Three Interconnected Areas
-subtitle: Understanding society, economy, and nature
-on-arrival: systems_awareness += 1
-
-Facilyn: "Think of it this way: society is about how we relate to each other—our communities, cultures, and social structures. Economy is how we create and exchange value—not just money, but all the ways we meet our needs. Nature is the living systems that support all life."
-
-Narration: She gestures around at the scene—people helping each other, improvised economic exchanges, and the natural dust storm approaching.
-
-Facilyn: "Most management approaches try to optimize one area at the expense of the others. Maximize economic growth? Ignore environmental damage and social inequality. Protect the environment? Ignore economic needs and social impacts. Build strong communities? Ignore economic sustainability."
-
-Narration: The arguing group nearby has gotten louder, each person more entrenched in their position.
-
-Facilyn: "But these three areas aren't separate. They're all part of one living system. Healthy communities need a healthy environment and a healthy economy. A healthy economy depends on healthy communities and a healthy environment. And a healthy environment needs healthy communities and economies to protect it."
-
-Facilyn: "When you manage them as one interconnected whole, you get solutions that work for all three. That's what holistic management is about."
-
-- @ask_about_solutions: "How do you actually do that in practice?"
-- @introduce_framework: "This sounds like exactly what the world needs right now."
-- @accept_shelter: "I want to learn more, but that dust storm is getting closer."
-
-@ask_about_solutions
-title: Managing Complexity
-subtitle: A different approach to decision-making
-on-arrival: understanding += 1
-
-Facilyn: "Instead of asking 'How do we fix this problem?' I'd ask them 'What kind of neighborhood do you all want to create together?' Get them focused on their shared vision first."
-
-Narration: The dust storm is getting closer, and more people are seeking shelter. The arguing group seems oblivious to the approaching weather.
-
-Facilyn: "Then I'd ask 'What are you all managing together?' Help them see they're not managing streetlights or materials—they're managing their community. Once they understand what they're really managing, they can ask 'What practices will help us create the community we want?'"
-
-Narration: A gust of wind blows debris past you, and Facilyn pulls her jacket tighter.
-
-Facilyn: "It's a completely different way of thinking. Instead of reacting to problems, you're proactively creating what you want. Instead of managing parts in isolation, you're managing the whole system."
-
-Facilyn: "There's a whole framework for this—a systematic way to make decisions that consider the social, economic, and environmental impacts together. It's called holistic management, and it's designed specifically for managing complexity."
-
-- @introduce_framework: "I need to learn this framework."
-- @ask_how_it_works: "How does this framework actually work?"
-- @accept_shelter: "Can you teach me while we wait out this storm?"
+title: About Facilyn
+go-to: systems-faq.ask_about_facilyn
 
 @accept_shelter
 title: Seeking Shelter
@@ -168,11 +56,11 @@ on-arrival: community_engagement += 1
 
 Facilyn: "Good thinking. The community shelter is just ahead. We can continue this conversation there—and I can introduce you to the holistic management framework properly."
 
-Narration: As you walk toward the shelter, you notice how Facilyn moves with purpose even in the chaos. She nods to people she passes, offers a hand to an elderly man struggling with his bags, and seems to know exactly where she's going.
+As you walk toward the shelter, you notice how Facilyn moves with purpose even in the chaos. She nods to people she passes, offers a hand to an elderly man struggling with his bags, and seems to know exactly where she's going.
 
 Facilyn: "You know, this is actually a perfect example of what I was talking about. This dust storm is partly climate change, partly poor urban planning, partly economic inequality that forces people to live in vulnerable areas. You can't solve it by addressing just one piece."
 
-Narration: You reach a sturdy building with solar panels and a sign reading "Community Resilience Hub." People are already gathering inside, and you can hear the sound of generators and conversation.
+You reach a sturdy building with solar panels and a sign reading "Community Resilience Hub." People are already gathering inside, and you can hear the sound of generators and conversation.
 
 Facilyn: "But you can learn to make decisions that address the whole system. Ready to learn how?"
 
@@ -181,230 +69,24 @@ Facilyn: "But you can learn to make decisions that address the whole system. Rea
 
 @introduce_framework
 title: Ready to Learn
-subtitle: Embracing a new approach
 go-to: intro
 
 @ask_how_it_works
 title: Understanding the Process
-subtitle: Learning the framework basics
+subtitle: Ready to learn the framework
 
 Facilyn: "The framework starts with three simple questions, but they're deeper than they seem. First: Who are the decision-makers and what resources are you managing together? Second: What kind of life do you want to create? Third: What does the future need to look like to support that life?"
 
-Narration: Inside the shelter, you can see people organizing themselves—some setting up sleeping areas, others preparing food, others checking on the elderly and children. It's chaotic but purposeful.
+Inside the shelter, you can see people organizing themselves—some setting up sleeping areas, others preparing food, others checking on the elderly and children. It's chaotic but purposeful.
 
 Facilyn: "Once you're clear on those three things—your whole, your vision, and your future resource base—then you can make decisions that move you toward what you want instead of just reacting to what you don't want."
 
-Facilyn: "And there are specific checks you can use to test every decision—to make sure it addresses root causes, strengthens weak links, and moves you toward your vision sustainably."
-
-Narration: The dust storm hits the building with a low rumble, but inside it feels safe and purposeful.
+The dust storm hits the building with a low rumble, but inside it feels safe and purposeful.
 
 Facilyn: "Want to learn the whole framework? I can guide you through it step by step."
 
-- @introduce_framework: "Yes, let's start with the framework."
-
-@watch_argument
-title: Observe the Conflict
-on-arrival: conflict_awareness += 1; systems_awareness += 1
-
-Narration: You listen to the heated discussion:
-
-Person A: "We need light for safety!"
-Person B: "We need those materials for the water filter!"
-Person C: "Why not ask the city to fix it?"
-Person B: "The city's broke, remember?"
-Person A: "Then we prioritize safety!"
-Person C: "Water is more important than light!"
-
-Facilyn: "Each one's right, from their perspective. But they're all thinking about their piece of the puzzle."
-
-- @intervene_in_argument: "Maybe I can help them see the bigger picture."
-- @go_to_framework: "I think I need to learn that framework first."
-- @ask_what_would_facilitator_do: "What would you do here?"
-- #arrival_side_conversations: "Tell me more about this situation"
-
-@ask_what_would_facilitator_do
-title: Learn the Approach
-
-Facilyn: "I'd probably ask them: 'What do you all want this neighborhood to be like?' Get them talking about the life they want, not just the problems they see."
-
-Narration: The argument continues, getting more heated. A small child tugs on Person A's sleeve, ignored.
-
-Facilyn: "Then I might ask: 'What are you all managing together?' Help them see they're not managing streetlights or water filters—they're managing a community."
-
-- @try_facilitator_approach: "Let me try that approach with them."
-- @go_to_framework: "I need to learn this properly first."
-- @realize_connection: "I'm starting to see how everything connects."
-- #arrival_side_conversations: "Tell me more about this situation"
-
-@try_facilitator_approach
-title: Apply the Framework
-on-arrival: leadership += 1; community_engagement += 1
-
-Me: "Excuse me, everyone. What if we stepped back and asked: what do you all want this neighborhood to be like?"
-
-Narration: The argument stops. They look at you with surprise.
-
-Person A: "Well... safe, obviously."
-Person B: "And healthy. Clean water, clean air."
-Person C: "A place where we can actually rely on things working."
-
-Me: "So you all want the same thing—a neighborhood that's safe, healthy, and reliable?"
-
-Narration: They look at each other, the hostility fading.
-
-Person B: "When you put it like that..."
-Person A: "Maybe we can figure out a solution that addresses both the light and the water."
-
-Facilyn: "Not bad for a beginner! There's much more to learn. Ready for the full framework?"
-
-- @go_to_framework: "Yes, let's learn this."
-- @continue_helping: "Let me help them work this out first."
-- #arrival_side_conversations: "Tell me more about this situation"
-
-@continue_helping
-title: Keep Helping
-on-arrival: community_engagement += 2
-
-Narration: You spend the next hour helping the group brainstorm solutions. They end up deciding to use some materials for a solar-powered water filter that also provides LED lighting—solving both problems.
-
-Person A: "Thanks for helping us see past our individual concerns."
-Person C: "You should learn more about thinking holistically."
-
-Facilyn: "You're ready for the full framework. Let me guide you through it."
-
-- @go_to_framework: "Let's learn this framework."
-- #arrival_side_conversations: "Tell me more about this situation"
+- @go_to_framework: "Yes, let's start learning the framework."
 
 @go_to_framework
 title: Learn the Framework
 go-to: intro
-
-@polycrisis_side
-title: Understanding the Polycrisis
-tags: arrival_side_conversations
-max-visits: 1
-
-Facilyn: "Polycrisis... that's when everything goes wrong at once, and each problem makes the others worse."
-
-Narration: She points to different scenes around you: the broken infrastructure, the improvised economy, the social tensions.
-
-Facilyn: "Climate change stresses the power grid. Power failures crash the economy. Economic stress breaks down social trust. Broken trust makes it harder to solve climate change. Round and round."
-
-Narration: A food delivery drone crashes into a tree, its AI confused by the heat-warped GPS signals. A small crowd gathers to salvage the packages.
-
-- @humanmade: "Is this all human-made?"
-- @ask_about_solutions: "Is there a way out of this cycle?"
-- @go_to_framework: "I need to understand how to think about this differently."
-- #arrival_side_conversations: "Tell me about other aspects of this situation"
-
-@humanmade
-title: Human Origins
-tags: arrival_side_conversations
-max-visits: 1
-
-Facilyn: "Human-made? Well, we didn't create the heat waves directly, but we created the systems that can't handle them."
-
-Narration: She gestures at the struggling infrastructure around you.
-
-Facilyn: "We built everything to be efficient, not resilient. Cheap, not sustainable. Fast, not thoughtful. Each decision made sense at the time, but nobody was looking at the whole picture."
-
-- @ask_about_solutions: "So how do we fix it?"
-- @feel_overwhelmed: "This feels too big to solve."
-- @go_to_framework: "I want to learn how to see the whole picture."
-- #arrival_side_conversations: "Tell me about other aspects of this situation"
-
-@ask_about_solutions
-title: Seeking Solutions
-
-Facilyn: "That's exactly what I teach. The solution isn't to fix each problem separately, but to change how we make decisions in the first place."
-
-Narration: A group of teenagers walks by, their homemade air purifier backpacks humming softly. They've adapted, but it shouldn't have to be this way.
-
-Facilyn: "I call it 'holistic management'—making decisions that consider everything together: what you want, what you're responsible for, and what's actually sustainable."
-
-- @go_to_framework: "I need to learn this approach."
-- @ask_how_it_works: "How does that actually work in practice?"
-
-@ask_how_it_works
-title: Practical Application
-
-Facilyn: "I start with simple questions, but they get you thinking differently. Like, instead of asking 'How do we fix the power grid?' I might ask 'How do we want our community to live?'"
-
-Narration: The questions hang in the air as you watch people around you making do, adapting, surviving—but not thriving.
-
-Facilyn: "Once you're clear on what you really want, then you can ask what you're actually managing, and what practices will get you there sustainably."
-
-- @go_to_framework: "I want to learn this framework."
-- @feel_overwhelmed: "It sounds complicated."
-
-@feel_overwhelmed
-title: Feeling Overwhelmed
-
-Me: "This all feels too big, too complicated."
-
-Facilyn: "That's exactly why this approach works. Instead of trying to solve everything at once, you start with clarity about what you actually want."
-
-Narration: She smiles kindly.
-
-Facilyn: "You don't have to fix the world today. You just have to get clear about your piece of it."
-
-- @go_to_framework: "Okay, let's start with my piece."
-- @ask_about_my_piece: "What do you mean by 'my piece'?"
-
-@ask_about_my_piece
-title: Understanding Your Role
-
-[? if part_of = "alone" : Facilyn: "Well, you said you're here by yourself. So maybe your piece is just you—your life, your choices, your impact." ?]
-
-[? if part_of = "family" : Facilyn: "You mentioned you're here with family. So maybe your piece is your family unit—how you all want to live together, what you're building together." ?]
-
-[? if part_of = "organization" : Facilyn: "You said you're part of an organization. So maybe your piece is understanding what that organization is really trying to achieve, and how it fits into the bigger picture." ?]
-
-Facilyn: "I can help you get clear on exactly what you're managing, and then how to manage it well."
-
-- @go_to_framework: "That makes sense. Let's start learning."
-
-@intervene_in_argument
-title: Try to Help
-on-arrival: community_engagement += 1
-
-Me: "Excuse me, what if you all stepped back and thought about what you're trying to achieve together?"
-
-Narration: The arguing stops. They look at you with a mix of curiosity and annoyance.
-
-Person A: "We're trying to solve the streetlight problem."
-Person B: "No, we're trying to solve the water problem."
-Me: "But what are you both trying to create for this neighborhood?"
-
-Narration: There's a pause as they consider this.
-
-Person C: "A place that... works, I guess. Where we can live safely and healthily."
-
-Facilyn: "Not bad! You're thinking holistically already. Ready to learn the full framework?"
-
-- @go_to_framework: "Yes, let's start."
-- @ask_more_questions: "What other questions should I ask?"
-
-@ask_more_questions
-title: Learn More Questions
-
-Facilyn: "I have a whole framework. I'd ask them what they're really managing—not streetlights or water filters, but their community. Then I'd help them figure out what practices actually support their vision."
-
-Narration: The group is still standing there, looking thoughtful rather than argumentative.
-
-Facilyn: "But you should learn it properly. Let me guide you through it."
-
-- @go_to_framework: "Lead the way."
-
-@realize_connection
-title: See the Connections
-
-Me: "I'm starting to see how everything connects. The problems, the solutions, the people..."
-
-Facilyn: "Exactly! That's the beginning of holistic thinking. Most people try to solve problems in isolation, but everything affects everything else."
-
-Narration: You look around with new eyes. The broken streetlight affects safety, which affects community trust, which affects cooperation, which affects the ability to solve problems like broken streetlights.
-
-Facilyn: "Ready to learn how to work with those connections instead of against them?"
-
-- @go_to_framework: "Absolutely. Let's start."

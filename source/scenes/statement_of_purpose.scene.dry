@@ -3,15 +3,15 @@ subtitle: Your Organization's Core Drive
 new-page: true
 on-arrival: time_in_story += 1
 
-Narration: Since you're here representing an organization, we need to be clear about its fundamental purpose. Not your mission statement or marketing copy, but the real reason your organization exists.
+Facilyn: "Since you're here representing an organization, we need to be clear about its fundamental purpose. Not your mission statement or marketing copy, but the real reason your organization exists."
 
-Narration: If your organization disappeared tomorrow, what would the world lose?
+Facilyn: "If your organization disappeared tomorrow, what would the world lose?"
 
-Narration: A cleaning robot rolls by, spraying the sidewalk with what appears to be orange juice instead of disinfectant. Its cheerful voice announces:
+A cleaning robot rolls by, spraying the sidewalk with what appears to be orange juice instead of disinfectant. Its cheerful voice announces:
 
 Robotvoice: CLEANING COMPLETE! HAVE A CITRUSY DAY!
 
-Narration: That's an organization that's lost sight of its real purpose. What is your organization's true contribution to the world?
+Facilyn: "That's an organization that's lost sight of its real purpose. What is your organization's true contribution to the world?"
 
 - @producing_goods: Producing and selling goods or services
 - @financial_services: Providing financial and investment services
@@ -69,11 +69,11 @@ go-to: purpose_deeper
 title: Examples of Purpose Statements
 tags: side_conversations
 
-Narration: A hospital's purpose isn't "to make money from sick people" - it's "to heal and restore health." A school's purpose isn't "to process students" - it's "to develop human potential and knowledge."
+Facilyn: "A hospital's purpose isn't 'to make money from sick people' - it's 'to heal and restore health.' A school's purpose isn't 'to process students' - it's 'to develop human potential and knowledge.'"
 
-Narration: A good purpose statement captures the positive change your organization creates in the world. It's the "why" behind everything you do.
+Facilyn: "A good purpose statement captures the positive change your organization creates in the world. It's the 'why' behind everything you do."
 
-Narration: Even a factory's purpose isn't just "to make things" - it might be "to create tools that improve people's lives" or "to transform raw materials into useful products."
+Facilyn: "Even a factory's purpose isn't just 'to make things' - it might be 'to create tools that improve people's lives' or 'to transform raw materials into useful products.'"
 
 - @back_to_purpose: I understand. Let me choose our purpose.
 

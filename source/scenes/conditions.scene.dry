@@ -2,11 +2,11 @@ title: Conditions
 subtitle: Building Sustainability
 new-page: true
 
-Narration: Now we need to consider the conditions your resource base needs to support your vision of life. What are the conditions - both internal and external - that must exist for your future resource base to sustain the quality of life you want?
+Facilyn: "Now we need to consider the conditions your resource base needs to support your vision of life. What are the conditions - both internal and external - that must exist for your future resource base to sustain the quality of life you want?"
 
-Narration: A maintenance robot rolls by, apparently trying to improve soil health by watering concrete while playing nature sounds. It's well-intentioned but missing the point about what actually supports life.
+A maintenance robot rolls by, apparently trying to improve soil health by watering concrete while playing nature sounds. It's well-intentioned but missing the point about what actually supports life.
 
-Narration: Think about the four ecosystem processes and the social processes that must be functioning well for your vision to be sustainable over generations.
+Facilyn: "Think about the four ecosystem processes and the social processes that must be functioning well for your vision to be sustainable over generations."
 
 - @condition_soil: Regenerating soil and increasing biodiversity
 - @condition_water: Clean water systems and healthy watersheds  
@@ -21,7 +21,7 @@ title: Soil and Biodiversity
 max-visits: 1
 on-arrival: condition_soil = 1
 
-Narration: Regenerating soil and increasing biodiversity - the foundation of all life. Without healthy, living soil and diverse biological communities, food systems collapse and ecosystems can't function.
+Regenerating soil and increasing biodiversity - the foundation of all life. Without healthy, living soil and diverse biological communities, food systems collapse and ecosystems can't function.
 
 - @conditions_complete: Continue to complete conditions
 - @condition_water: Consider water systems
@@ -32,7 +32,7 @@ title: Water Systems
 max-visits: 1
 on-arrival: condition_water = 1
 
-Narration: Clean water systems and healthy watersheds - water is life itself. Polluted or depleted water systems can't support thriving communities or healthy ecosystems.
+Clean water systems and healthy watersheds - water is life itself. Polluted or depleted water systems can't support thriving communities or healthy ecosystems.
 
 - @conditions_complete: Continue to complete conditions
 - @condition_soil: Consider soil health
@@ -43,7 +43,7 @@ title: Climate Stability
 max-visits: 1
 on-arrival: condition_climate = 1
 
-Narration: Stable climate and functioning weather patterns - the predictable foundation that allows planning and building. Extreme weather and climate chaos make it impossible to create sustainable systems.
+Stable climate and functioning weather patterns - the predictable foundation that allows planning and building. Extreme weather and climate chaos make it impossible to create sustainable systems.
 
 - @conditions_complete: Continue to complete conditions
 - @condition_economy: Consider economic systems
@@ -54,7 +54,7 @@ title: Economic Systems
 max-visits: 1
 on-arrival: condition_economy = 1
 
-Narration: An equitable economy with fair distribution - extreme inequality creates instability and prevents communities from thriving. Economic systems must serve all people, not just a few.
+An equitable economy with fair distribution - extreme inequality creates instability and prevents communities from thriving. Economic systems must serve all people, not just a few.
 
 - @conditions_complete: Continue to complete conditions
 - @condition_social: Consider social systems
@@ -65,7 +65,7 @@ title: Social Systems
 max-visits: 1
 on-arrival: condition_social = 1
 
-Narration: Strong social cohesion and mutual support - without trust and cooperation, communities can't solve problems or support their members through challenges.
+Strong social cohesion and mutual support - without trust and cooperation, communities can't solve problems or support their members through challenges.
 
 - @conditions_complete: Continue to complete conditions
 - @condition_culture: Consider cultural systems
@@ -76,7 +76,7 @@ title: Cultural Systems
 max-visits: 1
 on-arrival: condition_culture = 1
 
-Narration: Thriving education and cultural systems - these preserve knowledge, values, and the capacity to adapt and learn. They maintain the wisdom needed for long-term sustainability.
+Thriving education and cultural systems - these preserve knowledge, values, and the capacity to adapt and learn. They maintain the wisdom needed for long-term sustainability.
 
 - @conditions_complete: Continue to complete conditions
 - @condition_economy: Consider economic systems

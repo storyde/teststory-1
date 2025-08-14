@@ -1,0 +1,117 @@
+title: Systems Thinking FAQ
+subtitle: Understanding complexity and interconnected systems
+tags: faq, systems, complexity
+
+@ask_about_facilyn
+title: About Facilyn
+subtitle: Learning about the facilitator
+on-arrival: curiosity += 1
+
+Facilyn: "I'm a traveling practitioner. I've learned from indigenous communities in the mountains, regenerative farmers in the valleys, and urban resilience groups like this one."
+
+She adjusts her patched satchel, which clearly has seen many places.
+
+Facilyn: "Each place taught me something different about managing complexity, but the principles are surprisingly similar everywhere."
+
+- @what_principles: "What principles?"
+- @accept_shelter: "Interesting. Let's find that shelter."
+
+@what_principles
+title: Core Principles
+subtitle: Understanding holistic management principles
+on-arrival: systems_awareness += 1
+
+Facilyn: "The main one is that everything is connected. You can't manage just one piece without affecting the others."
+
+She points to different scenes around you: the broken infrastructure, the improvised economy, the social tensions.
+
+Facilyn: "Climate change stresses the power grid. Power failures crash the economy. Economic stress breaks down social trust. Broken trust makes it harder to solve climate change. Round and round."
+
+A food delivery drone crashes into a tree, its AI confused by the heat-warped GPS signals. A small crowd gathers to salvage the packages.
+
+Facilyn: "But if you understand the connections, you can find leverage points—places where small changes create big positive effects."
+
+- @leverage_points: "What kind of leverage points?"
+- @accept_shelter: "That makes sense. Let's continue this at the shelter."
+
+@leverage_points
+title: Finding Leverage Points
+subtitle: Understanding systemic intervention points
+on-arrival: systems_awareness += 1
+
+Facilyn: "Sometimes it's changing how decisions get made. Sometimes it's changing what questions people ask. Sometimes it's just helping people see the connections they couldn't see before."
+
+A malfunctioning street drone tries to deliver packages to addresses that no longer exist, while a pedal-powered food truck serves fresh meals to a growing line of customers.
+
+Facilyn: "See the difference? The drone is complicated—lots of parts, but when one breaks, the whole thing fails. The food truck is complex—it adapts, responds, learns."
+
+- @complex_vs_complicated: "What's the difference between complex and complicated?"
+- @accept_shelter: "I think I'm starting to understand. Let's find shelter."
+
+@complex_vs_complicated
+title: Complex vs Complicated
+subtitle: Understanding different types of systems
+on-arrival: understanding += 1
+
+Facilyn: "Complicated systems have many parts, but they're predictable. Like that drone—if you know all the parts and how they work, you can fix it."
+
+The broken drone sparks again, its delivery algorithm stuck in an endless loop.
+
+Facilyn: "Complex systems are different. They adapt, learn, evolve. Like ecosystems, communities, economies. You can't control them, but you can work with them."
+
+She gestures toward the food truck, where the vendor is adjusting prices based on demand, chatting with customers, and adapting the menu to available ingredients.
+
+Facilyn: "Most of our problems come from trying to manage complex systems like they're just complicated machines."
+
+- @managing_complexity: "So how do you manage complexity?"
+- @accept_shelter: "That's a helpful distinction. Let's continue at the shelter."
+
+@managing_complexity
+title: Managing Complexity
+subtitle: Working with complex systems
+on-arrival: systems_awareness += 1
+
+Facilyn: "You don't manage complexity by controlling it. You manage it by being clear about what you want and then making decisions that move you in that direction."
+
+A group of people nearby are arguing about whether to fix the broken streetlight or install water filters first. Their voices are getting heated.
+
+Facilyn: "Like them—they're trying to solve problems in isolation. But what if they stepped back and asked what kind of neighborhood they want to create? Then they could see how streetlights and water and everything else fits together."
+
+- @intervene_in_argument: "Should we help them?"
+- @three_areas: "What do you mean by 'everything else'?"
+- @accept_shelter: "I see. Let's continue this conversation at the shelter."
+
+@three_areas
+title: The Three Interconnected Areas
+subtitle: Understanding society, economy, and nature
+on-arrival: systems_awareness += 1
+
+Facilyn: "I mean the three areas that everything depends on: society, economy, and nature. Most people try to manage them separately, but they're completely interconnected."
+
+She points around the plaza as the dust storm approaches.
+
+Facilyn: "Social problems create economic stress. Economic stress degrades the environment. Environmental degradation creates social problems. You can't solve one without considering the others."
+
+A group of people nearby are arguing about whether to fix the broken streetlight or install water filters first. Their voices are getting heated as the storm approaches.
+
+Facilyn: "That's why holistic management starts with understanding what you're really managing—not just streetlights or water, but the whole system that supports the life you want."
+
+- @intervene_in_argument: "Should we help them see that?"
+- @accept_shelter: "That makes sense. Let's find shelter and you can teach me more."
+
+@accept_shelter
+title: Seeking Shelter
+subtitle: Moving toward safety and learning
+on-arrival: community_engagement += 1
+
+Facilyn: "Good thinking. The community shelter is just ahead. We can continue this conversation there—and I can introduce you to the holistic management framework properly."
+
+As you walk toward the shelter, you notice how Facilyn moves with purpose even in the chaos. She nods to people she passes, offers a hand to an elderly man struggling with his bags, and seems to know exactly where she's going.
+
+Facilyn: "You know, this is actually a perfect example of what I was talking about. This dust storm is partly climate change, partly poor urban planning, partly economic inequality that forces people to live in vulnerable areas. You can't solve it by addressing just one piece."
+
+You reach a sturdy building with solar panels and a sign reading "Community Resilience Hub." People are already gathering inside, and you can hear the sound of generators and conversation.
+
+Facilyn: "But you can learn to make decisions that address the whole system. Ready to learn how?"
+
+- @go_to_framework: "Yes, let's start learning the framework."
