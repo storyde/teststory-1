@@ -113,3 +113,11 @@ You reach a sturdy building with solar panels and a sign reading "Community Resi
 Facilyn: "But you can learn to make decisions that address the whole system. Ready to learn how?"
 
 - @go_to_framework: "Yes, let's start learning the framework."
+
+@go_to_framework
+title: Learn the Framework
+
+- @continue_to_framework: Let's begin learning the framework
+
+@continue_to_framework
+go-to: framework_intro

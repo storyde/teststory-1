@@ -1,19 +1,19 @@
 title: Whole Under Management
 tags: framework_core
 
-Facilyn: "Now we get to the heart of it. What is the 'whole' you're actually managing?"
+Facilyn: Now we get to the heart of it. What is the 'whole' you're actually managing?
 
-Facilyn: "Every action, every decision, ripples outwards. You don't exist in isolation. When you make a choice, what all gets affected? What is the 'whole' that you are truly responsible for?"
+Facilyn: Every action, every decision, ripples outwards. You don't exist in isolation. When you make a choice, what all gets affected? What is the 'whole' that you are truly responsible for?
 
 A neighbor walks by, watering plants with greywater from their kitchen. A small, personal act, yet it affects the building's water bill, the local water system, even the plants that clean the air you breathe.
 
-[? if player_background = "individual" : Facilyn: "As an individual, your decisions still ripple outwards. What's the boundary of what you feel responsible for?" ?]
+[? if player_background = "individual" : Facilyn: As an individual, your decisions still ripple outwards. What's the boundary of what you feel responsible for? ?]
 
-[? if player_background = "family" : Facilyn: "Your family doesn't exist in isolation. What's the whole system that affects your family's wellbeing?" ?]
+[? if player_background = "family" : Facilyn: Your family doesn't exist in isolation. What's the whole system that affects your family's wellbeing? ?]
 
-[? if player_background = "organization" or player_background = "school" or player_background = "company" : Facilyn: "Your organization doesn't exist in isolation. What's the whole system you're really responsible for?" ?]
+[? if player_background = "organization" or player_background = "school" or player_background = "company" : Facilyn: Your organization doesn't exist in isolation. What's the whole system you're really responsible for? ?]
 
-Facilyn: "Consider the boundaries of your responsibility. What is the largest system you feel you can, and should, manage effectively?"
+Facilyn: Consider the boundaries of your responsibility. What is the largest system you feel you can, and should, manage effectively?
 
 - @scope_individual: Myself and my immediate well-being
 - @scope_family: My family unit and its direct environment
@@ -51,13 +51,13 @@ go-to: qol_categories
 title: Understanding Boundaries
 tags: side_conversations
 
-Narration: Boundaries are partly practical and partly philosophical. Practically, what can you actually influence? What resources do you control? What relationships do you have?
+Facilyn: Boundaries are partly practical and partly philosophical. Practically, what can you actually influence? What resources do you control? What relationships do you have?
 
-Narration: Philosophically, what do you feel responsible for? What aligns with your values and purpose?
+Facilyn: Philosophically, what do you feel responsible for? What aligns with your values and purpose?
 
-Narration: And systemically, what's connected to what? What affects what you care about?
+Facilyn: And systemically, what's connected to what? What affects what you care about?
 
-Narration: Your 'whole under management' is where these perspectives overlap - what you can influence, what you feel responsible for, and what's systemically connected to your goals.
+Facilyn: Your 'whole under management' is where these perspectives overlap - what you can influence, what you feel responsible for, and what's systemically connected to your goals.
 
 - @back_to_scope: I understand. Let me choose my scope.
 
@@ -68,57 +68,57 @@ go-to: whole_under_management
 title: Organizational Focus
 on-arrival: scope_organization += 1; organizational_responsibility += 1
 
-Sarah: "Your organization—but what's the boundary? Just the employees? The customers? The suppliers? The community where you operate?"
+Sarah: Your organization—but what's the boundary? Just the employees? The customers? The suppliers? The community where you operate?
 
-Narration: A small business owner walks by, carrying produce to trade with the garden collective.
+A small business owner walks by, carrying produce to trade with the garden collective.
 
-Sarah: "That business affects its customers, suppliers, competitors, the local economy, the environment where it operates..."
+Sarah: That business affects its customers, suppliers, competitors, the local economy, the environment where it operates...
 
-Sarah: "Organizations can have tremendous impact, but they're also embedded in larger systems. What feels like the right scope for your responsibility?"
+Sarah: Organizations can have tremendous impact, but they're also embedded in larger systems. What feels like the right scope for your responsibility?
 
-- @just_internal: "Just our internal operations and employees."
-- @including_stakeholders: "Including our key stakeholders and community."
-- @full_ecosystem: "The full ecosystem we're part of."
+- @just_internal: Just our internal operations and employees.
+- @including_stakeholders: Including our key stakeholders and community.
+- @full_ecosystem: The full ecosystem we're part of.
 
 @my_community
 title: Community Focus
 on-arrival: scope_community += 1; community_responsibility += 1
 
-Sarah: "Community-level thinking—that's ambitious and important. But which community? Geographic? Professional? Cultural?"
+Sarah: Community-level thinking—that's ambitious and important. But which community? Geographic? Professional? Cultural?
 
-Narration: She gestures at the diverse group of people working in and around the garden.
+She gestures at the diverse group of people working in and around the garden.
 
-Sarah: "This community includes people from different backgrounds, ages, economic situations. They're connected by geography and shared needs, but they're also connected to other communities."
+Sarah: This community includes people from different backgrounds, ages, economic situations. They're connected by geography and shared needs, but they're also connected to other communities.
 
-Sarah: "Community-level management can be very powerful, but it requires understanding many different perspectives and needs."
+Sarah: Community-level management can be very powerful, but it requires understanding many different perspectives and needs.
 
-- @geographic_community: "My geographic neighborhood or area."
-- @professional_community: "My professional or industry community."
-- @multiple_communities: "The multiple communities I'm part of."
+- @geographic_community: My geographic neighborhood or area.
+- @professional_community: My professional or industry community.
+- @multiple_communities: The multiple communities I'm part of.
 
 @my_region
 title: Regional Focus
 on-arrival: scope_region += 1; regional_responsibility += 1
 
-Sarah: "Regional thinking—that's getting into complex systems. Regions include multiple communities, ecosystems, economic networks..."
+Sarah: Regional thinking—that's getting into complex systems. Regions include multiple communities, ecosystems, economic networks...
 
-Narration: A delivery truck passes by, part of the supply chains that connect this community to the broader region.
+A delivery truck passes by, part of the supply chains that connect this community to the broader region.
 
-Sarah: "Regional decisions affect millions of people, multiple ecosystems, complex economic and political systems. It's important work, but it requires understanding many interconnected parts."
+Sarah: Regional decisions affect millions of people, multiple ecosystems, complex economic and political systems. It's important work, but it requires understanding many interconnected parts.
 
-Sarah: "Are you sure you want to take on that level of complexity? Or would it be better to start smaller and build up?"
+Sarah: Are you sure you want to take on that level of complexity? Or would it be better to start smaller and build up?
 
-- @start_smaller: "Maybe I should start with a smaller scope."
-- @regional_role: "I think my role requires regional thinking."
-- @step_by_step: "I could start smaller but keep the regional perspective in mind."
+- @start_smaller: Maybe I should start with a smaller scope.
+- @regional_role: I think my role requires regional thinking.
+- @step_by_step: I could start smaller but keep the regional perspective in mind.
 
 @my_nation
 title: National Focus
 on-arrival: scope_nation += 1; national_responsibility += 1
 
-Sarah: "National level... that's policy, large-scale systems, millions of people. Very important, but also very complex."
+Sarah: National level... that's policy, large-scale systems, millions of people. Very important, but also very complex.
 
-Narration: A news drone flies overhead, broadcasting updates about national economic and climate policies.
+A news drone flies overhead, broadcasting updates about national economic and climate policies.
 
 Sarah: "National decisions ripple through every community, every family, every individual. The responsibility is enormous."
 
@@ -134,7 +134,7 @@ on-arrival: scope_global += 1; global_responsibility += 1
 
 Sarah: "Global thinking—climate, international economics, planetary systems. The ultimate 'whole.'"
 
-Narration: She looks up at the sky, where the effects of global climate change are visible in the unusual weather patterns.
+She looks up at the sky, where the effects of global climate change are visible in the unusual weather patterns.
 
 Sarah: "Everything is ultimately connected to everything else on this planet. But global-scale management is incredibly complex."
 
@@ -151,15 +151,15 @@ tags: scope_exploration
 
 Sarah: "Great question! Boundaries are partly practical and partly philosophical."
 
-Narration: She draws a circle in the dirt with her finger.
+She draws a circle in the dirt with her finger.
 
 Sarah: "Practically, what can you actually influence? What resources do you control? What relationships do you have?"
 
-Narration: She draws a larger circle around the first one.
+She draws a larger circle around the first one.
 
 Sarah: "Philosophically, what do you feel responsible for? What aligns with your values and purpose?"
 
-Narration: She draws connecting lines between the circles.
+She draws connecting lines between the circles.
 
 Sarah: "And systemically, what's connected to what? What affects what you care about?"
 
@@ -191,7 +191,7 @@ tags: scope_exploration
 
 Sarah: "Values-based thinking—what feels right to you? What do you feel called to take care of?"
 
-Narration: She points to the garden around you.
+She points to the garden around you.
 
 Sarah: "Some people feel responsible for their immediate family. Others feel responsible for their community, their profession, their ecosystem, their planet."
 
@@ -207,7 +207,7 @@ on-arrival: systems_awareness += 2
 
 Sarah: "Systems thinking—what's connected to what? What affects the things you care about most?"
 
-Narration: She points to different elements of the garden ecosystem.
+She points to different elements of the garden ecosystem.
 
 Sarah: "If you care about these tomatoes, you have to think about the soil, the water, the pollinators, the climate, the community that maintains this space..."
 
@@ -222,7 +222,7 @@ title: Integrating All Perspectives
 
 Sarah: "Excellent! That's truly holistic thinking—considering practical influence, values-based responsibility, and systemic connections together."
 
-Narration: She draws overlapping circles in the dirt.
+She draws overlapping circles in the dirt.
 
 Sarah: "Your 'whole under management' is where these three perspectives overlap. What you can influence, what you feel responsible for, and what's systemically connected to your goals."
 
@@ -237,7 +237,7 @@ title: Gradual Expansion
 
 Sarah: "Wise approach. Start with a scope you can manage well, learn from experience, then expand as you develop capacity."
 
-Narration: She points to the garden's growth from a single bed to multiple raised beds.
+She points to the garden's growth from a single bed to multiple raised beds.
 
 Sarah: "This garden started with one person growing herbs in a container. As people learned and resources grew, so did the scope."
 
@@ -252,7 +252,7 @@ title: Extended Network
 
 Sarah: "Your extended network—that's thinking about relationships and influence patterns. Family, friends, colleagues, neighbors..."
 
-Narration: A group of people wave as they pass by, clearly part of Sarah's extended network.
+A group of people wave as they pass by, clearly part of Sarah's extended network.
 
 Sarah: "Networks can be very powerful for creating change, because influence flows through relationships."
 
@@ -360,7 +360,7 @@ title: Assess Your Influence
 
 Sarah: "Take a moment to really think about this. Where do you have actual decision-making power? What resources do you control or influence? Who asks for your input?"
 
-Narration: She waits patiently while you reflect.
+She waits patiently while you reflect.
 
 Sarah: "Remember, influence isn't just formal authority. It's also relationships, expertise, resources, and credibility."
 
@@ -372,7 +372,7 @@ title: Feel Responsible For
 
 Sarah: "What keeps you up at night? What do you feel you should be taking care of? What would you regret not addressing?"
 
-Narration: She looks at you with genuine curiosity.
+She looks at you with genuine curiosity.
 
 Sarah: "Sometimes our sense of responsibility is bigger than our current influence, and that's okay. It can motivate us to grow our capacity."
 
@@ -384,7 +384,7 @@ title: Map the Connections
 
 Sarah: "Let's think through this systematically. What do you care about most? What affects that? What affects what affects that?"
 
-Narration: She starts drawing connections in the dirt.
+She starts drawing connections in the dirt.
 
 Sarah: "For example, if you care about your family's wellbeing, that's affected by your household resources, which are affected by your income, which is affected by your organization's success, which is affected by the broader economy..."
 
@@ -398,7 +398,7 @@ title: Take Time to Integrate
 
 Sarah: "That's wise. This is one of the most important decisions you'll make—it shapes everything else."
 
-Narration: She stands and brushes dirt from her hands.
+She stands and brushes dirt from her hands.
 
 Sarah: "Why don't you spend some time observing this community? See how different people define their 'whole under management.' When you're ready, come find me."
 
@@ -470,7 +470,7 @@ title: Scope Confirmed
 
 Sarah: "Excellent. Now you're clear about what you're actually managing. That's the foundation for everything else."
 
-Narration: She makes notes in her worn notebook.
+She makes notes in her worn notebook.
 
 Sarah: "Next, we need to get clear about how you want that whole to be. What's your vision for the life you want to create within your scope of management?"
 

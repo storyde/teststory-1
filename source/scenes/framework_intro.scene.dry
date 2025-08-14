@@ -13,54 +13,46 @@ The system, designed for efficiency, now just adds to the chaos. It's a stark re
 
 This framework begins with clarity. Clarity about what truly drives you, what you are truly responsible for, and what kind of future you are striving to build.
 
-Facilyn: "But first, let's be clear about your situation. Are you here alone, with family, or as part of something larger?"
+[? if part_of = "organization" : Facilyn: Since you're here as part of an organization, what kind of organization do you represent?
 
-- @here_alone: I'm here by myself
-- @here_with_family: I'm here with my family
-- @here_as_organization: I'm here as part of an organization
-- @here_as_school: I represent a school or educational institution
-- @here_as_company: I represent a company or business
-- @here_as_community: I represent a community group
-- @here_as_nation: I represent a government or nation
-- @side_why_this_matters: Why does this distinction matter?
+- @here_as_school: A school or educational institution
+- @here_as_company: A company or business
+- @here_as_community: A community group
+- @here_as_government: A government or public agency
+- @here_as_nonprofit: A nonprofit or NGO
+- @side_why_this_matters: Why does this distinction matter? ?]
 
-@here_alone
-on-arrival: player_background = "individual"
+[? if part_of != "organization" : Facilyn: Now that we understand your context, let's move forward with the framework.
+
+- @continue_to_qol: Let's explore what quality of life means ?]
+
+@continue_to_qol
 go-to: qol_categories
-
-@here_with_family
-on-arrival: player_background = "family"
-go-to: qol_categories
-
-@here_as_organization
-on-arrival: player_background = "organization"
-go-to: statement_of_purpose
 
 @here_as_school
-on-arrival: player_background = "school"
-go-to: statement_of_purpose
+on-arrival: organization = "school"
 
 @here_as_company
-on-arrival: player_background = "company"
-go-to: statement_of_purpose
+on-arrival: organization = "company"
 
 @here_as_community
-on-arrival: player_background = "community"
-go-to: qol_categories
+on-arrival: organization = "community"
 
-@here_as_nation
-on-arrival: player_background = "nation"
-go-to: qol_categories
+@here_as_government
+on-arrival: organization = "government"
+
+@here_as_nonprofit
+on-arrival: organization = "nonprofit"
 
 @side_why_this_matters
 title: Why This Distinction Matters
 tags: side_conversations
 
-Facilyn: "The distinction matters because different entities have different purposes and responsibilities. An individual manages their personal life. A family manages their collective wellbeing. But organizations - schools, companies, hospitals - exist to serve a specific purpose in society."
+Facilyn: The distinction matters because different entities have different purposes and responsibilities. An individual manages their personal life. A family manages their collective wellbeing. But organizations - schools, companies, hospitals - exist to serve a specific purpose in society.
 
 A delivery drone buzzes overhead, drops a package in the wrong yard, and flies away. The package is labeled "URGENT: Ice cream for tropical fish." That's an organization that has clearly lost sight of its purpose.
 
-Facilyn: "Understanding your role helps determine what questions we need to ask and what you're truly managing."
+Facilyn: Understanding your role helps determine what questions we need to ask and what you're truly managing.
 
 - @back_to_context: I understand. Let me choose my context.
 

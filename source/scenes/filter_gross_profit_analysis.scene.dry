@@ -3,13 +3,13 @@ subtitle: Choosing the Right Enterprises
 new-page: true
 on-arrival: filter_current_check_id = "gpa"
 
-Narration: The **Gross Profit Analysis** check helps you select enterprises that best cover overhead costs.
+Facilyn: The **Gross Profit Analysis** check helps you select enterprises that best cover overhead costs.
 
-Narration: The question you ask is: **"Which enterprises contribute the most to covering the overheads of the business?"**
+Facilyn: The question you ask is: **"Which enterprises contribute the most to covering the overheads of the business?"**
 
-Narration: Gross profit = Income from enterprise - Additional costs you wouldn't have without that enterprise. The enterprise with the highest gross profit helps cover your fixed costs (rent, insurance, basic utilities) most effectively.
+Facilyn: Gross profit = Income from enterprise - Additional costs you wouldn't have without that enterprise. The enterprise with the highest gross profit helps cover your fixed costs (rent, insurance, basic utilities) most effectively.
 
-Narration: A financial analysis robot nearby is calculating the profitability of selling individual grains of sand. Its precision is impressive, though its business model needs work.
+A financial analysis robot nearby is calculating the profitability of selling individual grains of sand. Its precision is impressive, though its business model needs work.
 
 - @gpa_complete: I understand this check
 

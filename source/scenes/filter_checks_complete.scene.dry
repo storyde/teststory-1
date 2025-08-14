@@ -3,7 +3,7 @@ subtitle: Your Decision-Making Framework
 new-page: true
 on-arrival: context_progress = 7
 
-Narration: You now understand the seven context checks that help you evaluate decisions against your holistic context.
+Facilyn: You now understand the seven context checks that help you evaluate decisions against your holistic context.
 
 = The Context Checks
 
@@ -27,11 +27,11 @@ Narration: You now understand the seven context checks that help you evaluate de
 
 ---
 
-Narration: A mastery robot rolls by, apparently having learned to juggle all context checks simultaneously. Its integration skills are impressive, if overly complex.
+A mastery robot rolls by, apparently having learned to juggle all context checks simultaneously. Its integration skills are impressive, if overly complex.
 
-Narration: With practice, these checks become natural. You'll start thinking holistically without realizing it.
+Facilyn: With practice, these checks become natural. You'll start thinking holistically without realizing it.
 
-Narration: You now have your holistic context and tools to apply it. You're ready to manage holistically.
+Facilyn: You now have your holistic context and tools to apply it. You're ready to manage holistically.
 
 - @practice_scenario: Practice with another scenario
 - @return_to_context: Review my complete holistic context

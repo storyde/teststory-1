@@ -3,13 +3,13 @@ subtitle: Maintaining Crucial Relationships
 new-page: true
 on-arrival: filter_current_check_id = "wls"
 
-Facilyn: "The **Social Weak Link** check helps you avoid damaging crucial relationships."
+Facilyn: The **Social Weak Link** check helps you avoid damaging crucial relationships.
 
-Facilyn: "The question you ask is: **'Could this action, due to prevailing attitudes or beliefs, create a weak link between us and those whose support we need?'**"
+Facilyn: The question you ask is: **'Could this action, due to prevailing attitudes or beliefs, create a weak link between us and those whose support we need?'**
 
 A communication robot nearby is trying to build consensus by shouting the same message louder and louder. It hasn't grasped that volume doesn't overcome fundamental disagreement.
 
-Facilyn: "Like a chain, your success depends on the weakest link in your network of relationships. This check reminds you to consider whose support you need and whether your action might damage those relationships."
+Facilyn: Like a chain, your success depends on the weakest link in your network of relationships. This check reminds you to consider whose support you need and whether your action might damage those relationships.
 
 - @wls_complete: I understand this check
 

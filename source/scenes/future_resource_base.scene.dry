@@ -3,11 +3,11 @@ subtitle: What Will Sustain Your Vision?
 new-page: true
 on-arrival: time_in_story += 1
 
-Narration: Now that you're clear about how you want your life to be, we need to consider what will sustain that vision over time. What is your future resource base - the foundation of land and people that will support your quality of life not just today, but for generations to come?
+Facilyn: Now that you're clear about how you want your life to be, we need to consider what will sustain that vision over time. What is your future resource base - the foundation of land and people that will support your quality of life not just today, but for generations to come?
 
-Narration: A maintenance drone rolls by, apparently trying to plant seeds in concrete while playing classical music. It's been at this for hours, convinced that persistence will overcome the fundamental mismatch between intention and reality.
+A maintenance drone rolls by, apparently trying to plant seeds in concrete while playing classical music. It's been at this for hours, convinced that persistence will overcome the fundamental mismatch between intention and reality.
 
-Narration: Your resource base isn't just what you own or control directly - it's the entire web of land, people, and systems that your life depends on. Where do your food, water, energy, and social support actually come from?
+Facilyn: Your resource base isn't just what you own or control directly - it's the entire web of land, people, and systems that your life depends on. Where do your food, water, energy, and social support actually come from?
 
 - @city_resource_base: I live in a city - my resource base includes farmers and suppliers from many areas
 - @small_town_resource_base: I live in a small town - my resource base is the surrounding landscape and local community  
@@ -35,13 +35,13 @@ go-to: resource_base_deeper
 title: Understanding Resource Base
 tags: side_conversations
 
-Narration: Your future resource base is everything that sustains your life and the lives of those you care about. It includes the land that grows your food, the watersheds that provide your water, the communities that support your social needs, and the economic systems that enable exchange.
+Facilyn: Your future resource base is everything that sustains your life and the lives of those you care about. It includes the land that grows your food, the watersheds that provide your water, the communities that support your social needs, and the economic systems that enable exchange.
 
-Narration: A delivery drone hovers uncertainly above a community garden, apparently trying to deliver a package to a tomato plant. The plant, being a plant, is not signing for anything.
+A delivery drone hovers uncertainly above a community garden, apparently trying to deliver a package to a tomato plant. The plant, being a plant, is not signing for anything.
 
-Narration: Most people never think about their resource base - they just assume the grocery store will always have food, the tap will always have water, and their community will always function. But in times of crisis, you realize how dependent you are on these larger systems.
+Facilyn: Most people never think about their resource base - they just assume the grocery store will always have food, the tap will always have water, and their community will always function. But in times of crisis, you realize how dependent you are on these larger systems.
 
-Narration: The key insight is that your resource base must be healthy and regenerating if it's going to support your vision of life over the long term. A degraded resource base cannot sustain a high quality of life.
+Facilyn: The key insight is that your resource base must be healthy and regenerating if it's going to support your vision of life over the long term. A degraded resource base cannot sustain a high quality of life.
 
 - @back_to_resource_base: I understand. Let me define my resource base.
 

@@ -20,26 +20,26 @@ But the projector sparks and dies.
 
 You hear someone nearby mention something about a "polycrisis" and you can't help but wonder...
 
-- @poly_what: "The poly-what?"
+- @poly_what: The poly-what?
 
 @poly_what
 title: The Poly-What?
 subtitle: A moment of confusion
 on-arrival: curiosity += 1
 
-Me: "The poly-what?"
+Me: The poly-what?
 
 ...you mutter to yourself as you stumble through a half-deserted plaza, looking for shelter. A local info-hub flickers, offering outdated alerts about riots and drought. A street vendor nearby offers water for crypto. You hand over your last bit. It tastes metallic. A dust storm looms. You're slowly beginning to grasp what polycrisis really means.
 
 As you seek shelter from the approaching dust storm, a woman approaches you. She moves with purpose despite the chaos around her, carrying a worn leather satchel and wearing practical clothes that have seen better days.
 
-Facilyn: "Looking for somewhere to wait out the storm? There's a community shelter just ahead. I'm Facilyn, by the way."
+Facilyn: Looking for somewhere to wait out the storm? There's a community shelter just ahead. I'm Facilyn, by the way.
 
 Her voice is calm, reassuring—a stark contrast to the anxiety you feel watching the world seemingly fall apart around you.
 
-- @ask_about_polycrisis: "What exactly is a polycrisis?"
-- @ask_about_facilyn: "Are you from around here?"
-- @accept_shelter: "Yes, shelter sounds good right now."
+- @ask_about_polycrisis: What exactly is a polycrisis?
+- @ask_about_facilyn: Are you from around here?
+- @accept_shelter: Yes, shelter sounds good right now.
 
 @ask_about_polycrisis
 title: Understanding Polycrisis
@@ -54,39 +54,45 @@ title: Seeking Shelter
 subtitle: Moving to safety
 on-arrival: community_engagement += 1
 
-Facilyn: "Good thinking. The community shelter is just ahead. We can continue this conversation there—and I can introduce you to the holistic management framework properly."
+Facilyn: Good thinking. The community shelter is just ahead. We can continue this conversation there—and I can introduce you to the holistic management framework properly.
 
 As you walk toward the shelter, you notice how Facilyn moves with purpose even in the chaos. She nods to people she passes, offers a hand to an elderly man struggling with his bags, and seems to know exactly where she's going.
 
-Facilyn: "You know, this is actually a perfect example of what I was talking about. This dust storm is partly climate change, partly poor urban planning, partly economic inequality that forces people to live in vulnerable areas. You can't solve it by addressing just one piece."
+Facilyn: You know, this is actually a perfect example of what I was talking about. This dust storm is partly climate change, partly poor urban planning, partly economic inequality that forces people to live in vulnerable areas. You can't solve it by addressing just one piece.
 
 You reach a sturdy building with solar panels and a sign reading "Community Resilience Hub." People are already gathering inside, and you can hear the sound of generators and conversation.
 
-Facilyn: "But you can learn to make decisions that address the whole system. Ready to learn how?"
+Facilyn: But you can learn to make decisions that address the whole system. Ready to learn how?
 
-- @introduce_framework: "Yes, teach me this framework."
-- @ask_how_it_works: "How does holistic management actually work?"
+- @introduce_framework: Yes, teach me this framework.
+- @ask_how_it_works: How does holistic management actually work?
 
 @introduce_framework
-title: Ready to Learn
-go-to: intro
+go-to: framework_intro
 
 @ask_how_it_works
 title: Understanding the Process
 subtitle: Ready to learn the framework
 
-Facilyn: "The framework starts with three simple questions, but they're deeper than they seem. First: Who are the decision-makers and what resources are you managing together? Second: What kind of life do you want to create? Third: What does the future need to look like to support that life?"
+Facilyn: We make most of our decisions, to meet a need, a desire or solve a problem. So for example, I am getting hungry. Should I light a Fire right away? 
 
 Inside the shelter, you can see people organizing themselves—some setting up sleeping areas, others preparing food, others checking on the elderly and children. It's chaotic but purposeful.
 
-Facilyn: "Once you're clear on those three things—your whole, your vision, and your future resource base—then you can make decisions that move you toward what you want instead of just reacting to what you don't want."
+- @fire_cooking: Well, that depends on where you are and what kind of heating equipment you got.
+
+@fire_cooking
+
+Me: Well, that depends on where you are and what kind of heating equipment you got.
+
+Facilyn: Exactly! 
+All of our decisions are in a context. Most of the time, the context of our decisions is just, if we meet the need, the desire or solve the problem. 
+But when managing complexity, your context needs to be more than this.
 
 The dust storm hits the building with a low rumble, but inside it feels safe and purposeful.
 
-Facilyn: "Want to learn the whole framework? I can guide you through it step by step."
+Facilyn: Want to learn the whole framework? I can guide you through it step by step.
 
-- @go_to_framework: "Yes, let's start learning the framework."
+- @go_to_framework: Yes, let's start learning the framework.
 
 @go_to_framework
-title: Learn the Framework
-go-to: intro
+go-to: framework_intro

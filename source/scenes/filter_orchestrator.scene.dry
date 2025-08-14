@@ -3,13 +3,13 @@ subtitle: Applying Your Holistic Context to Decisions
 new-page: true
 on-arrival: filter_checks_completed_count = 0; filter_current_check_id = "ce"
 
-Narration: Now that you've experienced applying your holistic context to real decisions, let's learn about the formal context checks. These are systematic questions that help you evaluate any proposed action against your holistic context.
+Facilyn: Now that you've experienced applying your holistic context to real decisions, let's learn about the formal context checks. These are systematic questions that help you evaluate any proposed action against your holistic context.
 
-Narration: There are seven context checks that consider the social, economic, and environmental impacts of your choices. They're tools to help you think systematically about decisions.
+Facilyn: There are seven context checks that consider the social, economic, and environmental impacts of your choices. They're tools to help you think systematically about decisions.
 
-Narration: A decision-making robot rolls by, apparently trying to choose between two identical pebbles by conducting extensive cost-benefit analyses on each one. It's been at this for three hours, demonstrating the importance of having a clear framework for decisions.
+A decision-making robot rolls by, apparently trying to choose between two identical pebbles by conducting extensive cost-benefit analyses on each one. It's been at this for three hours, demonstrating the importance of having a clear framework for decisions.
 
-Narration: Let's walk through each context check briefly. You'll learn what each one does and when to use it.
+Facilyn: Let's walk through each context check briefly. You'll learn what each one does and when to use it.
 
 - @start_filter_checks: Begin learning the context checks
 

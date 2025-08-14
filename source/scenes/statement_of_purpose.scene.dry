@@ -1,69 +1,80 @@
 title: Statement of Purpose
-subtitle: Your Organization's Core Drive
+subtitle: Defining What We're Here to Do
 new-page: true
-on-arrival: time_in_story += 1
+on-arrival: context_progress = 2
 
-Facilyn: "Since you're here representing an organization, we need to be clear about its fundamental purpose. Not your mission statement or marketing copy, but the real reason your organization exists."
+Facilyn: "Every organization exists for a reason. What's yours?"
 
-Facilyn: "If your organization disappeared tomorrow, what would the world lose?"
+A nearby vending machine suddenly starts dispensing free snacks while playing a jaunty tune. A small crowd gathers, delighted by this unexpected generosity. Then the machine's screen flickers: "ERROR: PURPOSE UNCLEAR. DEFAULTING TO CHAOS MODE."
 
-A cleaning robot rolls by, spraying the sidewalk with what appears to be orange juice instead of disinfectant. Its cheerful voice announces:
+Facilyn: "See? Without a clear purpose, even simple systems go haywire. Let's define what your organization is truly here to accomplish."
 
-Robotvoice: CLEANING COMPLETE! HAVE A CITRUSY DAY!
+[? if organization = "school" : - @practical_skills: We teach practical skills people need
+- @critical_thinking: We develop people's ability to think and adapt
+- @personal_growth: We support people's personal and professional growth ?]
 
-Facilyn: "That's an organization that's lost sight of its real purpose. What is your organization's true contribution to the world?"
+[? if organization = "company" : - @essential_needs: We meet essential daily needs
+- @convenience_efficiency: We make life more convenient and efficient
+- @innovation_progress: We drive innovation and progress ?]
 
-- @producing_goods: Producing and selling goods or services
-- @financial_services: Providing financial and investment services
-- @digital_tech: Developing digital technologies and platforms
-- @consulting: Offering professional advice and consulting
-- @education: Educating and cultivating skills
-- @healthcare: Promoting health and delivering medical services
-- @advocacy: Advocating for social or environmental causes
-- @culture: Preserving arts, culture, and heritage
-- @safety: Ensuring public safety and emergency response
-- @community_support: Supporting communities through engagement and aid
-- @side_purpose_examples: Can you give me examples of good purpose statements?
+[? if organization = "community" : - @local_wellbeing: We improve the wellbeing of our local community
+- @social_connection: We strengthen social connections and belonging
+- @collective_action: We organize collective action for positive change ?]
 
-@producing_goods
-on-arrival: purpose = "production"; context_progress = 2
-go-to: purpose_deeper
+[? if organization = "government" : - @public_service: We serve the public interest and common good
+- @safety_security: We ensure safety and security for citizens
+- @infrastructure_systems: We maintain essential infrastructure and systems ?]
 
-@financial_services
-on-arrival: purpose = "finance"; context_progress = 2
-go-to: purpose_deeper
+[? if organization = "nonprofit" : - @addressing_problems: We address specific social or environmental problems
+- @supporting_people: We support people who need help or advocacy
+- @creating_change: We create positive change in society ?]
 
-@digital_tech
-on-arrival: purpose = "technology"; context_progress = 2
-go-to: purpose_deeper
+- @side_purpose_examples: Can you give me some examples?
 
-@consulting
-on-arrival: purpose = "consulting"; context_progress = 2
-go-to: purpose_deeper
+@practical_skills
+on-arrival: purpose = "We teach practical skills people need"
 
-@education
-on-arrival: purpose = "education"; context_progress = 2
-go-to: purpose_deeper
+@critical_thinking
+on-arrival: purpose = "We develop people's ability to think and adapt"
 
-@healthcare
-on-arrival: purpose = "health"; context_progress = 2
-go-to: purpose_deeper
+@personal_growth
+on-arrival: purpose = "We support people's personal and professional growth"
 
-@advocacy
-on-arrival: purpose = "advocacy"; context_progress = 2
-go-to: purpose_deeper
+@essential_needs
+on-arrival: purpose = "We meet essential daily needs"
 
-@culture
-on-arrival: purpose = "culture"; context_progress = 2
-go-to: purpose_deeper
+@convenience_efficiency
+on-arrival: purpose = "We make life more convenient and efficient"
 
-@safety
-on-arrival: purpose = "safety"; context_progress = 2
-go-to: purpose_deeper
+@innovation_progress
+on-arrival: purpose = "We drive innovation and progress"
 
-@community_support
-on-arrival: purpose = "community"; context_progress = 2
-go-to: purpose_deeper
+@local_wellbeing
+on-arrival: purpose = "We improve the wellbeing of our local community"
+
+@social_connection
+on-arrival: purpose = "We strengthen social connections and belonging"
+
+@collective_action
+on-arrival: purpose = "We organize collective action for positive change"
+
+@public_service
+on-arrival: purpose = "We serve the public interest and common good"
+
+@safety_security
+on-arrival: purpose = "We ensure safety and security for citizens"
+
+@infrastructure_systems
+on-arrival: purpose = "We maintain essential infrastructure and systems"
+
+@addressing_problems
+on-arrival: purpose = "We address specific social or environmental problems"
+
+@supporting_people
+on-arrival: purpose = "We support people who need help or advocacy"
+
+@creating_change
+on-arrival: purpose = "We create positive change in society"
 
 @side_purpose_examples
 title: Examples of Purpose Statements
