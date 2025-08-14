@@ -77,7 +77,6 @@ A group of people nearby are arguing about whether to fix the broken streetlight
 
 Facilyn: "Like them—they're trying to solve problems in isolation. But what if they stepped back and asked what kind of neighborhood they want to create? Then they could see how streetlights and water and everything else fits together."
 
-- @intervene_in_argument: "Should we help them?"
 - @three_areas: "What do you mean by 'everything else'?"
 - @accept_shelter: "I see. Let's continue this conversation at the shelter."
 
@@ -96,7 +95,6 @@ A group of people nearby are arguing about whether to fix the broken streetlight
 
 Facilyn: "That's why holistic management starts with understanding what you're really managing—not just streetlights or water, but the whole system that supports the life you want."
 
-- @intervene_in_argument: "Should we help them see that?"
 - @accept_shelter: "That makes sense. Let's find shelter and you can teach me more."
 
 @accept_shelter
