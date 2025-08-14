@@ -8,7 +8,7 @@ In a time not so far into the future, society grapples with the symptoms of the 
 
 - @start_game: Start game
 - @go_to_credits: Credits
-- @another_choice_for_test: Test_choice
+- @test_choice: Test_choice
 
 @start_game
 subtitle: go on an adventure
@@ -18,6 +18,6 @@ go-to: intro
 subtitle: View credits and inspirations
 go-to: credits
 
-@another_choice_for_test
+@test_choice
 subtitle: Test another choice
-go-to: another_choice
+go-to: test
