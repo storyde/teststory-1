@@ -13,18 +13,29 @@ The system, designed for efficiency, now just adds to the chaos. It's a stark re
 
 This framework begins with clarity. Clarity about what truly drives you, what you are truly responsible for, and what kind of future you are striving to build.
 
-[? if part_of = "organization" : Facilyn: Since you're here as part of an organization, what kind of organization do you represent?
+- @organization_path: Continue as organization
+- @individual_path: Continue as individual/family
+
+@organization_path
+title: Organization Context
+choose-if: part_of = "organization"
+
+Facilyn: Since you're here as part of an organization, what kind of organization do you represent?
 
 - @here_as_school: A school or educational institution
 - @here_as_company: A company or business
 - @here_as_community: A community group
 - @here_as_government: A government or public agency
 - @here_as_nonprofit: A nonprofit or NGO
-- @side_why_this_matters: Why does this distinction matter? ?]
+- @side_why_this_matters: Why does this distinction matter?
 
-[? if part_of != "organization" : Facilyn: Now that we understand your context, let's move forward with the framework.
+@individual_path
+title: Individual/Family Context
+choose-if: part_of != "organization"
 
-- @continue_to_qol: Let's explore what quality of life means ?]
+Facilyn: Now that we understand your context, let's move forward with the framework.
+
+- @continue_to_qol: Let's explore what quality of life means
 
 @continue_to_qol
 go-to: qol_categories
