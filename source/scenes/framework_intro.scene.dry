@@ -22,42 +22,35 @@ choose-if: part_of = "organization"
 
 Facilyn: Since you're here as part of an organization, what kind of organization do you represent?
 
-- @here_as_school: A school or educational institution
-- @here_as_company: A company or business
-- @here_as_community: A community group
-- @here_as_government: A government or public agency
-- @here_as_nonprofit: A nonprofit or NGO
-- @side_why_this_matters: Why does this distinction matter?
+- #organization
 
-@individual_path
-title: Individual/Family Context
-choose-if: part_of != "organization"
-
-Facilyn: Now that we understand your context, let's move forward with the framework.
-
-- @continue_to_qol: Let's explore what quality of life means
-
-@continue_to_qol
-go-to: qol_categories
-
-@here_as_school
+Title: A school or educational institution
 on-arrival: organization = "school"
+choose-if: part_of = "organization"
+tags: organization
 
-@here_as_company
+title: A company or business
 on-arrival: organization = "company"
+choose-if: part_of = "organization"
+tags: organization
 
-@here_as_community
+title: A community group
 on-arrival: organization = "community"
+choose-if: part_of = "organization"
+tags: organization
 
-@here_as_government
+title: A government or public agency
 on-arrival: organization = "government"
+choose-if: part_of = "organization"
+tags: organization
 
-@here_as_nonprofit
+title: A nonprofit or NGO
 on-arrival: organization = "nonprofit"
+choose-if: part_of = "organization"
+tags: organization
 
-@side_why_this_matters
 title: Why This Distinction Matters
-tags: side_conversations
+tags: organization, side_conversations
 
 Facilyn: The distinction matters because different entities have different purposes and responsibilities. An individual manages their personal life. A family manages their collective wellbeing. But organizations - schools, companies, hospitals - exist to serve a specific purpose in society.
 
