@@ -68,7 +68,10 @@ Facilyn: But you can learn to make decisions that address the whole system. Read
 - @ask_how_it_works: How does holistic management actually work?
 
 @introduce_framework
-go-to: framework_intro
+go-to: organisation
+new-page: true
+
+some text
 
 @ask_how_it_works
 title: Understanding the Process
@@ -92,7 +95,4 @@ The dust storm hits the building with a low rumble, but inside it feels safe and
 
 Facilyn: Want to learn the whole framework? I can guide you through it step by step.
 
-- @go_to_framework: Yes, let's start learning the framework.
-
-@go_to_framework
-go-to: framework_intro
+- #learn_frmwrk

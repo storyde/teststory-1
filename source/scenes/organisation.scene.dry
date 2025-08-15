@@ -1,5 +1,7 @@
-title: A New Way of Thinking
+title: organisation
 subtitle: Beyond the Broken Pieces
+choose-if: part_of = "organization"
+tags: choose_org, learn_frmwrk
 new-page: true
 on-arrival: time_in_story += 1
 
@@ -14,7 +16,6 @@ The system, designed for efficiency, now just adds to the chaos. It's a stark re
 This framework begins with clarity. Clarity about what truly drives you, what you are truly responsible for, and what kind of future you are striving to build.
 
 - @organization_path: Continue as organization
-- @individual_path: Continue as individual/family
 
 @organization_path
 title: Organization Context
@@ -24,31 +25,32 @@ Facilyn: Since you're here as part of an organization, what kind of organization
 
 - #organization
 
-Title: A school or educational institution
+@org_type_school
+title: A school or educational institution
 on-arrival: organization = "school"
-choose-if: part_of = "organization"
 tags: organization
 
+@org_type_company
 title: A company or business
 on-arrival: organization = "company"
-choose-if: part_of = "organization"
 tags: organization
 
+@org_type_community
 title: A community group
 on-arrival: organization = "community"
-choose-if: part_of = "organization"
 tags: organization
 
+@org_type_government
 title: A government or public agency
 on-arrival: organization = "government"
-choose-if: part_of = "organization"
 tags: organization
 
+@org_type_nonprofit
 title: A nonprofit or NGO
 on-arrival: organization = "nonprofit"
-choose-if: part_of = "organization"
 tags: organization
 
+@org_type_matters
 title: Why This Distinction Matters
 tags: organization, side_conversations
 
@@ -58,7 +60,3 @@ A delivery drone buzzes overhead, drops a package in the wrong yard, and flies a
 
 Facilyn: Understanding your role helps determine what questions we need to ask and what you're truly managing.
 
-- @back_to_context: I understand. Let me choose my context.
-
-@back_to_context
-go-to: framework_intro

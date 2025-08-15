@@ -18,4 +18,5 @@ on-arrival: stakeholder_risk = true
 go-to: whole_under_management
 
 @expand_involvement
-go-to: get_stakeholders_involved
+
+You ask more people to come to the table

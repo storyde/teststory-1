@@ -19,7 +19,6 @@ Facilyn: For your organization to truly manage holistically, you need the right 
 [? if player_context = "organization" : - @org_all_stakeholders: All affected parties and stakeholders
 - @org_leadership: Organizational leadership and board
 - @org_members: Members and active participants ?]
-
 - @side_why_involve_everyone: Why involve so many people?
 
 @school_stakeholders

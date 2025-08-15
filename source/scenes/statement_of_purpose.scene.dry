@@ -28,7 +28,6 @@ Facilyn: "See? Without a clear purpose, even simple systems go haywire. Let's de
 [? if organization = "nonprofit" : - @addressing_problems: We address specific social or environmental problems
 - @supporting_people: We support people who need help or advocacy
 - @creating_change: We create positive change in society ?]
-
 - @side_purpose_examples: Can you give me some examples?
 
 @practical_skills
