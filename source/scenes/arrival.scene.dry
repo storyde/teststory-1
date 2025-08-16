@@ -41,10 +41,11 @@ Facilyn: Looking for somewhere to wait out the storm? There's a community shelte
 
 - @ask_about_facilyn: Are you from around here?
 - @accept_shelter: Yes, shelter sounds good right now.
+- @is_it_human_made: So, is this Human-made?.
 
-@ask_about_polycrisis
+@is_it_human_made
 title: Understanding Polycrisis
-go-to: polycrisis-faq
+go-to: human_made
 
 @ask_about_facilyn
 title: About Facilyn
