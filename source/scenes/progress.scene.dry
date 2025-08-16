@@ -6,13 +6,8 @@ subtitle: Your game progress
 = Background information
 
 [? if player_background = "individual" : I am here by myself ?]
-[? if player_background = "family" : I am here with my family ?]
+[? if player_background = "group" : I am here with my family or friens ?]
 [? if player_background = "organization" : I am here as part of an organization ?]
-
-**Statement of Purpose**
-
-
-**Whole Under Management**
 
 = My Holistic Context
 

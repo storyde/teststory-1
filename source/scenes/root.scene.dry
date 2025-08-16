@@ -4,14 +4,14 @@ new-page: true
 
 = Test story
 
-In a time not so far into the future, society grapples with the symptoms of the polycrisis—a complex web of social, economic, and environmental challenges.
+In a time not so far into the future, our world grapples with the symptoms of the polycrisis—a complex web of social, economic, and environmental challenges.
 
 - @start_game: Start game
 - @go_to_credits: Credits
 - @test_choice: Test_choice
 
 @start_game
-subtitle: go on an adventure
+subtitle: Go on an adventure
 go-to: intro
 
 @go_to_credits

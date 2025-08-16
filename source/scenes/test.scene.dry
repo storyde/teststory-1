@@ -27,11 +27,11 @@ Code: `this should be monospaced.`
 
 Javascript: {! <script>dendryUI.dendryEngine.state.qualities['name'] = prompt('Enter your name:');</script> !}
 
-In-text link: {!<a href="#" onclick="dendryUI.dendryEngine.goToScene('one');">Scene One</a>!}
+In-text link: {!<a href="#" onclick="dendryUI.dendryEngine.goToScene('arrival');">Scene Arrival</a>!}
 
-In-text link: {!<a href="#" onclick="dendryUI.dendryEngine.goToScene('two');">Scene Two</a>!}
+In-text link: {!<a href="#" onclick="dendryUI.dendryEngine.goToScene('credits');">Scene Credits</a>!}
 
-In-text link: {!<a href="#" onclick="dendryUI.dendryEngine.goToScene('three');">Scene Three</a>!}
+In-text link: {!<a href="#" onclick="dendryUI.dendryEngine.goToScene('root');">Scene Root</a>!}
 
 # TODO: hover-over
 

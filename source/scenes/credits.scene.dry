@@ -1,6 +1,5 @@
 title: Credits
 new-page: true
-set-bg: backgrounds/outdoors_1_filtered.jpg
 
 Test story
 
@@ -9,9 +8,8 @@ Developed using dendry by Ian D. Millington, with modifications by Aucchen
 Thank *you* for playing!
 
 - @inspirations: Inspirations and related works
-- @back_to_start: Start game
+- @back_to_start: Go back to Start
 - @game_over: End game
-
 
 @inspirations
 
@@ -22,9 +20,7 @@ Inspirations for test game.
 
 
 @game_over
-view-if: time > 0
 game-over: true
 
 @back_to_start
-view-if: time = 0
 go-to: root
