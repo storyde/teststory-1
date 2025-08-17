@@ -1,8 +1,7 @@
 title: Arrival
 subtitle: First Impressions of the Future
 new-page: true
-tags: exploration
-on-arrival: understanding += 1
+tags: arrival
 
 Street vendors hawk water purifiers made from old smartphone parts. 
 
@@ -54,13 +53,6 @@ go-to: systems-faq
 @accept_shelter
 title: Seeking Shelter
 subtitle: Moving to safety
-on-arrival: community_engagement += 1
-
-Facilyn: Good thinking. The community shelter is just ahead. We can continue this conversation there—and I can introduce you to the holistic management framework properly.
-
-As you walk toward the shelter, you notice how Facilyn moves with purpose even in the chaos. She nods to people she passes, offers a hand to an elderly man struggling with his bags, and seems to know exactly where she's going.
-
-Facilyn: You know, this is actually a perfect example of what I was talking about. This dust storm is partly climate change, partly poor urban planning, partly economic inequality that forces people to live in vulnerable areas. You can't solve it by addressing just one piece.
 
 You reach a sturdy building with solar panels and a sign reading "Community Resilience Hub." People are already gathering inside, and you can hear the sound of generators and conversation.
 
@@ -83,17 +75,19 @@ Facilyn: We make most of our decisions, to meet a need, a desire or solve a prob
 
 Inside the shelter, you can see people organizing themselves—some setting up sleeping areas, others preparing food, others checking on the elderly and children. It's chaotic but purposeful.
 
-- @fire_cooking: Well, that depends on where you are and what kind of heating equipment you got.
+- @fire_cooking
 
 @fire_cooking
+title: Well, that depends
+subtitle:  on where you are and what kind of heating equipment you got.
 
 Me: Well, that depends on where you are and what kind of heating equipment you got.
 
 Facilyn: Exactly! 
-All of our decisions are in a context. Most of the time, the context of our decisions is just, if we meet the need, the desire or solve the problem. 
-But when managing complexity, your context needs to be more than this.
+It's all about context. Most of the time we make decisions, the context of our decisions is if we meet the need, the desire or solve the problem we have. 
+But when managing complexity, your context needs to cover much more than this.
 
-The dust storm hits the building with a low rumble, but inside it feels safe and purposeful.
+The dust storm hits the building with a low rumble.
 
 Facilyn: Want to learn the whole framework? I can guide you through it step by step.
 
