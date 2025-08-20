@@ -1,37 +1,44 @@
-title: Intro Scene
-subtitle: The Beginning of Understanding
-new-page: true
+title: Intro Scene  
+subtitle: The Beginning of Understanding  
+new-page: true  
 
-= Welcome to the near future...
+= Welcome to the near future...  
 
-...where streets crack under inequality. 
-Climate trembles. And the economy is all over the place. 
+...where streets crack under inequality.  
+Climate trembles. And the economy is all over the place.  
 
-Also, the robots are just doing their own thing now.
+Also, the robots are just doing their own thing now.  
 
-You arrive in the middle of it all. 
-A delivery drone circles overhead, searching for the best spot to take a selfie. 
+You arrive in the middle of it all, heading for the old teahouse on Fifth Street. 
 
-You are:
+A delivery drone circles overhead, searching for the best spot to take a selfie.  
 
-- @by_yourself: Just by myself
-- @with_group: Family or friends
-- @for_organization: Here as part of an organisation
+You came here:  
+
+- @by_yourself: On your own 
+- @with_group: With family or friends
+- @for_organization: On behalf of your organisation
 
 @by_yourself
-title: Solo Journey
-subtitle: I travel alone
+title: On your own 
+subtitle: Following a recommendation
 on-arrival: part_of = "individual"
-go-to: arrival
+go-to: find_teahouse
+
+A friend recommended this place, saying you could learn a new way to make decisions.
 
 @with_group
-title: Family or friends
-subtitle: We are here as a group
+title: With family or friends
+subtitle: Meeting an old friend
 on-arrival: part_of = "group"
-go-to: arrival
+go-to: find_teahouse
+
+You’re here to catch up with an old friend you haven’t seen in years.  
 
 @for_organization
-title: Organizational Representative
-subtitle: I need to take my organisation into account
+title: On behalf of your organisation
+subtitle: Learn something new
 on-arrival: part_of = "organization"
-go-to: arrival
+go-to: find_teahouse
+
+Your organisation suggested you to come here to learn about a new management method.  

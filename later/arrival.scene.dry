@@ -1,0 +1,230 @@
+title: Find the teahouse  
+subtitle: On the way to the Teahouse  
+new-page: true  
+tags: intro  
+
+You enter a big plaza with infoscreens on the side. 
+
+A drone wobbles on the ground, tossing crumbs to a small flock of pigeons.  
+It seems stuck. 
+
+A dust storm looms at the horizon, already stinging your throat. 
+
+Somebody nearby mutters something about the polycrisis...  
+
+- @poly_what: The poly-what?  
+- @info_screen: Read the info-screen  
+- @directions_scene: Ask for directions to the teahouse
+- @drone_scene: Help the drone
+- @vendor_scene: Buy water from a vendor
+
+
+@poly_what  
+title: The poly-what?  
+subtitle: Isn’t a normal crisis bad enough already?  
+
+Me: The poly-what?  
+
+The stranger eyes you, amused.  
+Stranger: When crises stop lining up one by one… and start crashing down together.  
+
+- @ask_teahouse_directions: And do you know where the teahouse is?
+- @drone_scene: Watch the rogue drone  
+
+@ask_teahouse_directions
+title: Asking for Directions
+subtitle: The stranger might know the way
+
+Me: Hey, before you go, could you tell me how to get to the teahouse?
+
+Stranger: Sure, it's that way. Just follow the red banners; they'll lead you straight there.
+
+They point to a sidestreet, then disappear into the crowd.
+
+- @drone_scene: Watch the rogue drone
+- @teahouse_arrival: Head to the teahouse
+
+@info_screen  
+title: Polycrisis Alerts  
+subtitle: A glimpse of cascading disasters  
+
+The info-screen flickers with last week’s megafires, famine zones, heatwaves, and brutal protests.  
+
+The headlines warn:  
+
+Headline1: Power grids unstable.  
+Headline2: Food distribution networks collapsing.  
+Headline3: Water shortages intensifying.  
+
+Each one is worrying. Taken together, it feels like the system is unraveling.  
+
+You realize small, isolated events ripple across regions, economies, and communities.  
+The polycrisis is not a single disaster—it’s a chain reaction of failures across multiple systems.  
+
+- @drone_scene: Watch the rogue drone  
+- @directions_scene: Ask someone for directions to the teahouse
+
+
+@drone_scene  
+title: Help the drone
+
+You crouch and carefully pick it up.  
+
+Me: Let’s see… sensors misaligned.  
+
+You switch off the drone, adjust its optics, check the battery and switch it back on again.  
+
+The drone lifts off, circling briefly before palling again with the birds. 
+
+Maybe its behavior doesn’t need fixing. 
+Something about its behavior makes you smile—machines doing their own thing now.  
+
+- @info_screen: Check the flickering info-screen  
+- @directions_scene: Ask for directions to the teahouse
+
+
+@vendor_scene  
+title: Thirst  
+subtitle: Water, but at a price  
+
+A vendor waves a cracked purifier bottle at you.  
+
+Vendor: One sip for a coin. Or keep walking thirsty.  
+
+- @pay_vendor: Hand over your last crypto  
+- @haggle_vendor: Haggle with the vendor. 
+
+@pay_vendor  
+title: Metallic Sip  
+subtitle: Last coin spent  
+
+You hand over your last bit of crypto. The water tastes metallic, but eases your throat.  
+
+- @ask_vendor_teahouse: Ask for the tea house  
+
+@haggle_vendor  
+title: Negotiation  
+
+Me: That’s robbery. Half a coin.  
+
+The vendor narrows his eyes, then shrugs.  
+Vendor: Fine. Half. You’ll wish you’d bought more.  
+
+The water is thin but cool. Enough to ease your tongue.  
+
+- @ask_vendor_teahouse: Ask for the tea house  
+
+@ask_vendor_teahouse
+title: Ask for the teahouse
+subtitle: Quick directions
+
+Me: Do you know where the teahouse is?
+
+The vendor points down a side street.  
+
+Vendor: Follow the red banners. You can’t miss it.  
+
+- @teahouse_arrival: Head to the teahouse  
+
+
+@directions_scene  
+title: Ask for directions to the teahouse
+subtitle:  
+
+You see some young people scratching shapes into the dust.  
+As you get closer, you recognize the logos of NASA, WHO, WWF and other organizations.  
+
+You ask them:  
+
+- @why_drawing: Why do you draw these?  
+- @ask_for_teahouse: Do you know where the teahouse is?  
+
+
+@why_drawing  
+title: Participating  
+subtitle: Hands-on learning  
+
+Me: Why do you draw these?  
+Youn: So we remember who tries to fix what, even if it doesn’t last.  
+
+The dust from the nearby farms blows the drawings away.  
+It’s a quiet reminder: Without functioning agriculture, most organizations would not even exist.  
+
+- @ask_for_teahouse: Do you know where the teahouse is?  
+
+@ask_for_teahouse  
+title: Do you know where the teahouse is?  
+subtitle: Ask for directions
+
+Me: Do you know where the teahouse is?
+
+The young person points down a side street.  
+Youn: Follow the red banners. You can’t miss it.  
+
+- @teahouse_arrival: Head to the teahouse  
+
+@teahouse_arrival
+title: Head to the teahouse  
+
+You stumble through the side street, dust stinging your face.  
+The paper lanterns of the old teahouse sway in the wind, welcoming you into dim light and quiet warmth as the storm closes in.
+
+Inside, the air is still, scented faintly of herbs. People sit at low tables.  
+A person waves at you as you enter.  
+
+- @friend_intro: She’s an old friend—you’ve come to reconnect  
+- @recommend_intro: A friend recommended her guidance  
+- @company_intro: Your company sent you here to learn  
+
+@friend_intro  
+title: Reunion  
+subtitle: Familiar faces in unfamiliar times  
+
+Facilyn: It’s been a long time. I wondered if you’d really come.  
+Her smile softens the sharp edge of the storm outside.  
+
+Me: I almost didn’t recognize this place. The world feels so different now.  
+
+Facilyn: That’s why you’re here. To find a new way of seeing it.  
+
+- @framework_start: Sit down with her  
+
+
+@recommend_intro  
+title: Recommendation  
+subtitle: Following a lead  
+
+Facilyn: You must be the one they sent to me.  
+Her gaze is curious, weighing your arrival.  
+
+Me: A friend said you could help me understand… another way of managing all this.  
+
+Facilyn: They weren’t wrong. But I don’t hand out answers. I help you learn to ask the right questions.  
+
+- @framework_start: Sit down with her  
+
+
+@company_intro  
+title: Assignment  
+subtitle: Sent to learn  
+
+Facilyn: So. You’re the one your company chose.  
+Her voice carries no judgment, but her eyes search yours.  
+
+Me: They told me you’d show me a framework. Something practical, something that works.  
+
+Facilyn: Practical, yes. But it will change more than your work—it will change how you think.  
+
+- @framework_start: Sit down with her  
+
+
+@framework_start  
+title: Beginning the Conversation  
+subtitle: The first step  
+
+You sit down opposite Facilyn.  
+The storm rattles against the walls, but inside it is still.  
+
+Facilyn: Before we begin, tell me—why now? Why did you really come here?  
+Her question hangs in the quiet, waiting for your answer.  
+
