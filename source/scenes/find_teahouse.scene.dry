@@ -165,6 +165,7 @@ Youn: Follow the red banners. You can’t miss it.
 
 @teahouse_arrival
 title: Head to the teahouse  
+go-to: @individual_intro if part_of = "individual"; @group_intro if part_of = "group"; @organization_intro if part_of = "organization"
 
 You stumble through the side street, dust stinging your face.  
 The paper lanterns of the old teahouse sway in the wind, welcoming you into dim light and quiet warmth as the storm closes in.
@@ -172,59 +173,42 @@ The paper lanterns of the old teahouse sway in the wind, welcoming you into dim 
 Inside, the air is still, scented faintly of herbs. People sit at low tables.  
 A person waves at you as you enter.  
 
-- @friend_intro: She’s an old friend—you’ve come to reconnect  
-- @recommend_intro: A friend recommended her guidance  
-- @company_intro: Your company sent you here to learn  
-
-@friend_intro  
-title: Reunion  
-subtitle: Familiar faces in unfamiliar times  
-
-Facilyn: It’s been a long time. I wondered if you’d really come.  
-Her smile softens the sharp edge of the storm outside.  
-
-Me: I almost didn’t recognize this place. The world feels so different now.  
-
-Facilyn: That’s why you’re here. To find a new way of seeing it.  
-
-- @framework_start: Sit down with her  
 
 
-@recommend_intro  
+
+@individual_intro  
 title: Recommendation  
 subtitle: Following a lead  
 
-Facilyn: You must be the one they sent to me.  
-Her gaze is curious, weighing your arrival.  
+As you take a seat on her table, she says:
 
-Me: A friend said you could help me understand… another way of managing all this.  
+Facilyn: Nice to meet you, I'm Facilyn. ... told me to meet you here.
 
-Facilyn: They weren’t wrong. But I don’t hand out answers. I help you learn to ask the right questions.  
+Me: Yes, she said you could help me understand… another way of managing?  
 
-- @framework_start: Sit down with her  
+Facilyn: They weren’t wrong. 
 
 
-@company_intro  
+@group_intro  
+title: Reunion  
+subtitle: Familiar faces in unfamiliar times  
+
+It is Facilyn.
+
+Facilyn: It’s been a while. I wondered if you’d really come.  
+
+Her smile softens the sharp edge of the storm outside.  
+
+Me: I almost didn’t recognize this place. 
+
+
+
+@organization_intro  
 title: Assignment  
-subtitle: Sent to learn  
+subtitle: Sent to learn 
+go-to: statement_of_purpose 
 
-Facilyn: So. You’re the one your company chose.  
-Her voice carries no judgment, but her eyes search yours.  
+As you take a seat on her table, she says:
 
-Me: They told me you’d show me a framework. Something practical, something that works.  
-
-Facilyn: Practical, yes. But it will change more than your work—it will change how you think.  
-
-- @framework_start: Sit down with her  
-
-
-@framework_start  
-title: Beginning the Conversation  
-subtitle: The first step  
-
-You sit down opposite Facilyn.  
-The storm rattles against the walls, but inside it is still.  
-
-Facilyn: Before we begin, tell me—why now? Why did you really come here?  
-Her question hangs in the quiet, waiting for your answer.  
+Facilyn: Welcome, I'm Facilyn. I was asked to help you and your organisation. 
 

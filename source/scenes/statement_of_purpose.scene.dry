@@ -1,0 +1,147 @@
+title: Statement of Purpose
+subtitle: Defining, what our company provides
+new-page: true
+tags: 
+
+Facilyn: Actually, what kind of organisation are you a part of?
+
+- #what_org
+
+@school
+titel: I am part of a school
+on-arrival: organization = "school"
+tags: what_org
+
+@company
+titel: I am part of a company
+on-arrival: organization = "company"
+tags: what_org
+
+@farm
+titel: I am part of a farm
+on-arrival: organization = "farm"
+tags: what_org
+
+@nonprofit
+titel: I am part of a nonprofit
+on-arrival: organization = "nonprofit"
+tags: what_org
+
+@community
+titel: I am part of a community
+on-arrival: organization = "community"
+tags: what_org
+
+@government
+titel: I am part of a government
+on-arrival: organization = "government"
+tags: what_org
+
+Facilyn: That’s great. And how would you describe the purpose of your organisation?
+
+- #st_purpose
+
+@purpose_what
+title: I am not sure what a Statement of Purpose is.
+max-visits: 1
+tags: st_purpose
+
+Facilyn: The Statement of Purpose is a description of what your organization is truly here to accomplish.
+
+Facilyn: For example, a hospital's purpose isn't "To make money from sick people" - it's "To heal and restore health." 
+
+Facilyn: A good Statement of Purpose captures the positive change your organization creates in the world. It's the "why" behind everything you do.
+
+Facilyn: Even a factory's purpose isn't just "To make things" - it might be "To create tools that improve people's lives" or "To transform raw materials into useful products."
+
+Facilyn: So, which purpose do you think fits your organisation best?
+
+- #st_purpose
+
+@practical_skills
+title: We teach practical skills people need
+view if organization = "school"
+on-arrival: purpose = "We teach practical skills people need"
+tags: st_purpose
+
+@critical_thinking
+title: We develop people's ability to think and adapt
+view if organization = "school"
+on-arrival: purpose = "We develop people's ability to think and adapt"
+tags: st_purpose
+
+@personal_growth
+title: We support people's personal and professional growth 
+view if organization = "school"
+on-arrival: purpose = "We support people's personal and professional growth"
+tags: st_purpose
+
+@essential_needs
+title: We meet essential daily needs
+view if organization = "company"
+on-arrival: purpose = "We meet essential daily needs"
+tags: st_purpose
+
+@convenience_efficiency
+title: We make life more convenient and efficient
+view if organization = "company"
+on-arrival: purpose = "We make life more convenient and efficient"
+tags: st_purpose
+
+@innovation_progress: We drive innovation and progress 
+view if organization = "company"
+on-arrival: purpose = "We drive innovation and progress"
+tags: st_purpose
+
+@local_wellbeing
+title: We improve the wellbeing of our local community
+view if organization = "community"
+on-arrival: purpose = "We improve the wellbeing of our local community"
+tags: st_purpose
+
+@social_connection
+title: We strengthen social connections and belonging
+view if organization = "community"
+on-arrival: purpose = "We strengthen social connections and belonging"
+tags: st_purpose
+
+@collective_action
+title: We organize collective action for positive change
+view if organization = "community"
+on-arrival: purpose = "We organize collective action for positive change"
+tags: st_purpose
+
+@public_service
+title: We serve the public interest and common good
+view if organization = "government"
+on-arrival: purpose = "We serve the public interest and common good"
+tags: st_purpose
+
+@safety_security: We ensure safety and security for citizens
+view if organization = "government"
+on-arrival: purpose = "We ensure safety and security for citizens"
+tags: st_purpose
+
+@infrastructure_systems
+title: We maintain essential infrastructure and systems
+view if organization = "government"
+on-arrival: purpose = "We maintain essential infrastructure and systems"
+tags: st_purpose
+
+@addressing_problems
+title: We address specific social or environmental problems
+view if organization = "nonprofit"
+on-arrival: purpose = "We address specific social or environmental problems"
+tags: st_purpose
+
+@supporting_people
+title: We support people who need help or advocacy
+view if organization = "nonprofit"
+on-arrival: purpose = "We support people who need help or advocacy"
+tags: st_purpose
+
+@creating_change
+title: We create positive change in society
+view if organization = "nonprofit"
+on-arrival: purpose = "We create positive change in society"
+tags: st_purpose
