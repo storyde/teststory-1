@@ -1,41 +1,83 @@
 title: Statement of Purpose
-subtitle: Defining, what our company provides
+subtitle: Defining what our organisation provides
 new-page: true
 tags: 
 
-Facilyn: Actually, what kind of organisation are you a part of?
+Facilyn: I'm curious actually, which sector does your organisation belong to?
 
-- #what_org
+- #sector
 
-@school
-titel: I am part of a school
-on-arrival: organization = "school"
-tags: what_org
+@sector_agriculture
+title: Agriculture
+on-arrival: sector = "agriculture"
+tags: sector
 
-@company
-titel: I am part of a company
-on-arrival: organization = "company"
-tags: what_org
+Me: Our organisation falls under agriculture
 
-@farm
-titel: I am part of a farm
-on-arrival: organization = "farm"
-tags: what_org
+@sector_business
+title: Business
+on-arrival: sector = "business"
+tags: sector
 
-@nonprofit
-titel: I am part of a nonprofit
-on-arrival: organization = "nonprofit"
-tags: what_org
+Me: Our organisation falls under business
 
-@community
-titel: I am part of a community
-on-arrival: organization = "community"
-tags: what_org
+@sector_culture
+title: Culture
+on-arrival: sector = "culture"
+tags: sector
 
-@government
-titel: I am part of a government
-on-arrival: organization = "government"
-tags: what_org
+Me: Our organisation falls under culture
+
+@sector_education
+title: Education
+on-arrival: sector = "education"
+tags: sector
+
+Me: Our organisation falls under education
+
+@sector_energy
+title: Energy
+on-arrival: sector = "energy"
+tags: sector
+
+Me: Our organisation falls under energy
+
+@sector_government
+title: Government
+on-arrival: sector = "government"
+tags: sector
+
+Me: Our organisation falls under government
+
+@sector_health
+title: Health
+on-arrival: sector = "health"
+tags: sector
+
+Me: Our organisation falls under health
+
+@sector_industry
+title: Industry
+on-arrival: sector = "industry"
+tags: sector
+
+Me: Our organisation falls under industry
+
+@sector_media
+title: Media
+on-arrival: sector = "media"
+tags: sector
+
+Me: Our organisation falls under media
+
+@sector_nonprofit
+title: Nonprofit
+on-arrival: sector = "nonprofit"
+tags: sector
+
+Me: Our organisation falls under nonprofit
+
+
 
 Facilyn: That’s great. And how would you describe the purpose of your organisation?
 
@@ -46,11 +88,11 @@ title: I am not sure what a Statement of Purpose is.
 max-visits: 1
 tags: st_purpose
 
-Facilyn: The Statement of Purpose is a description of what your organization is truly here to accomplish.
+Facilyn: The Statement of Purpose is a description of what your organisation is truly here to accomplish.
 
-Facilyn: For example, a hospital's purpose isn't "To make money from sick people" - it's "To heal and restore health." 
+Facilyn: For example, a hospital's purpose isn't "To make money from sick people" - it's "To heal and restore health."
 
-Facilyn: A good Statement of Purpose captures the positive change your organization creates in the world. It's the "why" behind everything you do.
+Facilyn: A good Statement of Purpose captures the positive change your organisation creates in the world. It's the "why" behind everything you do.
 
 Facilyn: Even a factory's purpose isn't just "To make things" - it might be "To create tools that improve people's lives" or "To transform raw materials into useful products."
 
@@ -60,88 +102,322 @@ Facilyn: So, which purpose do you think fits your organisation best?
 
 @practical_skills
 title: We teach practical skills people need
-view if organization = "school"
+view if sector = "education"
 on-arrival: purpose = "We teach practical skills people need"
 tags: st_purpose
 
 @critical_thinking
 title: We develop people's ability to think and adapt
-view if organization = "school"
+view if sector = "education"
 on-arrival: purpose = "We develop people's ability to think and adapt"
 tags: st_purpose
 
 @personal_growth
-title: We support people's personal and professional growth 
-view if organization = "school"
+title: We support people's personal and professional growth
+view if sector = "education"
 on-arrival: purpose = "We support people's personal and professional growth"
 tags: st_purpose
 
+@edu_school_life_preparation
+title: We educate and prepare young people for life
+view if sector = "education"
+on-arrival: purpose = "We educate and prepare young people for life"
+tags: st_purpose
+
+@edu_university_advance_knowledge
+title: We advance knowledge and educate future leaders
+view if sector = "education"
+on-arrival: purpose = "We advance knowledge and educate future leaders"
+tags: st_purpose
+
+@edu_kindergarten_early_development
+title: We nurture early childhood development
+view if sector = "education"
+on-arrival: purpose = "We nurture early childhood development"
+tags: st_purpose
 @essential_needs
 title: We meet essential daily needs
-view if organization = "company"
+view if sector = "business"
 on-arrival: purpose = "We meet essential daily needs"
 tags: st_purpose
 
 @convenience_efficiency
 title: We make life more convenient and efficient
-view if organization = "company"
+view if sector = "business"
 on-arrival: purpose = "We make life more convenient and efficient"
 tags: st_purpose
 
-@innovation_progress: We drive innovation and progress 
-view if organization = "company"
+@innovation_progress
+title: We drive innovation and progress
+view if sector = "business"
 on-arrival: purpose = "We drive innovation and progress"
 tags: st_purpose
 
+@business_insurance_protect_risk
+title: We protect people and organisations from financial risk so they can thrive
+view if sector = "business"
+on-arrival: purpose = "We protect people and organisations from financial risk so they can thrive"
+tags: st_purpose
+
+@business_trading_connect_markets
+title: We connect producers and markets to move goods to where they are needed
+view if sector = "business"
+on-arrival: purpose = "We connect producers and markets to move goods to where they are needed"
+tags: st_purpose
+
+@business_train_connect_transport
+title: We connect people and places with reliable railway services
+view if sector = "business"
+on-arrival: purpose = "We connect people and places with reliable railway services"
+tags: st_purpose
 @local_wellbeing
 title: We improve the wellbeing of our local community
-view if organization = "community"
+view if sector = "nonprofit"
 on-arrival: purpose = "We improve the wellbeing of our local community"
 tags: st_purpose
 
 @social_connection
 title: We strengthen social connections and belonging
-view if organization = "community"
+view if sector = "culture"
 on-arrival: purpose = "We strengthen social connections and belonging"
 tags: st_purpose
 
 @collective_action
-title: We organize collective action for positive change
-view if organization = "community"
-on-arrival: purpose = "We organize collective action for positive change"
+title: We advance collective action for positive change
+view if sector = "nonprofit"
+on-arrival: purpose = "We advance collective action for positive change"
 tags: st_purpose
 
 @public_service
 title: We serve the public interest and common good
-view if organization = "government"
+view if sector = "government"
 on-arrival: purpose = "We serve the public interest and common good"
 tags: st_purpose
 
-@safety_security: We ensure safety and security for citizens
-view if organization = "government"
+@safety_security
+title: We ensure safety and security for citizens
+view if sector = "government"
 on-arrival: purpose = "We ensure safety and security for citizens"
 tags: st_purpose
 
 @infrastructure_systems
 title: We maintain essential infrastructure and systems
-view if organization = "government"
+view if sector = "government"
 on-arrival: purpose = "We maintain essential infrastructure and systems"
+tags: st_purpose
+
+@gov_parks_conserve_heritage
+title: We protect and share our natural heritage for current and future generations
+view if sector = "government"
+on-arrival: purpose = "We protect and share our natural heritage for current and future generations"
+tags: st_purpose
+
+@gov_party_public_policy
+title: We represent citizens and shape public policy for the common good
+view if sector = "government"
+on-arrival: purpose = "We represent citizens and shape public policy for the common good"
 tags: st_purpose
 
 @addressing_problems
 title: We address specific social or environmental problems
-view if organization = "nonprofit"
+view if sector = "nonprofit"
 on-arrival: purpose = "We address specific social or environmental problems"
 tags: st_purpose
 
 @supporting_people
 title: We support people who need help or advocacy
-view if organization = "nonprofit"
+view if sector = "nonprofit"
 on-arrival: purpose = "We support people who need help or advocacy"
 tags: st_purpose
 
 @creating_change
 title: We create positive change in society
-view if organization = "nonprofit"
+view if sector = "nonprofit"
 on-arrival: purpose = "We create positive change in society"
+tags: st_purpose
+
+@nonprofit_activist_climate
+title: We mobilise society to safeguard the climate for present and future generations
+view if sector = "nonprofit"
+on-arrival: purpose = "We mobilise society to safeguard the climate for present and future generations"
+tags: st_purpose
+
+@nonprofit_ngo_protect_nature
+title: We protect nature and biodiversity for the benefit of all
+view if sector = "nonprofit"
+on-arrival: purpose = "We protect nature and biodiversity for the benefit of all"
+tags: st_purpose
+
+# Agriculture sector purposes
+@agriculture_food_security
+title: We provide nourishing food sustainably
+view if sector = "agriculture"
+on-arrival: purpose = "We provide nourishing food sustainably"
+tags: st_purpose
+
+@agriculture_stewardship
+title: We steward land, soil and water for future generations
+view if sector = "agriculture"
+on-arrival: purpose = "We steward land, soil and water for future generations"
+tags: st_purpose
+
+@agriculture_livelihoods
+title: We support rural livelihoods and local economies
+view if sector = "agriculture"
+on-arrival: purpose = "We support rural livelihoods and local economies"
+tags: st_purpose
+
+@agriculture_ranch_livestock_stewardship
+title: We raise livestock to provide nutritious food while caring for land and water
+view if sector = "agriculture"
+on-arrival: purpose = "We raise livestock to provide nutritious food while caring for land and water"
+tags: st_purpose
+
+@agriculture_vegfarm_fresh_produce
+title: We grow fresh, healthy produce for our community
+view if sector = "agriculture"
+on-arrival: purpose = "We grow fresh, healthy produce for our community"
+tags: st_purpose
+
+# Energy sector purposes
+@energy_reliable_supply
+title: We ensure secure, affordable and clean energy
+view if sector = "energy"
+on-arrival: purpose = "We ensure secure, affordable and clean energy"
+tags: st_purpose
+
+@energy_transition
+title: We accelerate the transition to low-carbon energy
+view if sector = "energy"
+on-arrival: purpose = "We accelerate the transition to low-carbon energy"
+tags: st_purpose
+
+@energy_innovation
+title: We advance energy storage, grids, and efficiency
+view if sector = "energy"
+on-arrival: purpose = "We advance energy storage, grids, and efficiency"
+tags: st_purpose
+
+# Health sector purposes
+@health_heal_restore
+title: We heal, prevent illness, and restore health
+view if sector = "health"
+on-arrival: purpose = "We heal, prevent illness, and restore health"
+tags: st_purpose
+
+@health_access_equity
+title: We improve access and equity in care
+view if sector = "health"
+on-arrival: purpose = "We improve access and equity in care"
+tags: st_purpose
+
+@health_community_wellbeing
+title: We promote community wellbeing and prevention
+view if sector = "health"
+on-arrival: purpose = "We promote community wellbeing and prevention"
+tags: st_purpose
+
+@health_hospital_restore_lives
+title: We restore health and save lives with compassionate care
+view if sector = "health"
+on-arrival: purpose = "We restore health and save lives with compassionate care"
+tags: st_purpose
+
+# Industry sector purposes
+@industry_useful_products
+title: We make useful products that improve people's lives
+view if sector = "industry"
+on-arrival: purpose = "We make useful products that improve people's lives"
+tags: st_purpose
+
+@industry_critical_components
+title: We provide critical components that keep systems running
+view if sector = "industry"
+on-arrival: purpose = "We provide critical components that keep systems running"
+tags: st_purpose
+
+@industry_infrastructure_materials
+title: We supply materials that enable infrastructure and industry
+view if sector = "industry"
+on-arrival: purpose = "We supply materials that enable infrastructure and industry"
+tags: st_purpose
+
+@industry_quality_reliability
+title: We deliver reliable, safe products for everyday use
+view if sector = "industry"
+on-arrival: purpose = "We deliver reliable, safe products for everyday use"
+tags: st_purpose
+
+@industry_responsible_production
+title: We produce essential goods responsibly
+view if sector = "industry"
+on-arrival: purpose = "We produce essential goods responsibly"
+tags: st_purpose
+
+@industry_logging_timber_responsibly
+title: We provide timber resources responsibly to meet society's needs
+view if sector = "industry"
+on-arrival: purpose = "We provide timber resources responsibly to meet society's needs"
+tags: st_purpose
+
+@industry_construction_build_communities
+title: We create safe, durable structures and infrastructure that serve communities
+view if sector = "industry"
+on-arrival: purpose = "We create safe, durable structures and infrastructure that serve communities"
+tags: st_purpose
+
+ # Media sector purposes
+@media_inform_public
+title: We inform the public with accurate, independent reporting
+view if sector = "media"
+on-arrival: purpose = "We inform the public with accurate, independent reporting"
+tags: st_purpose
+
+@media_build_trust
+title: We build informed communities and civic trust
+view if sector = "media"
+on-arrival: purpose = "We build informed communities and civic trust"
+tags: st_purpose
+
+@media_counter_disinfo
+title: We counter misinformation so people can make informed choices
+view if sector = "media"
+on-arrival: purpose = "We counter misinformation so people can make informed choices"
+tags: st_purpose
+
+@security_safety
+title: We protect people and critical infrastructure
+view if sector = "government"
+on-arrival: purpose = "We protect people and critical infrastructure"
+tags: st_purpose
+
+@security_resilience
+title: We build community resilience and reduce risks
+view if sector = "nonprofit"
+on-arrival: purpose = "We build community resilience and reduce risks"
+tags: st_purpose
+
+@security_rule_of_law
+title: We uphold the rule of law and human rights
+view if sector = "government"
+on-arrival: purpose = "We uphold the rule of law and human rights"
+tags: st_purpose
+
+# Culture sector purposes
+@culture_expression
+title: We foster cultural expression and creativity
+view if sector = "culture"
+on-arrival: purpose = "We foster cultural expression and creativity"
+tags: st_purpose
+
+@culture_heritage
+title: We preserve and share cultural heritage
+view if sector = "culture"
+on-arrival: purpose = "We preserve and share cultural heritage"
+tags: st_purpose
+
+@culture_belonging
+title: We strengthen identity, connection, and belonging
+view if sector = "culture"
+on-arrival: purpose = "We strengthen identity, connection, and belonging"
 tags: st_purpose
