@@ -7,13 +7,12 @@ Facilyn: Now that we're clear about your organization's purpose, there's somethi
 
 Facilyn: Let's make sure we have the right people at the table. In you organisation, who is making decisions, who is expected to carry out these decisions, and are there any other people with veto power over your decisions? Try to be inclusive rather than exclusive.
 
-[? if sector = "government" : 
+[? if sector = "policy" : 
 
-Facilyn: If your organisation is part of the government or you are involved in policymaking, you need to make sure to invite citizens from various backgrounds. Otherwise you risk that your context, that we are about to create in a minute, reflects the interest of your party or of the organisation you collaborate with instead of reflecting the interest of the people you govern.
+Facilyn: If your organisation is involved in governing and policymaking for your community, your city, for your country or even on an international level, you need to make sure to invite citizens from various backgrounds. Otherwise, you risk that your context, that we are about to create in a minute, reflects only the priorities of your organisation or of the institutions you collaborate with, instead of reflecting the interests of the people you govern.
 ?]
 
 - #decision_makers
-
 
 @why_involve_everyone
 title: Why Involve Everyone?
@@ -23,15 +22,14 @@ Me: Why Involve Everyone?
 
 Facilyn: To leave out affected parties often creates unintended consequences. You risk that the context you will create becomes one-sided or meaningless to people who were not involved in this process. 
 
-In front of the teahouse, a maintenance robot rolls by, apparently trying to deliver mail to a fire hydrant. It's been at this for hours, convinced the hydrant is a very quiet resident.
+In front of the teahouse, a post robot rolls by, apparently trying to deliver mail to a fire hydrant. It's been at this for hours, convinced the hydrant is a very quiet resident.
 
 - #decision_makers
-
 
 @school_dmkrs
 title: Teachers, students, parents and the ministry of education
 view if sector = "education"
-on-arrival: purpose = "Teachers, students, parents and ministry of education"
+on-arrival: decisionmakers = "Teachers, students, parents and ministry of education"
 tags: decision_makers
 
 Me: Teachers, students, parents and ministry of education.
@@ -39,7 +37,7 @@ Me: Teachers, students, parents and ministry of education.
 @university_dmkrs
 title: Professors, students and the ministry of education
 view if sector = "education"
-on-arrival: purpose = "Professors, students and the ministry of education"
+on-arrival: decisionmakers = "Professors, students and the ministry of education"
 tags: decision_makers
 
 Me: Professors, students and the ministry of education.
@@ -47,7 +45,7 @@ Me: Professors, students and the ministry of education.
 @factory_dmkrs
 title: Workers, management and the owners
 view if sector = "industry"
-on-arrival: purpose = "Workers, management board and the owners"
+on-arrival: decisionmakers = "Workers, management board and the owners"
 tags: decision_makers
 
 Me: Workers, management board and the owners.
@@ -55,18 +53,184 @@ Me: Workers, management board and the owners.
 @business_dmkrs
 title: Employees, customers, suppliers, the management and the owners
 view if sector = "business"
-on-arrival: purpose = "Employees, customers, suppliers, the management and the owners"
+on-arrival: decisionmakers = "Employees, customers, suppliers, the management and the owners"
 tags: decision_makers
 
 Me: Employees, customers, suppliers, the management and the owners.
 
-@policy_dmkrs
+@city_plcmkrs
 title: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders
-view if sector = "industry"
-on-arrival: purpose = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
+view if sector = "policy"
+on-arrival: decisionmakers = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
 tags: decision_makers
 
 Me: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders.
 
+@country_plcmkrs
+title: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders
+view if sector = "policy"
+on-arrival: decisionmakers = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
+tags: decision_makers
 
+Me: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders.
+
+@intl_plcmkrs
+title: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders
+view if sector = "policy"
+on-arrival: decisionmakers = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
+tags: decision_makers
+
+Me: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders.
+
+@agriculture_farm_coop_dmkrs
+title: Farm owners, farm workers, agronomists and cooperative representatives
+view if sector = "agriculture"
+on-arrival: decisionmakers = "Farm owners, farm workers, agronomists and cooperative representatives"
+tags: decision_makers
+
+Me: Farm owners, farm workers, agronomists and cooperative representatives.
+
+@agriculture_ranch_dmkrs
+title: Ranch owners, herders, veterinarians and land stewards
+view if sector = "agriculture"
+on-arrival: decisionmakers = "Ranch owners, herders, veterinarians and land stewards"
+tags: decision_makers
+
+Me: Ranch owners, herders, veterinarians and land stewards.
+
+@business_retail_dmkrs
+title: Employees, customers, suppliers, store managers and owners
+view if sector = "business"
+on-arrival: decisionmakers = "Employees, customers, suppliers, store managers and owners"
+tags: decision_makers
+
+Me: Employees, customers, suppliers, store managers and owners.
+
+@business_insurance_dmkrs
+title: Underwriters, claims staff, customers, regulators and owners
+view if sector = "business"
+on-arrival: decisionmakers = "Underwriters, claims staff, customers, regulators and owners"
+tags: decision_makers
+
+Me: Underwriters, claims staff, customers, regulators and owners.
+
+@culture_arts_dmkrs
+title: Artists, cultural workers, audience representatives and funders
+view if sector = "culture"
+on-arrival: decisionmakers = "Artists, cultural workers, audience representatives and funders"
+tags: decision_makers
+
+Me: Artists, cultural workers, audience representatives and funders.
+
+@culture_heritage_dmkrs
+title: Curators, historians, community elders and educators
+view if sector = "culture"
+on-arrival: decisionmakers = "Curators, historians, community elders and educators"
+tags: decision_makers
+
+Me: Curators, historians, community elders and educators.
+
+@energy_utility_dmkrs
+title: Engineers, grid operators, regulators, customers and community representatives
+view if sector = "energy"
+on-arrival: decisionmakers = "Engineers, grid operators, regulators, customers and community representatives"
+tags: decision_makers
+
+Me: Engineers, grid operators, regulators, customers and community representatives.
+
+@energy_renewables_dmkrs
+title: Project managers, technicians, landowners, environmental specialists and local residents
+view if sector = "energy"
+on-arrival: decisionmakers = "Project managers, technicians, landowners, environmental specialists and local residents"
+tags: decision_makers
+
+Me: Project managers, technicians, landowners, environmental specialists and local residents.
+
+@gov_local_dmkrs
+title: Elected officials, civil servants, community leaders and citizens
+view if sector = "government"
+on-arrival: decisionmakers = "Elected officials, civil servants, community leaders and citizens"
+tags: decision_makers
+
+Me: Elected officials, civil servants, community leaders and citizens.
+
+@gov_parks_dmkrs
+title: Park managers, rangers, local communities and heritage experts
+view if sector = "government"
+on-arrival: decisionmakers = "Park managers, rangers, local communities and heritage experts"
+tags: decision_makers
+
+Me: Park managers, rangers, local communities and heritage experts.
+
+@health_hospital_dmkrs
+title: Doctors, nurses, hospital administrators, patients and carers
+view if sector = "health"
+on-arrival: decisionmakers = "Doctors, nurses, hospital administrators, patients and carers"
+tags: decision_makers
+
+Me: Doctors, nurses, hospital administrators, patients and carers.
+
+@health_public_health_dmkrs
+title: Clinicians, public health officers, patient advocates and community representatives
+view if sector = "health"
+on-arrival: decisionmakers = "Clinicians, public health officers, patient advocates and community representatives"
+tags: decision_makers
+
+Me: Clinicians, public health officers, patient advocates and community representatives.
+
+@industry_construction_dmkrs
+title: Site managers, skilled workers, safety officers, clients and local residents
+view if sector = "industry"
+on-arrival: decisionmakers = "Site managers, skilled workers, safety officers, clients and local residents"
+tags: decision_makers
+
+Me: Site managers, skilled workers, safety officers, clients and local residents.
+
+@industry_logging_dmkrs
+title: Forestry managers, machine operators, environmental officers, indigenous representatives and local communities
+view if sector = "industry"
+on-arrival: decisionmakers = "Forestry managers, machine operators, environmental officers, indigenous representatives and local communities"
+tags: decision_makers
+
+Me: Forestry managers, machine operators, environmental officers, indigenous representatives and local communities.
+
+@media_newsroom_dmkrs
+title: Editors, reporters, fact-checkers, audience representatives and legal counsel
+view if sector = "media"
+on-arrival: decisionmakers = "Editors, reporters, fact-checkers, audience representatives and legal counsel"
+tags: decision_makers
+
+Me: Editors, reporters, fact-checkers, audience representatives and legal counsel.
+
+@media_broadcast_dmkrs
+title: Producers, presenters, technical staff, community representatives and viewers
+view if sector = "media"
+on-arrival: decisionmakers = "Producers, presenters, technical staff, community representatives and viewers"
+tags: decision_makers
+
+Me: Producers, presenters, technical staff, community representatives and viewers.
+
+@nonprofit_service_dmkrs
+title: Staff, volunteers, beneficiaries and donors
+view if sector = "nonprofit"
+on-arrival: decisionmakers = "Staff, volunteers, beneficiaries and donors"
+tags: decision_makers
+
+Me: Staff, volunteers, beneficiaries and donors.
+
+@nonprofit_advocacy_dmkrs
+title: Campaigners, researchers, partner organisations and community allies
+view if sector = "nonprofit"
+on-arrival: decisionmakers = "Campaigners, researchers, partner organisations and community allies"
+tags: decision_makers
+
+Me: Campaigners, researchers, partner organisations and community allies.
+
+@education_kindergarten_dmkrs
+title: Teachers, teaching assistants, parents and local education officials
+view if sector = "education"
+on-arrival: decisionmakers = "Teachers, teaching assistants, parents and local education officials"
+tags: decision_makers
+
+Me: Teachers, teaching assistants, parents and local education officials.
 

@@ -49,6 +49,22 @@ tags: sector
 
 Me: Our organisation falls under government
 
+Facilyn: And is your organisation involved in public policymaking?
+
+- @policy_yes: Yes, we create public policies
+- @policy_no: No, we are not
+
+@policy_yes
+title: Yes, we create public policies
+on-arrival: sector = "policy"
+
+Me: Yes, we create public policies
+
+@policy_no
+title: No, we are not
+
+Me: No, we are not.
+
 @sector_health
 title: Health
 on-arrival: sector = "health"
@@ -214,7 +230,7 @@ tags: st_purpose
 
 @gov_party_public_policy
 title: We represent citizens and shape public policy for the common good
-view if sector = "government"
+view if sector = "policy"
 on-arrival: purpose = "We represent citizens and shape public policy for the common good"
 tags: st_purpose
 
