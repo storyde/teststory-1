@@ -176,7 +176,7 @@ A person waves at you as you enter.
 
 
 
-@individual_intro  
+@individual_welcome
 title: Recommendation  
 subtitle: Following a lead  
 
@@ -189,7 +189,7 @@ Me: Yes, she said you could help me understand… another way of managing?
 Facilyn: They weren’t wrong. 
 
 
-@group_intro  
+@group_welcome
 title: Reunion  
 subtitle: Familiar faces in unfamiliar times  
 
@@ -203,7 +203,7 @@ Me: I almost didn’t recognize this place.
 
 
 
-@organization_intro  
+@organization_welcome
 title: Assignment  
 subtitle: Sent to learn 
 go-to: statement_of_purpose 
