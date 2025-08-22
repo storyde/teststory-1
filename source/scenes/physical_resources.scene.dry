@@ -1,0 +1,230 @@
+title: Physical Resources
+subtitle: Major Physical Assets Available to You
+view if part_of = "organisation"
+new-page: true
+
+Facilyn: Now let's identify the major physical resources from which you can generate revenue or derive support. These might include land, buildings, equipment, machinery, or other physical assets. These resources need not be owned, merely available to you.
+
+Facilyn: You are not after a detailed list of every asset you have, only a very general one. You may later decide to sell some of the assets you own anyway, particularly the liquid or movable ones.
+
+- #physical_resources
+
+@why_identify_physical_resources
+title: Why Identify Physical Resources?
+tags: physical_resources
+
+Me: Why Identify Physical Resources?
+
+Facilyn: Physical resources form the foundation of your operations. They represent your capacity to deliver services, produce goods, or create value. Understanding what physical assets are available helps you make better management decisions about how to use them effectively.
+
+A maintenance robot rolls by, apparently cataloguing every physical object in sight, including a confused pigeon that it's trying to classify as "mobile infrastructure."
+
+- #physical_resources
+
+@education_school_prcs
+title: School buildings, classrooms, laboratories, and educational equipment
+view if sector = "education"
+on-arrival: physicalresources = "School buildings, classrooms, laboratories, and educational equipment"
+tags: physical_resources
+
+Me: School buildings, classrooms, laboratories, and educational equipment.
+
+@education_university_prcs
+title: University campus, lecture halls, research facilities, and academic equipment
+view if sector = "education"
+on-arrival: physicalresources = "University campus, lecture halls, research facilities, and academic equipment"
+tags: physical_resources
+
+Me: University campus, lecture halls, research facilities, and academic equipment.
+
+@factory_buildings_machinery
+title: Factory buildings, production machinery, and industrial equipment
+view if sector = "industry"
+on-arrival: physicalresources = "Factory buildings, production machinery, and industrial equipment"
+tags: physical_resources
+
+Me: Factory buildings, production machinery, and industrial equipment.
+
+@business_offices_equipment
+title: Office buildings, computers, and business equipment
+view if sector = "business"
+on-arrival: physicalresources = "Office buildings, computers, and business equipment"
+tags: physical_resources
+
+Me: Office buildings, computers, and business equipment.
+
+@business_retail_prcs
+title: Retail stores, inventory, and point-of-sale systems
+view if sector = "business"
+on-arrival: physicalresources = "Retail stores, inventory, and point-of-sale systems"
+tags: physical_resources
+
+Me: Retail stores, inventory, and point-of-sale systems.
+
+@business_insurance_prcs
+title: Office buildings, computer systems, and data infrastructure
+view if sector = "business"
+on-arrival: physicalresources = "Office buildings, computer systems, and data infrastructure"
+tags: physical_resources
+
+Me: Office buildings, computer systems, and data infrastructure.
+
+@city_prcs
+title: Municipal buildings, public infrastructure, and civic facilities
+view if sector = "policymaking"
+on-arrival: physicalresources = "Municipal buildings, public infrastructure, and civic facilities"
+tags: physical_resources
+
+Me: Municipal buildings, public infrastructure, and civic facilities.
+
+@country_prcs
+title: Government buildings, public infrastructure, and national assets
+view if sector = "policymaking"
+on-arrival: physicalresources = "Government buildings, public infrastructure, and national assets"
+tags: physical_resources
+
+Me: Government buildings, public infrastructure, and national assets.
+
+@intl_prcs
+title: International offices, meeting facilities, and communication infrastructure
+view if sector = "policymaking"
+on-arrival: physicalresources = "International offices, meeting facilities, and communication infrastructure"
+tags: physical_resources
+
+Me: International offices, meeting facilities, and communication infrastructure.
+
+@agriculture_farm_land_equipment
+title: Farmland, agricultural equipment, and storage facilities
+view if sector = "agriculture"
+on-arrival: physicalresources = "Farmland, agricultural equipment, and storage facilities"
+tags: physical_resources
+
+Me: Farmland, agricultural equipment, and storage facilities.
+
+@agriculture_ranch_land_livestock
+title: Ranch land, livestock, and ranching equipment
+view if sector = "agriculture"
+on-arrival: physicalresources = "Ranch land, livestock, and ranching equipment"
+tags: physical_resources
+
+Me: Ranch land, livestock, and ranching equipment.
+
+@culture_arts_venues_equipment
+title: Performance venues, art studios, and cultural equipment
+view if sector = "culture"
+on-arrival: physicalresources = "Performance venues, art studios, and cultural equipment"
+tags: physical_resources
+
+Me: Performance venues, art studios, and cultural equipment.
+
+@culture_heritage_museums_collections
+title: Museums, heritage sites, and cultural collections
+view if sector = "culture"
+on-arrival: physicalresources = "Museums, heritage sites, and cultural collections"
+tags: physical_resources
+
+Me: Museums, heritage sites, and cultural collections.
+
+@energy_utility_infrastructure
+title: Power plants, transmission lines, and grid infrastructure
+view if sector = "public_service"
+on-arrival: physicalresources = "Power plants, transmission lines, and grid infrastructure"
+tags: physical_resources
+
+Me: Power plants, transmission lines, and grid infrastructure.
+
+@energy_renewables_installations
+title: Solar panels, wind turbines, and renewable energy installations
+view if sector = "public_service"
+on-arrival: physicalresources = "Solar panels, wind turbines, and renewable energy installations"
+tags: physical_resources
+
+Me: Solar panels, wind turbines, and renewable energy installations.
+
+@gov_local_buildings_infrastructure
+title: Municipal buildings, public facilities, and local infrastructure
+view if sector = "public_service"
+on-arrival: physicalresources = "Municipal buildings, public facilities, and local infrastructure"
+tags: physical_resources
+
+Me: Municipal buildings, public facilities, and local infrastructure.
+
+@gov_parks_land_facilities
+title: Protected lands, visitor facilities, and conservation equipment
+view if sector = "public_service"
+on-arrival: physicalresources = "Protected lands, visitor facilities, and conservation equipment"
+tags: physical_resources
+
+Me: Protected lands, visitor facilities, and conservation equipment.
+
+@health_hospital_facilities_equipment
+title: Hospital buildings, medical equipment, and healthcare facilities
+view if sector = "public_service"
+on-arrival: physicalresources = "Hospital buildings, medical equipment, and healthcare facilities"
+tags: physical_resources
+
+Me: Hospital buildings, medical equipment, and healthcare facilities.
+
+@health_public_clinics_equipment
+title: Public health clinics, medical equipment, and community health facilities
+view if sector = "public_service"
+on-arrival: physicalresources = "Public health clinics, medical equipment, and community health facilities"
+tags: physical_resources
+
+Me: Public health clinics, medical equipment, and community health facilities.
+
+@industry_construction_equipment_sites
+title: Construction equipment, work sites, and building materials
+view if sector = "industry"
+on-arrival: physicalresources = "Construction equipment, work sites, and building materials"
+tags: physical_resources
+
+Me: Construction equipment, work sites, and building materials.
+
+@industry_logging_equipment_forests
+title: Logging equipment, forest concessions, and processing facilities
+view if sector = "industry"
+on-arrival: physicalresources = "Logging equipment, forest concessions, and processing facilities"
+tags: physical_resources
+
+Me: Logging equipment, forest concessions, and processing facilities.
+
+@media_newsroom_equipment_facilities
+title: Newsroom facilities, printing equipment, and broadcasting infrastructure
+view if sector = "culture"
+on-arrival: physicalresources = "Newsroom facilities, printing equipment, and broadcasting infrastructure"
+tags: physical_resources
+
+Me: Newsroom facilities, printing equipment, and broadcasting infrastructure.
+
+@media_broadcast_studios_equipment
+title: Broadcasting studios, transmission equipment, and production facilities
+view if sector = "culture"
+on-arrival: physicalresources = "Broadcasting studios, transmission equipment, and production facilities"
+tags: physical_resources
+
+Me: Broadcasting studios, transmission equipment, and production facilities.
+
+@nonprofit_service_facilities_equipment
+title: Service facilities, program equipment, and community centers
+view if sector = "nonprofit"
+on-arrival: physicalresources = "Service facilities, program equipment, and community centers"
+tags: physical_resources
+
+Me: Service facilities, program equipment, and community centers.
+
+@nonprofit_advocacy_offices_equipment
+title: Office facilities, research equipment, and campaign materials
+view if sector = "nonprofit"
+on-arrival: physicalresources = "Office facilities, research equipment, and campaign materials"
+tags: physical_resources
+
+Me: Office facilities, research equipment, and campaign materials.
+
+@education_kindergarten_facilities_equipment
+title: Kindergarten buildings, playground equipment, and educational materials
+view if sector = "education"
+on-arrival: physicalresources = "Kindergarten buildings, playground equipment, and educational materials"
+tags: physical_resources
+
+Me: Kindergarten buildings, playground equipment, and educational materials.

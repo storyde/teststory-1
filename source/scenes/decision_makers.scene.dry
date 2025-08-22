@@ -7,11 +7,6 @@ Facilyn: Now that we're clear about your organization's purpose, there's somethi
 
 Facilyn: Let's make sure we have the right people at the table. In you organisation, who is making decisions, who is expected to carry out these decisions, and are there any other people with veto power over your decisions? Try to be inclusive rather than exclusive.
 
-[? if sector = "policymaking" : 
-
-Facilyn: If your organisation is involved in governing and policymaking for your community, your city, for your country or even on an international level, you need to make sure to invite citizens from various backgrounds. Otherwise, you risk that your context, that we are about to create in a minute, reflects only the priorities of your organisation or of the institutions you collaborate with, instead of reflecting the interests of the people you govern.
-?]
-
 - #decision_makers
 
 @why_involve_everyone
@@ -27,210 +22,210 @@ In front of the teahouse, a post robot rolls by, apparently trying to deliver ma
 - #decision_makers
 
 @school_dmkrs
-title: Teachers, students, parents and the ministry of education
+title: Teachers, School administrators and the ministry of education
 view if sector = "education"
-on-arrival: decisionmakers = "Teachers, students, parents and ministry of education"
+on-arrival: decisionmakers = "Teachers, School administrators and the ministry of education"
 tags: decision_makers
 
-Me: Teachers, students, parents and ministry of education.
+Me: Teachers, School administrators and the ministry of education.
 
 @university_dmkrs
-title: Professors, students and the ministry of education
+title: University administrators, deans and ministry officials
 view if sector = "education"
-on-arrival: decisionmakers = "Professors, students and the ministry of education"
+on-arrival: decisionmakers = "University administrators, deans and ministry officials"
 tags: decision_makers
 
-Me: Professors, students and the ministry of education.
+Me: University administrators, deans and ministry officials.
 
 @factory_dmkrs
-title: Workers, management and the owners
+title: Management board and the owners
 view if sector = "industry"
-on-arrival: decisionmakers = "Workers, management board and the owners"
+on-arrival: decisionmakers = "Management board and the owners"
 tags: decision_makers
 
-Me: Workers, management board and the owners.
+Me: Management board and the owners.
 
 @business_dmkrs
-title: Employees, customers, suppliers, the management and the owners
+title: Management and the owners
 view if sector = "business"
-on-arrival: decisionmakers = "Employees, customers, suppliers, the management and the owners"
+on-arrival: decisionmakers = "Management and the owners"
 tags: decision_makers
 
-Me: Employees, customers, suppliers, the management and the owners.
+Me: Management and the owners.
 
 @city_plcmkrs
-title: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders
+title: The city government
 view if sector = "policymaking"
-on-arrival: decisionmakers = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
+on-arrival: decisionmakers = "The city government"
 tags: decision_makers
 
-Me: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders.
+Me: The city government.
 
 @country_plcmkrs
-title: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders
+title: Political leaders and the governing parties
 view if sector = "policymaking"
-on-arrival: decisionmakers = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
+on-arrival: decisionmakers = "Political leaders and the governing parties"
 tags: decision_makers
 
-Me: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders.
+Me: Political leaders and the governing parties.
 
 @intl_plcmkrs
-title: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders
+title: Representatives of international organisations
 view if sector = "policymaking"
-on-arrival: decisionmakers = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
+on-arrival: decisionmakers = "Representatives of international organisations"
 tags: decision_makers
 
-Me: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders.
+Me: Representatives of international organisations.
 
 @agriculture_farm_coop_dmkrs
-title: Farm owners, farm workers, agronomists and cooperative representatives
+title: Farm owners and cooperative board members
 view if sector = "agriculture"
-on-arrival: decisionmakers = "Farm owners, farm workers, agronomists and cooperative representatives"
+on-arrival: decisionmakers = "Farm owners and cooperative board members"
 tags: decision_makers
 
-Me: Farm owners, farm workers, agronomists and cooperative representatives.
+Me: Farm owners and cooperative board members.
 
 @agriculture_ranch_dmkrs
-title: Ranch owners, herders, veterinarians and land stewards
+title: Ranch owners and ranch managers
 view if sector = "agriculture"
-on-arrival: decisionmakers = "Ranch owners, herders, veterinarians and land stewards"
+on-arrival: decisionmakers = "Ranch owners and ranch managers"
 tags: decision_makers
 
-Me: Ranch owners, herders, veterinarians and land stewards.
+Me: Ranch owners and ranch managers.
 
 @business_retail_dmkrs
-title: Employees, customers, suppliers, store managers and owners
+title: Store managers and owners
 view if sector = "business"
-on-arrival: decisionmakers = "Employees, customers, suppliers, store managers and owners"
+on-arrival: decisionmakers = "Store managers and owners"
 tags: decision_makers
 
-Me: Employees, customers, suppliers, store managers and owners.
+Me: Store managers and owners.
 
 @business_insurance_dmkrs
-title: Underwriters, claims staff, customers, regulators and owners
+title: Senior underwriters, claims managers and owners
 view if sector = "business"
-on-arrival: decisionmakers = "Underwriters, claims staff, customers, regulators and owners"
+on-arrival: decisionmakers = "Senior underwriters, claims managers and owners"
 tags: decision_makers
 
-Me: Underwriters, claims staff, customers, regulators and owners.
+Me: Senior underwriters, claims managers and owners.
 
 @culture_arts_dmkrs
-title: Artists, cultural workers, audience representatives and funders
+title: Arts directors, program managers and funders
 view if sector = "culture"
-on-arrival: decisionmakers = "Artists, cultural workers, audience representatives and funders"
+on-arrival: decisionmakers = "Arts directors, program managers and funders"
 tags: decision_makers
 
-Me: Artists, cultural workers, audience representatives and funders.
+Me: Arts directors, program managers and funders.
 
 @culture_heritage_dmkrs
-title: Curators, historians, community elders and educators
+title: Museum directors, head curators and heritage board members
 view if sector = "culture"
-on-arrival: decisionmakers = "Curators, historians, community elders and educators"
+on-arrival: decisionmakers = "Museum directors, head curators and heritage board members"
 tags: decision_makers
 
-Me: Curators, historians, community elders and educators.
+Me: Museum directors, head curators and heritage board members.
 
 @energy_utility_dmkrs
-title: Engineers, grid operators, regulators, customers and community representatives
+title: Utility executives, chief engineers and regulatory commissioners
 view if sector = "public_service"
-on-arrival: decisionmakers = "Engineers, grid operators, regulators, customers and community representatives"
+on-arrival: decisionmakers = "Utility executives, chief engineers and regulatory commissioners"
 tags: decision_makers
 
-Me: Engineers, grid operators, regulators, customers and community representatives.
+Me: Utility executives, chief engineers and regulatory commissioners.
 
 @energy_renewables_dmkrs
-title: Project managers, technicians, landowners, environmental specialists and local residents
+title: Project directors, landowners and environmental compliance officers
 view if sector = "public_service"
-on-arrival: decisionmakers = "Project managers, technicians, landowners, environmental specialists and local residents"
+on-arrival: decisionmakers = "Project directors, landowners and environmental compliance officers"
 tags: decision_makers
 
-Me: Project managers, technicians, landowners, environmental specialists and local residents.
+Me: Project directors, landowners and environmental compliance officers.
 
 @gov_local_dmkrs
-title: Elected officials, civil servants, community leaders and citizens
+title: Elected officials and department heads
 view if sector = "public_service"
-on-arrival: decisionmakers = "Elected officials, civil servants, community leaders and citizens"
+on-arrival: decisionmakers = "Elected officials and department heads"
 tags: decision_makers
 
-Me: Elected officials, civil servants, community leaders and citizens.
+Me: Elected officials and department heads.
 
 @gov_parks_dmkrs
-title: Park managers, rangers, local communities and heritage experts
+title: Park superintendents and conservation directors
 view if sector = "public_service"
-on-arrival: decisionmakers = "Park managers, rangers, local communities and heritage experts"
+on-arrival: decisionmakers = "Park superintendents and conservation directors"
 tags: decision_makers
 
-Me: Park managers, rangers, local communities and heritage experts.
+Me: Park superintendents and conservation directors.
 
 @health_hospital_dmkrs
-title: Doctors, nurses, hospital administrators, patients and carers
+title: Hospital administrators, chief medical officers and department heads
 view if sector = "public_service"
-on-arrival: decisionmakers = "Doctors, nurses, hospital administrators, patients and carers"
+on-arrival: decisionmakers = "Hospital administrators, chief medical officers and department heads"
 tags: decision_makers
 
-Me: Doctors, nurses, hospital administrators, patients and carers.
+Me: Hospital administrators, chief medical officers and department heads.
 
 @health_public_health_dmkrs
-title: Clinicians, public health officers, patient advocates and community representatives
+title: Public health directors and chief medical officers
 view if sector = "public_service"
-on-arrival: decisionmakers = "Clinicians, public health officers, patient advocates and community representatives"
+on-arrival: decisionmakers = "Public health directors and chief medical officers"
 tags: decision_makers
 
-Me: Clinicians, public health officers, patient advocates and community representatives.
+Me: Public health directors and chief medical officers.
 
 @industry_construction_dmkrs
-title: Site managers, skilled workers, safety officers, clients and local residents
+title: Project managers, site supervisors and safety directors
 view if sector = "industry"
-on-arrival: decisionmakers = "Site managers, skilled workers, safety officers, clients and local residents"
+on-arrival: decisionmakers = "Project managers, site supervisors and safety directors"
 tags: decision_makers
 
-Me: Site managers, skilled workers, safety officers, clients and local residents.
+Me: Project managers, site supervisors and safety directors.
 
 @industry_logging_dmkrs
-title: Forestry managers, machine operators, environmental officers, indigenous representatives and local communities
+title: Forestry managers and operations directors
 view if sector = "industry"
-on-arrival: decisionmakers = "Forestry managers, machine operators, environmental officers, indigenous representatives and local communities"
+on-arrival: decisionmakers = "Forestry managers and operations directors"
 tags: decision_makers
 
-Me: Forestry managers, machine operators, environmental officers, indigenous representatives and local communities.
+Me: Forestry managers and operations directors.
 
 @media_newsroom_dmkrs
-title: Editors, reporters, fact-checkers, audience representatives and legal counsel
+title: Editors-in-chief, managing editors and legal counsel
 view if sector = "culture"
-on-arrival: decisionmakers = "Editors, reporters, fact-checkers, audience representatives and legal counsel"
+on-arrival: decisionmakers = "Editors-in-chief, managing editors and legal counsel"
 tags: decision_makers
 
-Me: Editors, reporters, fact-checkers, audience representatives and legal counsel.
+Me: Editors-in-chief, managing editors and legal counsel.
 
 @media_broadcast_dmkrs
-title: Producers, presenters, technical staff, community representatives and viewers
+title: Executive producers, station managers and program directors
 view if sector = "culture"
-on-arrival: decisionmakers = "Producers, presenters, technical staff, community representatives and viewers"
+on-arrival: decisionmakers = "Executive producers, station managers and program directors"
 tags: decision_makers
 
-Me: Producers, presenters, technical staff, community representatives and viewers.
+Me: Executive producers, station managers and program directors.
 
 @nonprofit_service_dmkrs
-title: Staff, volunteers, beneficiaries and donors
+title: Executive directors, program managers and board members
 view if sector = "nonprofit"
-on-arrival: decisionmakers = "Staff, volunteers, beneficiaries and donors"
+on-arrival: decisionmakers = "Executive directors, program managers and board members"
 tags: decision_makers
 
-Me: Staff, volunteers, beneficiaries and donors.
+Me: Executive directors, program managers and board members.
 
 @nonprofit_advocacy_dmkrs
-title: Campaigners, researchers, partner organisations and community allies
+title: Campaign directors, research directors and coalition leaders
 view if sector = "nonprofit"
-on-arrival: decisionmakers = "Campaigners, researchers, partner organisations and community allies"
+on-arrival: decisionmakers = "Campaign directors, research directors and coalition leaders"
 tags: decision_makers
 
-Me: Campaigners, researchers, partner organisations and community allies.
+Me: Campaign directors, research directors and coalition leaders.
 
 @education_kindergarten_dmkrs
-title: Teachers, teaching assistants, parents and local education officials
+title: Kindergarten directors, head teachers and education officials
 view if sector = "education"
-on-arrival: decisionmakers = "Teachers, teaching assistants, parents and local education officials"
+on-arrival: decisionmakers = "Kindergarten directors, head teachers and education officials"
 tags: decision_makers
 
-Me: Teachers, teaching assistants, parents and local education officials.
+Me: Kindergarten directors, head teachers and education officials.
 

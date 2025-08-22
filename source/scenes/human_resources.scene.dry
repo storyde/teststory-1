@@ -1,0 +1,207 @@
+title: Human Resources
+subtitle: People with influence on management decisions
+view if part_of = "organisation"
+new-page: true
+
+Facilyn: Now make a list of the categories of people who can/will influence or be influenced by the management decisions you make, but won't have the power to veto or alter them.
+
+[? if sector = "policymaking" : 
+
+Facilyn: If your organisation is involved in governing and policymaking for your community, your city, for your country or even on an international level, you need to make sure to invite citizens from various backgrounds. Otherwise, you risk that your context, that we are about to create in a minute, reflects only the priorities of your organisation or of the institutions you collaborate with, instead of reflecting the interests of the people you govern.
+?]
+
+Facilyn: These people are no less important than the decision makers. In fact, they are often vitally important to your whole even though they do not make management decisions within it. You wouldn't be in business without the clients or customers who buy your products, for instance.
+
+- #human_resources
+
+@business_customers_suppliers
+title: Customers and suppliers
+view if sector = "business"
+on-arrival: humanresources = "Customers and suppliers"
+tags: human_resources
+
+Me: Customers and suppliers.
+
+@business_retail_hrcs
+title: Customers and suppliers
+view if sector = "business"
+on-arrival: humanresources = "Customers and suppliers"
+tags: human_resources
+
+Me: Customers and suppliers.
+
+@business_insurance_hrcs
+title: Customers and regulators
+view if sector = "business"
+on-arrival: humanresources = "Customers and regulators"
+tags: human_resources
+
+Me: Customers and regulators.
+
+@energy_utility_hrcs
+title: Customers and community representatives
+view if sector = "public_service"
+on-arrival: humanresources = "Customers and community representatives"
+tags: human_resources
+
+Me: Customers and community representatives.
+
+@energy_renewables_hrcs
+title: Landowners and local residents
+view if sector = "public_service"
+on-arrival: humanresources = "Landowners and local residents"
+tags: human_resources
+
+Me: Landowners and local residents.
+
+@gov_local_citizens
+title: Citizens
+view if sector = "public_service"
+on-arrival: humanresources = "Citizens"
+tags: human_resources
+
+Me: Citizens.
+
+@gov_parks_hrcs
+title: Local communities
+view if sector = "public_service"
+on-arrival: humanresources = "Local communities"
+tags: human_resources
+
+Me: Local communities.
+
+@hospital_hrcs
+title: Patients and carers
+view if sector = "public_service"
+on-arrival: humanresources = "Patients and carers"
+tags: human_resources
+
+Me: Patients and carers.
+
+@public_health_hrcs
+title: Patient advocates and community representatives
+view if sector = "public_service"
+on-arrival: humanresources = "Patient advocates and community representatives"
+tags: human_resources
+
+Me: Patient advocates and community representatives.
+
+@industry_construction_clients_residents
+title: Clients and local residents
+view if sector = "industry"
+on-arrival: humanresources = "Clients and local residents"
+tags: human_resources
+
+Me: Clients and local residents.
+
+@industry_logging_environmental_indigenous_communities
+title: Environmental officers, indigenous representatives and local communities
+view if sector = "industry"
+on-arrival: humanresources = "Environmental officers, indigenous representatives and local communities"
+tags: human_resources
+
+Me: Environmental officers, indigenous representatives and local communities.
+
+@media_newsroom_audience_legal
+title: Audience representatives and legal counsel
+view if sector = "culture"
+on-arrival: humanresources = "Audience representatives and legal counsel"
+tags: human_resources
+
+Me: Audience representatives and legal counsel.
+
+@media_broadcast_community_viewers
+title: Community representatives and viewers
+view if sector = "culture"
+on-arrival: humanresources = "Community representatives and viewers"
+tags: human_resources
+
+Me: Community representatives and viewers.
+
+@nonprofit_service_beneficiaries_donors
+title: Beneficiaries and donors
+view if sector = "nonprofit"
+on-arrival: humanresources = "Beneficiaries and donors"
+tags: human_resources
+
+Me: Beneficiaries and donors.
+
+@nonprofit_advocacy_partners_allies
+title: Partner organisations and community allies
+view if sector = "nonprofit"
+on-arrival: humanresources = "Partner organisations and community allies"
+tags: human_resources
+
+Me: Partner organisations and community allies.
+
+@culture_arts_audience_funders
+title: Audience representatives and funders
+view if sector = "culture"
+on-arrival: humanresources = "Audience representatives and funders"
+tags: human_resources
+
+Me: Audience representatives and funders.
+
+@agriculture_ranch_veterinarians_stewards
+title: Veterinarians and land stewards
+view if sector = "agriculture"
+on-arrival: humanresources = "Veterinarians and land stewards"
+tags: human_resources
+
+Me: Veterinarians and land stewards.
+
+@agriculture_farm_coop_agronomists_representatives
+title: Agronomists and cooperative representatives
+view if sector = "agriculture"
+on-arrival: humanresources = "Agronomists and cooperative representatives"
+tags: human_resources
+
+Me: Agronomists and cooperative representatives.
+
+@school_parents_ministry
+title: Parents and the ministry of education
+view if sector = "education"
+on-arrival: humanresources = "Parents and the ministry of education"
+tags: human_resources
+
+Me: Parents and the ministry of education.
+
+@university_ministry
+title: The ministry of education
+view if sector = "education"
+on-arrival: humanresources = "The ministry of education"
+tags: human_resources
+
+Me: The ministry of education.
+
+@education_kindergarten_parents_officials
+title: Parents and local education officials
+view if sector = "education"
+on-arrival: humanresources = "Parents and local education officials"
+tags: human_resources
+
+Me: Parents and local education officials.
+
+@city_hr
+title: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders
+view if sector = "policymaking"
+on-arrival: humanresources = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
+tags: human_resources
+
+Me: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders.
+
+@country_hr
+title: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders
+view if sector = "policymaking"
+on-arrival: humanresources = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
+tags: human_resources
+
+Me: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders.
+
+@intl_hr
+title: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders
+view if sector = "policymaking"
+on-arrival: humanresources = "Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders."
+tags: human_resources
+
+Me: Farmers and business owners, employees, parents, youth representatives, elderly community members, environmental stewards, and cultural leaders.
