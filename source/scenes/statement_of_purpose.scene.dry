@@ -80,6 +80,18 @@ go-to: @purpose_statement
 
 Me: No, we are not.
 
+# Statement of Purpose
+
+@purpose_statement
+title: Statement of Purpose
+subtitle: Defining what our organisation provides
+new-page: true
+tags: 
+
+Facilyn: Next, we need a Statement of Purpose of your organisation. So, how would you describe your organisation's purpose?
+
+- #st_purpose
+
 @purpose_what
 title: I am not sure what a Statement of Purpose is.
 max-visits: 1
@@ -94,18 +106,6 @@ Facilyn: For example, a hospital's purpose isn't "To make money from sick people
 Facilyn: A factory's purpose isn't just "To make things" - it might be "To create tools that improve people's lives" or "To transform raw materials into useful products."
 
 Facilyn: Which purpose fits your organisation best?
-
-- #st_purpose
-
-# Statement of Purpose
-
-@purpose_statement
-title: Statement of Purpose
-subtitle: Defining what our organisation provides
-new-page: true
-tags: 
-
-Facilyn: Next, we need a Statement of Purpose of your organisation. So, how would you describe your organisation's purpose?
 
 - #st_purpose
 

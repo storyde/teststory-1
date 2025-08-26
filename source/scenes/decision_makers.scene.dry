@@ -1,6 +1,6 @@
 title: Getting Everyone Involved
 subtitle: Bringing Stakeholders to the Table
-view-if part_of = "organisation"
+view-if part_of = organisation
 
 Facilyn: Now that we're clear about your organization's purpose, there's something crucial to understand: this framework works best when everyone who's making decisions in your entity is involved in this conversation.
 
