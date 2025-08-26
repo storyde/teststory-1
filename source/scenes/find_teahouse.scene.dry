@@ -157,7 +157,7 @@ Youn: Follow the red banners. You can’t miss it.
 
 @teahouse_arrival
 title: Head to the teahouse  
-go-to: @individual_intro if part_of = "individual"; @group_intro if part_of = "group"; @organization_intro if part_of = "organization"
+go-to: @individual_welcome if part_of = "individual"; @group_welcome if part_of = "group"; @organization_welcome if part_of = "organisation"
 
 You stumble through the side street, dust stinging your face.  
 The paper lanterns of the old teahouse sway in the wind, welcoming you into dim light and quiet warmth as the storm closes in.
@@ -167,7 +167,8 @@ A person waves at you as you enter.
 
 @individual_welcome
 title: Recommendation  
-subtitle: Following a lead  
+subtitle: Following a lead
+go-to: statement_of_purpose 
 
 As you take a seat on her table, she says:
 
@@ -232,3 +233,4 @@ go-to: decision_makers
 tags: start_frmwrk
 
 Me: Yes, let's start
+

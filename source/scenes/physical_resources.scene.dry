@@ -5,11 +5,11 @@ Facilyn: Now let's identify the major physical resources from which you can gene
 
 Facilyn: You are not after a detailed list of every asset you have, only a very general one. You may later decide to sell some of the assets you own anyway, particularly the liquid or movable ones.
 
-- #physical_resources
+- #physical_rcs
 
 @why_identify_prcs
 title: Why Identify Physical Resources?
-tags: physical_resources
+tags: physical_rcs
 
 Me: Why Identify Physical Resources?
 
@@ -17,7 +17,7 @@ Facilyn: Physical resources form the foundation of your operations. They represe
 
 A maintenance robot rolls by, apparently cataloguing every physical object in sight, including a confused pigeon that it's trying to classify as "mobile infrastructure."
 
-- #physical_resources
+- #physical_rcs
 
 # Agriculture
 
@@ -25,7 +25,7 @@ A maintenance robot rolls by, apparently cataloguing every physical object in si
 title: Farmland and agricultural equipment
 view-if: sector = "agriculture"
 on-arrival: physicalresources = "Farmland and agricultural equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Farmland and agricultural equipment.
 
@@ -33,7 +33,7 @@ Me: Farmland and agricultural equipment.
 title: Cooperative facilities and grain storage
 view-if: sector = "agriculture"
 on-arrival: physicalresources = "Cooperative facilities and grain storage"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Cooperative facilities and grain storage.
 
@@ -41,7 +41,7 @@ Me: Cooperative facilities and grain storage.
 title: Ranch land and livestock facilities
 view-if: sector = "agriculture"
 on-arrival: physicalresources = "Ranch land and livestock facilities"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Ranch land and livestock facilities.
 
@@ -51,7 +51,7 @@ Me: Ranch land and livestock facilities.
 title: Store buildings and retail equipment
 view-if: sector = "business"
 on-arrival: physicalresources = "Store buildings and retail equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Store buildings and retail equipment.
 
@@ -59,7 +59,7 @@ Me: Store buildings and retail equipment.
 title: Office buildings and information technology
 view-if: sector = "business"
 on-arrival: physicalresources = "Office buildings and information technology"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Office buildings and information technology.
 
@@ -67,7 +67,7 @@ Me: Office buildings and information technology.
 title: Railway infrastructure and rolling stock
 view-if: sector = "business"
 on-arrival: physicalresources = "Railway infrastructure and rolling stock"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Railway infrastructure and rolling stock.
 
@@ -77,7 +77,7 @@ Me: Railway infrastructure and rolling stock.
 title: Arts venues and cultural equipment
 view-if: sector = "culture"
 on-arrival: physicalresources = "Arts venues and cultural equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Arts venues and cultural equipment.
 
@@ -85,7 +85,7 @@ Me: Arts venues and cultural equipment.
 title: Heritage buildings and preservation equipment
 view-if: sector = "culture"
 on-arrival: physicalresources = "Heritage buildings and preservation equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Heritage buildings and preservation equipment.
 
@@ -93,7 +93,7 @@ Me: Heritage buildings and preservation equipment.
 title: Media facilities and broadcasting equipment
 view-if: sector = "culture"
 on-arrival: physicalresources = "Media facilities and broadcasting equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Media facilities and broadcasting equipment.
 
@@ -103,7 +103,7 @@ Me: Media facilities and broadcasting equipment.
 title: Kindergarten buildings and playground equipment
 view-if: sector = "education"
 on-arrival: physicalresources = "Kindergarten buildings and playground equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Kindergarten buildings and playground equipment.
 
@@ -111,7 +111,7 @@ Me: Kindergarten buildings and playground equipment.
 title: School buildings and educational equipment
 view-if: sector = "education"
 on-arrival: physicalresources = "School buildings and educational equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: School buildings and educational equipment.
 
@@ -119,7 +119,7 @@ Me: School buildings and educational equipment.
 title: University campus and research facilities
 view-if: sector = "education"
 on-arrival: physicalresources = "University campus and research facilities"
-tags: physical_resources
+tags: physical_rcs
 
 Me: University campus and research facilities.
 
@@ -129,7 +129,7 @@ Me: University campus and research facilities.
 title: Factory buildings and production machinery
 view-if: sector = "industry"
 on-arrival: physicalresources = "Factory buildings and production machinery"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Factory buildings and production machinery.
 
@@ -137,7 +137,7 @@ Me: Factory buildings and production machinery.
 title: Construction equipment and building materials
 view-if: sector = "industry"
 on-arrival: physicalresources = "Construction equipment and building materials"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Construction equipment and building materials.
 
@@ -145,7 +145,7 @@ Me: Construction equipment and building materials.
 title: Logging equipment and processing facilities
 view-if: sector = "industry"
 on-arrival: physicalresources = "Logging equipment and processing facilities"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Logging equipment and processing facilities.
 
@@ -155,7 +155,7 @@ Me: Logging equipment and processing facilities.
 title: Service facilities and community centers
 view-if: sector = "nonprofit"
 on-arrival: physicalresources = "Service facilities and community centers"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Service facilities and community centers.
 
@@ -163,7 +163,7 @@ Me: Service facilities and community centers.
 title: Office facilities and campaign materials
 view-if: sector = "nonprofit"
 on-arrival: physicalresources = "Office facilities and campaign materials"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Office facilities and campaign materials.
 
@@ -171,7 +171,7 @@ Me: Office facilities and campaign materials.
 title: Research facilities and conservation equipment
 view-if: sector = "nonprofit"
 on-arrival: physicalresources = "Research facilities and conservation equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Research facilities and conservation equipment.
 
@@ -181,7 +181,7 @@ Me: Research facilities and conservation equipment.
 title: Hospital buildings and medical equipment
 view-if: sector = "publicservice"
 on-arrival: physicalresources = "Hospital buildings and medical equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Hospital buildings and medical equipment.
 
@@ -189,7 +189,7 @@ Me: Hospital buildings and medical equipment.
 title: Government buildings and public infrastructure
 view-if: sector = "publicservice"
 on-arrival: physicalresources = "Government buildings and public infrastructure"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Government buildings and public infrastructure.
 
@@ -197,7 +197,7 @@ Me: Government buildings and public infrastructure.
 title: Protected lands and conservation equipment
 view-if: sector = "publicservice"
 on-arrival: physicalresources = "Protected lands and conservation equipment"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Protected lands and conservation equipment.
 
@@ -207,7 +207,7 @@ Me: Protected lands and conservation equipment.
 title: Government buildings and national assets
 view-if: sector = "policymaking"
 on-arrival: physicalresources = "Government buildings and national assets"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Government buildings and national assets.
 
@@ -215,7 +215,7 @@ Me: Government buildings and national assets.
 title: City hall and municipal facilities
 view-if: sector = "policymaking"
 on-arrival: physicalresources = "City hall and municipal facilities"
-tags: physical_resources
+tags: physical_rcs
 
 Me: City hall and municipal facilities.
 
@@ -223,6 +223,6 @@ Me: City hall and municipal facilities.
 title: Embassies and diplomatic facilities
 view-if: sector = "policymaking"
 on-arrival: physicalresources = "Embassies and diplomatic facilities"
-tags: physical_resources
+tags: physical_rcs
 
 Me: Embassies and diplomatic facilities.
