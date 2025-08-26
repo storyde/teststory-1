@@ -219,7 +219,7 @@ tags: start_frmwrk
 Me: Yes, let's start
 
 @group_start
-title: 
+title: group title
 view-if: part_of = "group"
 go-to: decision_makers
 tags: start_frmwrk
@@ -227,7 +227,7 @@ tags: start_frmwrk
 Me: Yes, let's start
 
 @individual_start
-title: 
+title: individual title
 view-if: part_of = "individual"
 go-to: decision_makers
 tags: start_frmwrk
