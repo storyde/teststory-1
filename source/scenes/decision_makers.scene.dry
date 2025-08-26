@@ -21,211 +21,210 @@ In front of the teahouse, a post robot rolls by, apparently trying to deliver ma
 
 - #decision_makers
 
-@school_dmkrs
-title: Teachers, School administrators and the ministry of education
-view if sector = "education"
-on-arrival: decisionmakers = "Teachers, School administrators and the ministry of education"
-tags: decision_makers
+# Agriculture
 
-Me: Teachers, School administrators and the ministry of education.
-
-@university_dmkrs
-title: University administrators, deans and ministry officials
-view if sector = "education"
-on-arrival: decisionmakers = "University administrators, deans and ministry officials"
-tags: decision_makers
-
-Me: University administrators, deans and ministry officials.
-
-@factory_dmkrs
-title: Management board and the owners
-view if sector = "industry"
-on-arrival: decisionmakers = "Management board and the owners"
-tags: decision_makers
-
-Me: Management board and the owners.
-
-@business_dmkrs
-title: Management and the owners
-view if sector = "business"
-on-arrival: decisionmakers = "Management and the owners"
-tags: decision_makers
-
-Me: Management and the owners.
-
-@city_plcmkrs
-title: The city government
-view if sector = "policymaking"
-on-arrival: decisionmakers = "The city government"
-tags: decision_makers
-
-Me: The city government.
-
-@country_plcmkrs
-title: Political leaders and the governing parties
-view if sector = "policymaking"
-on-arrival: decisionmakers = "Political leaders and the governing parties"
-tags: decision_makers
-
-Me: Political leaders and the governing parties.
-
-@intl_plcmkrs
-title: Representatives of international organisations
-view if sector = "policymaking"
-on-arrival: decisionmakers = "Representatives of international organisations"
-tags: decision_makers
-
-Me: Representatives of international organisations.
-
-@agriculture_farm_coop_dmkrs
-title: Farm owners and cooperative board members
+@agr_farm_dmkrs
+title: Farm owners and farm managers
 view if sector = "agriculture"
-on-arrival: decisionmakers = "Farm owners and cooperative board members"
+on-arrival: decision_makers = "Farm owners and farm managers"
 tags: decision_makers
 
-Me: Farm owners and cooperative board members.
+Me: Farm owners and farm managers
 
-@agriculture_ranch_dmkrs
+@agr_coop_dmkrs
+title: Cooperative members and board of directors
+view if sector = "agriculture"
+on-arrival: decision_makers = "Cooperative members and board of directors"
+tags: decision_makers
+
+Me: Cooperative members and board of directors
+
+@agr_ranch_dmkrs
 title: Ranch owners and ranch managers
 view if sector = "agriculture"
-on-arrival: decisionmakers = "Ranch owners and ranch managers"
+on-arrival: decision_makers = "Ranch owners and ranch managers"
 tags: decision_makers
 
-Me: Ranch owners and ranch managers.
+Me: Ranch owners and ranch managers
 
-@business_retail_dmkrs
-title: Store managers and owners
+# Business
+
+@bus_store_dmkrs
+title: Store owners and managers
 view if sector = "business"
-on-arrival: decisionmakers = "Store managers and owners"
+on-arrival: decision_makers = "Store owners and managers"
 tags: decision_makers
 
-Me: Store managers and owners.
+Me: Store owners and managers
 
-@business_insurance_dmkrs
-title: Senior underwriters, claims managers and owners
+@bus_insurance_dmkrs
+title: Insurance executives and underwriters
 view if sector = "business"
-on-arrival: decisionmakers = "Senior underwriters, claims managers and owners"
+on-arrival: decision_makers = "Insurance executives and underwriters"
 tags: decision_makers
 
-Me: Senior underwriters, claims managers and owners.
+Me: Insurance executives and underwriters
 
-@culture_arts_dmkrs
-title: Arts directors, program managers and funders
+@bus_train_dmkrs
+title: Railway executives and operations managers
+view if sector = "business"
+on-arrival: decision_makers = "Railway executives and operations managers"
+tags: decision_makers
+
+Me: Railway executives and operations managers
+
+# Culture
+
+@cul_arts_dmkrs
+title: Arts directors and curators
 view if sector = "culture"
-on-arrival: decisionmakers = "Arts directors, program managers and funders"
+on-arrival: decision_makers = "Arts directors and curators"
 tags: decision_makers
 
-Me: Arts directors, program managers and funders.
+Me: Arts directors and curators
 
-@culture_heritage_dmkrs
-title: Museum directors, head curators and heritage board members
+@cul_heritage_dmkrs
+title: Heritage conservators and board members
 view if sector = "culture"
-on-arrival: decisionmakers = "Museum directors, head curators and heritage board members"
+on-arrival: decision_makers = "Heritage conservators and board members"
 tags: decision_makers
 
-Me: Museum directors, head curators and heritage board members.
+Me: Heritage conservators and board members
 
-@energy_utility_dmkrs
-title: Utility executives, chief engineers and regulatory commissioners
-view if sector = "public_service"
-on-arrival: decisionmakers = "Utility executives, chief engineers and regulatory commissioners"
-tags: decision_makers
-
-Me: Utility executives, chief engineers and regulatory commissioners.
-
-@energy_renewables_dmkrs
-title: Project directors, landowners and environmental compliance officers
-view if sector = "public_service"
-on-arrival: decisionmakers = "Project directors, landowners and environmental compliance officers"
-tags: decision_makers
-
-Me: Project directors, landowners and environmental compliance officers.
-
-@gov_local_dmkrs
-title: Elected officials and department heads
-view if sector = "public_service"
-on-arrival: decisionmakers = "Elected officials and department heads"
-tags: decision_makers
-
-Me: Elected officials and department heads.
-
-@gov_parks_dmkrs
-title: Park superintendents and conservation directors
-view if sector = "public_service"
-on-arrival: decisionmakers = "Park superintendents and conservation directors"
-tags: decision_makers
-
-Me: Park superintendents and conservation directors.
-
-@health_hospital_dmkrs
-title: Hospital administrators, chief medical officers and department heads
-view if sector = "public_service"
-on-arrival: decisionmakers = "Hospital administrators, chief medical officers and department heads"
-tags: decision_makers
-
-Me: Hospital administrators, chief medical officers and department heads.
-
-@health_public_health_dmkrs
-title: Public health directors and chief medical officers
-view if sector = "public_service"
-on-arrival: decisionmakers = "Public health directors and chief medical officers"
-tags: decision_makers
-
-Me: Public health directors and chief medical officers.
-
-@industry_construction_dmkrs
-title: Project managers, site supervisors and safety directors
-view if sector = "industry"
-on-arrival: decisionmakers = "Project managers, site supervisors and safety directors"
-tags: decision_makers
-
-Me: Project managers, site supervisors and safety directors.
-
-@industry_logging_dmkrs
-title: Forestry managers and operations directors
-view if sector = "industry"
-on-arrival: decisionmakers = "Forestry managers and operations directors"
-tags: decision_makers
-
-Me: Forestry managers and operations directors.
-
-@media_newsroom_dmkrs
-title: Editors-in-chief, managing editors and legal counsel
+@cul_newsroom_dmkrs
+title: Editors and journalists
 view if sector = "culture"
-on-arrival: decisionmakers = "Editors-in-chief, managing editors and legal counsel"
+on-arrival: decision_makers = "Editors and journalists"
 tags: decision_makers
 
-Me: Editors-in-chief, managing editors and legal counsel.
+Me: Editors and journalists
 
-@media_broadcast_dmkrs
-title: Executive producers, station managers and program directors
-view if sector = "culture"
-on-arrival: decisionmakers = "Executive producers, station managers and program directors"
-tags: decision_makers
+# Education
 
-Me: Executive producers, station managers and program directors.
-
-@nonprofit_service_dmkrs
-title: Executive directors, program managers and board members
-view if sector = "nonprofit"
-on-arrival: decisionmakers = "Executive directors, program managers and board members"
-tags: decision_makers
-
-Me: Executive directors, program managers and board members.
-
-@nonprofit_advocacy_dmkrs
-title: Campaign directors, research directors and coalition leaders
-view if sector = "nonprofit"
-on-arrival: decisionmakers = "Campaign directors, research directors and coalition leaders"
-tags: decision_makers
-
-Me: Campaign directors, research directors and coalition leaders.
-
-@education_kindergarten_dmkrs
-title: Kindergarten directors, head teachers and education officials
+@edu_kindergarten_dmkrs
+title: Kindergarten teachers and administrators
 view if sector = "education"
-on-arrival: decisionmakers = "Kindergarten directors, head teachers and education officials"
+on-arrival: decision_makers = "Kindergarten teachers and administrators"
 tags: decision_makers
 
-Me: Kindergarten directors, head teachers and education officials.
+Me: Kindergarten teachers and administrators
 
+@edu_school_dmkrs
+title: Teachers, School administrators and the ministry of education
+view if sector = "education"
+on-arrival: decision_makers = "Teachers, School administrators and the ministry of education"
+tags: decision_makers
+
+Me: Teachers, School administrators and the ministry of education
+
+@edu_university_dmkrs
+title: University faculty and administration
+view if sector = "education"
+on-arrival: decision_makers = "University faculty and administration"
+tags: decision_makers
+
+Me: University faculty and administration
+
+# Industry
+
+@ind_factory_dmkrs
+title: Factory managers and production supervisors
+view if sector = "industry"
+on-arrival: decision_makers = "Factory managers and production supervisors"
+tags: decision_makers
+
+Me: Factory managers and production supervisors
+
+@ind_construction_dmkrs
+title: Construction managers and project supervisors
+view if sector = "industry"
+on-arrival: decision_makers = "Construction managers and project supervisors"
+tags: decision_makers
+
+Me: Construction managers and project supervisors
+
+@ind_logging_dmkrs
+title: Logging supervisors and forest managers
+view if sector = "industry"
+on-arrival: decision_makers = "Logging supervisors and forest managers"
+tags: decision_makers
+
+Me: Logging supervisors and forest managers
+
+# Nonprofit
+
+@non_service_dmkrs
+title: Service coordinators and board members
+view if sector = "nonprofit"
+on-arrival: decision_makers = "Service coordinators and board members"
+tags: decision_makers
+
+Me: Service coordinators and board members
+
+@non_advocacy_dmkrs
+title: Advocacy leaders and campaign managers
+view if sector = "nonprofit"
+on-arrival: decision_makers = "Advocacy leaders and campaign managers"
+tags: decision_makers
+
+Me: Advocacy leaders and campaign managers
+
+@non_climate_dmkrs
+title: Environmental scientists and activists
+view if sector = "nonprofit"
+on-arrival: decision_makers = "Environmental scientists and activists"
+tags: decision_makers
+
+Me: Environmental scientists and activists
+
+# Public service
+
+@pub_health_dmkrs
+title: Hospital administrators and medical staff
+view if sector = "publicservice"
+on-arrival: decision_makers = "Hospital administrators and medical staff"
+tags: decision_makers
+
+Me: Hospital administrators and medical staff
+
+@pub_service_dmkrs
+title: Agency directors and department heads
+view if sector = "publicservice"
+on-arrival: decision_makers = "Agency directors and department heads"
+tags: decision_makers
+
+Me: Agency directors and department heads
+
+@pub_parks_dmkrs
+title: Parks managers and recreation coordinators
+view if sector = "publicservice"
+on-arrival: decision_makers = "Parks managers and recreation coordinators"
+tags: decision_makers
+
+Me: Parks managers and recreation coordinators
+
+# Policymaking
+
+@pol_policy_dmkrs
+title: Government officials and policy advisors
+view if sector = "policymaking"
+on-arrival: decision_makers = "Government officials and policy advisors"
+tags: decision_makers
+
+Me: Government officials and policy advisors
+
+@pol_city_dmkrs
+title: City council members and mayor
+view if sector = "policymaking"
+on-arrival: decision_makers = "City council members and mayor"
+tags: decision_makers
+
+Me: City council members and mayor
+
+@pol_intl_dmkrs
+title: Ambassadors and diplomatic staff
+view if sector = "policymaking"
+on-arrival: decision_makers = "Ambassadors and diplomatic staff"
+tags: decision_makers
+
+Me: Ambassadors and diplomatic staff

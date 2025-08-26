@@ -9,222 +9,210 @@ Facilyn: Again, you are not after a detailed financial statement, only a general
 
 - #monetary_resources
 
-@why_identify_monetary_resources
-title: Why Identify Monetary Resources?
-tags: monetary_resources
+# Agriculture
 
-Me: Why Identify Monetary Resources?
-
-Facilyn: Monetary resources represent your financial capacity to implement decisions and achieve your goals. Understanding what money is available helps you make realistic plans and allocate resources effectively across your operations.
-
-A financial advisor robot whirs past, apparently calculating the net present value of everything in sight, including the confused pigeon from earlier, which it's now appraising at "0.02 credits for entertainment value."
-
-- #monetary_resources
-
-@education_school_mrcs
-title: School operating budget and educational funding
-view if sector = "education"
-on-arrival: monetaryresources = "School operating budget and educational funding"
-tags: monetary_resources
-
-Me: School operating budget and educational funding.
-
-@education_university_mrcs
-title: University endowment, research grants, and tuition revenue
-view if sector = "education"
-on-arrival: monetaryresources = "University endowment, research grants, and tuition revenue"
-tags: monetary_resources
-
-Me: University endowment, research grants, and tuition revenue.
-
-@factory_operating_capital_investment
-title: Operating capital, investment funds, and production revenue
-view if sector = "industry"
-on-arrival: monetaryresources = "Operating capital, investment funds, and production revenue"
-tags: monetary_resources
-
-Me: Operating capital, investment funds, and production revenue.
-
-@business_working_capital_revenue
-title: Working capital, business loans, and revenue streams
-view if sector = "business"
-on-arrival: monetaryresources = "Working capital, business loans, and revenue streams"
-tags: monetary_resources
-
-Me: Working capital, business loans, and revenue streams.
-
-@business_retail_mrcs
-title: Cash flow, inventory investment, and sales revenue
-view if sector = "business"
-on-arrival: monetaryresources = "Cash flow, inventory investment, and sales revenue"
-tags: monetary_resources
-
-Me: Cash flow, inventory investment, and sales revenue.
-
-@business_insurance_mrcs
-title: Insurance reserves, premium income, and investment portfolio
-view if sector = "business"
-on-arrival: monetaryresources = "Insurance reserves, premium income, and investment portfolio"
-tags: monetary_resources
-
-Me: Insurance reserves, premium income, and investment portfolio.
-
-@city_municipal_mrcs
-title: Municipal budget, tax revenue, and federal grants
-view if sector = "policymaking"
-on-arrival: monetaryresources = "Municipal budget, tax revenue, and federal grants"
-tags: monetary_resources
-
-Me: Municipal budget, tax revenue, and federal grants.
-
-@country_national_mrcs
-title: National budget, treasury funds, and sovereign resources
-view if sector = "policymaking"
-on-arrival: monetaryresources = "National budget, treasury funds, and sovereign resources"
-tags: monetary_resources
-
-Me: National budget, treasury funds, and sovereign resources.
-
-@intl_organizational_mrcs
-title: Organizational budget, member contributions, and international funding
-view if sector = "policymaking"
-on-arrival: monetaryresources = "Organizational budget, member contributions, and international funding"
-tags: monetary_resources
-
-Me: Organizational budget, member contributions, and international funding.
-
-@agriculture_farm_operating_funds
-title: Farm operating funds, crop insurance, and agricultural loans
+@agr_farm_mrcs
+title: Operating funds and crop revenue
 view if sector = "agriculture"
-on-arrival: monetaryresources = "Farm operating funds, crop insurance, and agricultural loans"
+on-arrival: monetaryresources = "Operating funds and crop revenue"
 tags: monetary_resources
 
-Me: Farm operating funds, crop insurance, and agricultural loans.
+Me: Operating funds and crop revenue.
 
-@agriculture_ranch_livestock_revenue
-title: Livestock revenue, ranch operating capital, and commodity income
+@agr_coop_mrcs
+title: Member fees and cooperative sales revenue
 view if sector = "agriculture"
-on-arrival: monetaryresources = "Livestock revenue, ranch operating capital, and commodity income"
+on-arrival: monetaryresources = "Member fees and cooperative sales revenue"
 tags: monetary_resources
 
-Me: Livestock revenue, ranch operating capital, and commodity income.
+Me: Member fees and cooperative sales revenue.
 
-@culture_arts_grants_ticket_sales
-title: Arts grants, ticket sales, and cultural funding
+@agr_ranch_mrcs
+title: Livestock sales and land lease income
+view if sector = "agriculture"
+on-arrival: monetaryresources = "Livestock sales and land lease income"
+tags: monetary_resources
+
+Me: Livestock sales and land lease income.
+
+# Business
+
+@bus_store_mrcs
+title: Working capital and revenue streams
+view if sector = "business"
+on-arrival: monetaryresources = "Working capital and revenue streams"
+tags: monetary_resources
+
+Me: Working capital and revenue streams.
+
+@bus_insurance_mrcs
+title: Premium income and reserve funds
+view if sector = "business"
+on-arrival: monetaryresources = "Premium income and reserve funds"
+tags: monetary_resources
+
+Me: Premium income and reserve funds.
+
+@bus_train_mrcs
+title: Ticket revenue and government subsidies
+view if sector = "business"
+on-arrival: monetaryresources = "Ticket revenue and government subsidies"
+tags: monetary_resources
+
+Me: Ticket revenue and government subsidies.
+
+# Culture
+
+@cul_arts_mrcs
+title: Grants and donations
 view if sector = "culture"
-on-arrival: monetaryresources = "Arts grants, ticket sales, and cultural funding"
+on-arrival: monetaryresources = "Grants and donations"
 tags: monetary_resources
 
-Me: Arts grants, ticket sales, and cultural funding.
+Me: Grants and donations.
 
-@culture_heritage_preservation_funds
-title: Heritage preservation funds, visitor fees, and cultural endowments
+@cul_heritage_mrcs
+title: Heritage funding and visitor fees
 view if sector = "culture"
-on-arrival: monetaryresources = "Heritage preservation funds, visitor fees, and cultural endowments"
+on-arrival: monetaryresources = "Heritage funding and visitor fees"
 tags: monetary_resources
 
-Me: Heritage preservation funds, visitor fees, and cultural endowments.
+Me: Heritage funding and visitor fees.
 
-@energy_utility_rate_revenue
-title: Utility rate revenue, infrastructure investment, and regulatory funding
-view if sector = "public_service"
-on-arrival: monetaryresources = "Utility rate revenue, infrastructure investment, and regulatory funding"
-tags: monetary_resources
-
-Me: Utility rate revenue, infrastructure investment, and regulatory funding.
-
-@energy_renewables_investment_incentives
-title: Green investment capital, tax incentives, and renewable energy credits
-view if sector = "public_service"
-on-arrival: monetaryresources = "Green investment capital, tax incentives, and renewable energy credits"
-tags: monetary_resources
-
-Me: Green investment capital, tax incentives, and renewable energy credits.
-
-@gov_local_municipal_budget
-title: Municipal budget, local taxes, and public service funding
-view if sector = "public_service"
-on-arrival: monetaryresources = "Municipal budget, local taxes, and public service funding"
-tags: monetary_resources
-
-Me: Municipal budget, local taxes, and public service funding.
-
-@gov_parks_conservation_budget
-title: Conservation budget, park fees, and environmental grants
-view if sector = "public_service"
-on-arrival: monetaryresources = "Conservation budget, park fees, and environmental grants"
-tags: monetary_resources
-
-Me: Conservation budget, park fees, and environmental grants.
-
-@health_hospital_operating_budget
-title: Hospital operating budget, insurance reimbursements, and medical funding
-view if sector = "public_service"
-on-arrival: monetaryresources = "Hospital operating budget, insurance reimbursements, and medical funding"
-tags: monetary_resources
-
-Me: Hospital operating budget, insurance reimbursements, and medical funding.
-
-@health_public_health_budget
-title: Public health budget, government funding, and community health grants
-view if sector = "public_service"
-on-arrival: monetaryresources = "Public health budget, government funding, and community health grants"
-tags: monetary_resources
-
-Me: Public health budget, government funding, and community health grants.
-
-@industry_construction_project_funding
-title: Project funding, construction loans, and contract revenue
-view if sector = "industry"
-on-arrival: monetaryresources = "Project funding, construction loans, and contract revenue"
-tags: monetary_resources
-
-Me: Project funding, construction loans, and contract revenue.
-
-@industry_logging_timber_revenue
-title: Timber revenue, forestry investments, and resource extraction income
-view if sector = "industry"
-on-arrival: monetaryresources = "Timber revenue, forestry investments, and resource extraction income"
-tags: monetary_resources
-
-Me: Timber revenue, forestry investments, and resource extraction income.
-
-@media_newsroom_advertising_subscriptions
-title: Advertising revenue, subscription income, and media investments
+@cul_newsroom_mrcs
+title: Advertising revenue and subscriptions
 view if sector = "culture"
-on-arrival: monetaryresources = "Advertising revenue, subscription income, and media investments"
+on-arrival: monetaryresources = "Advertising revenue and subscriptions"
 tags: monetary_resources
 
-Me: Advertising revenue, subscription income, and media investments.
+Me: Advertising revenue and subscriptions.
 
-@media_broadcast_licensing_advertising
-title: Broadcasting licensing fees, advertising revenue, and media partnerships
-view if sector = "culture"
-on-arrival: monetaryresources = "Broadcasting licensing fees, advertising revenue, and media partnerships"
-tags: monetary_resources
+# Education
 
-Me: Broadcasting licensing fees, advertising revenue, and media partnerships.
-
-@nonprofit_service_grants_donations
-title: Service grants, donations, and program funding
-view if sector = "nonprofit"
-on-arrival: monetaryresources = "Service grants, donations, and program funding"
-tags: monetary_resources
-
-Me: Service grants, donations, and program funding.
-
-@nonprofit_advocacy_foundation_grants
-title: Foundation grants, advocacy funding, and campaign contributions
-view if sector = "nonprofit"
-on-arrival: monetaryresources = "Foundation grants, advocacy funding, and campaign contributions"
-tags: monetary_resources
-
-Me: Foundation grants, advocacy funding, and campaign contributions.
-
-@education_kindergarten_budget_funding
-title: Kindergarten budget, early childhood funding, and educational grants
+@edu_kindergarten_mrcs
+title: Kindergarten budget and early childhood funding
 view if sector = "education"
-on-arrival: monetaryresources = "Kindergarten budget, early childhood funding, and educational grants"
+on-arrival: monetaryresources = "Kindergarten budget and early childhood funding"
 tags: monetary_resources
 
-Me: Kindergarten budget, early childhood funding, and educational grants.
+Me: Kindergarten budget and early childhood funding.
+
+@edu_school_mrcs
+title: Government funding and tuition fees
+view if sector = "education"
+on-arrival: monetaryresources = "Government funding and tuition fees"
+tags: monetary_resources
+
+Me: Government funding and tuition fees.
+
+@edu_university_mrcs
+title: University endowment and research grants
+view if sector = "education"
+on-arrival: monetaryresources = "University endowment and research grants"
+tags: monetary_resources
+
+Me: University endowment and research grants.
+
+# Industry
+
+@ind_factory_mrcs
+title: Operating capital and investment funds
+view if sector = "industry"
+on-arrival: monetaryresources = "Operating capital and investment funds"
+tags: monetary_resources
+
+Me: Operating capital and investment funds.
+
+@ind_construction_mrcs
+title: Project financing and client payments
+view if sector = "industry"
+on-arrival: monetaryresources = "Project financing and client payments"
+tags: monetary_resources
+
+Me: Project financing and client payments.
+
+@ind_logging_mrcs
+title: Timber revenue and forestry investments
+view if sector = "industry"
+on-arrival: monetaryresources = "Timber revenue and forestry investments"
+tags: monetary_resources
+
+Me: Timber revenue and forestry investments.
+
+# Nonprofit
+
+@non_service_mrcs
+title: Grants and donations
+view if sector = "nonprofit"
+on-arrival: monetaryresources = "Grants and donations"
+tags: monetary_resources
+
+Me: Grants and donations.
+
+@non_advocacy_mrcs
+title: Foundation grants and campaign contributions
+view if sector = "nonprofit"
+on-arrival: monetaryresources = "Foundation grants and campaign contributions"
+tags: monetary_resources
+
+Me: Foundation grants and campaign contributions.
+
+@non_climate_mrcs
+title: Environmental grants and conservation funding
+view if sector = "nonprofit"
+on-arrival: monetaryresources = "Environmental grants and conservation funding"
+tags: monetary_resources
+
+Me: Environmental grants and conservation funding.
+
+# Public service
+
+@pub_health_mrcs
+title: Government budget and insurance reimbursements
+view if sector = "publicservice"
+on-arrival: monetaryresources = "Government budget and insurance reimbursements"
+tags: monetary_resources
+
+Me: Government budget and insurance reimbursements.
+
+@pub_service_mrcs
+title: Government budget and public service funding
+view if sector = "publicservice"
+on-arrival: monetaryresources = "Government budget and public service funding"
+tags: monetary_resources
+
+Me: Government budget and public service funding.
+
+@pub_parks_mrcs
+title: Conservation budget and park fees
+view if sector = "publicservice"
+on-arrival: monetaryresources = "Conservation budget and park fees"
+tags: monetary_resources
+
+Me: Conservation budget and park fees.
+
+# Policymaking
+
+@pol_policy_mrcs
+title: National budget and treasury funds
+view if sector = "policymaking"
+on-arrival: monetaryresources = "National budget and treasury funds"
+tags: monetary_resources
+
+Me: National budget and treasury funds.
+
+@pol_city_mrcs
+title: Municipal budget and local taxes
+view if sector = "policymaking"
+on-arrival: monetaryresources = "Municipal budget and local taxes"
+tags: monetary_resources
+
+Me: Municipal budget and local taxes.
+
+@pol_intl_mrcs
+title: Foreign affairs budget and diplomatic funding
+view if sector = "policymaking"
+on-arrival: monetaryresources = "Foreign affairs budget and diplomatic funding"
+tags: monetary_resources
+
+Me: Foreign affairs budget and diplomatic funding.

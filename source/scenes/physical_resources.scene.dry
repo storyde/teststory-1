@@ -9,7 +9,7 @@ Facilyn: You are not after a detailed list of every asset you have, only a very 
 
 - #physical_resources
 
-@why_identify_physical_resources
+@why_identify_prcs
 title: Why Identify Physical Resources?
 tags: physical_resources
 
@@ -21,210 +21,210 @@ A maintenance robot rolls by, apparently cataloguing every physical object in si
 
 - #physical_resources
 
-@education_school_prcs
-title: School buildings, classrooms, laboratories, and educational equipment
-view if sector = "education"
-on-arrival: physicalresources = "School buildings, classrooms, laboratories, and educational equipment"
-tags: physical_resources
+# Agriculture
 
-Me: School buildings, classrooms, laboratories, and educational equipment.
-
-@education_university_prcs
-title: University campus, lecture halls, research facilities, and academic equipment
-view if sector = "education"
-on-arrival: physicalresources = "University campus, lecture halls, research facilities, and academic equipment"
-tags: physical_resources
-
-Me: University campus, lecture halls, research facilities, and academic equipment.
-
-@factory_buildings_machinery
-title: Factory buildings, production machinery, and industrial equipment
-view if sector = "industry"
-on-arrival: physicalresources = "Factory buildings, production machinery, and industrial equipment"
-tags: physical_resources
-
-Me: Factory buildings, production machinery, and industrial equipment.
-
-@business_offices_equipment
-title: Office buildings, computers, and business equipment
-view if sector = "business"
-on-arrival: physicalresources = "Office buildings, computers, and business equipment"
-tags: physical_resources
-
-Me: Office buildings, computers, and business equipment.
-
-@business_retail_prcs
-title: Retail stores, inventory, and point-of-sale systems
-view if sector = "business"
-on-arrival: physicalresources = "Retail stores, inventory, and point-of-sale systems"
-tags: physical_resources
-
-Me: Retail stores, inventory, and point-of-sale systems.
-
-@business_insurance_prcs
-title: Office buildings, computer systems, and data infrastructure
-view if sector = "business"
-on-arrival: physicalresources = "Office buildings, computer systems, and data infrastructure"
-tags: physical_resources
-
-Me: Office buildings, computer systems, and data infrastructure.
-
-@city_prcs
-title: Municipal buildings, public infrastructure, and civic facilities
-view if sector = "policymaking"
-on-arrival: physicalresources = "Municipal buildings, public infrastructure, and civic facilities"
-tags: physical_resources
-
-Me: Municipal buildings, public infrastructure, and civic facilities.
-
-@country_prcs
-title: Government buildings, public infrastructure, and national assets
-view if sector = "policymaking"
-on-arrival: physicalresources = "Government buildings, public infrastructure, and national assets"
-tags: physical_resources
-
-Me: Government buildings, public infrastructure, and national assets.
-
-@intl_prcs
-title: International offices, meeting facilities, and communication infrastructure
-view if sector = "policymaking"
-on-arrival: physicalresources = "International offices, meeting facilities, and communication infrastructure"
-tags: physical_resources
-
-Me: International offices, meeting facilities, and communication infrastructure.
-
-@agriculture_farm_land_equipment
-title: Farmland, agricultural equipment, and storage facilities
+@agr_farm_prcs
+title: Farmland and agricultural equipment
 view if sector = "agriculture"
-on-arrival: physicalresources = "Farmland, agricultural equipment, and storage facilities"
+on-arrival: physicalresources = "Farmland and agricultural equipment"
 tags: physical_resources
 
-Me: Farmland, agricultural equipment, and storage facilities.
+Me: Farmland and agricultural equipment.
 
-@agriculture_ranch_land_livestock
-title: Ranch land, livestock, and ranching equipment
+@agr_coop_prcs
+title: Cooperative facilities and grain storage
 view if sector = "agriculture"
-on-arrival: physicalresources = "Ranch land, livestock, and ranching equipment"
+on-arrival: physicalresources = "Cooperative facilities and grain storage"
 tags: physical_resources
 
-Me: Ranch land, livestock, and ranching equipment.
+Me: Cooperative facilities and grain storage.
 
-@culture_arts_venues_equipment
-title: Performance venues, art studios, and cultural equipment
+@agr_ranch_prcs
+title: Ranch land and livestock facilities
+view if sector = "agriculture"
+on-arrival: physicalresources = "Ranch land and livestock facilities"
+tags: physical_resources
+
+Me: Ranch land and livestock facilities.
+
+# Business
+
+@bus_store_prcs
+title: Store buildings and retail equipment
+view if sector = "business"
+on-arrival: physicalresources = "Store buildings and retail equipment"
+tags: physical_resources
+
+Me: Store buildings and retail equipment.
+
+@bus_insurance_prcs
+title: Office buildings and information technology
+view if sector = "business"
+on-arrival: physicalresources = "Office buildings and information technology"
+tags: physical_resources
+
+Me: Office buildings and information technology.
+
+@bus_train_prcs
+title: Railway infrastructure and rolling stock
+view if sector = "business"
+on-arrival: physicalresources = "Railway infrastructure and rolling stock"
+tags: physical_resources
+
+Me: Railway infrastructure and rolling stock.
+
+# Culture
+
+@cul_arts_prcs
+title: Arts venues and cultural equipment
 view if sector = "culture"
-on-arrival: physicalresources = "Performance venues, art studios, and cultural equipment"
+on-arrival: physicalresources = "Arts venues and cultural equipment"
 tags: physical_resources
 
-Me: Performance venues, art studios, and cultural equipment.
+Me: Arts venues and cultural equipment.
 
-@culture_heritage_museums_collections
-title: Museums, heritage sites, and cultural collections
+@cul_heritage_prcs
+title: Heritage buildings and preservation equipment
 view if sector = "culture"
-on-arrival: physicalresources = "Museums, heritage sites, and cultural collections"
+on-arrival: physicalresources = "Heritage buildings and preservation equipment"
 tags: physical_resources
 
-Me: Museums, heritage sites, and cultural collections.
+Me: Heritage buildings and preservation equipment.
 
-@energy_utility_infrastructure
-title: Power plants, transmission lines, and grid infrastructure
-view if sector = "public_service"
-on-arrival: physicalresources = "Power plants, transmission lines, and grid infrastructure"
-tags: physical_resources
-
-Me: Power plants, transmission lines, and grid infrastructure.
-
-@energy_renewables_installations
-title: Solar panels, wind turbines, and renewable energy installations
-view if sector = "public_service"
-on-arrival: physicalresources = "Solar panels, wind turbines, and renewable energy installations"
-tags: physical_resources
-
-Me: Solar panels, wind turbines, and renewable energy installations.
-
-@gov_local_buildings_infrastructure
-title: Municipal buildings, public facilities, and local infrastructure
-view if sector = "public_service"
-on-arrival: physicalresources = "Municipal buildings, public facilities, and local infrastructure"
-tags: physical_resources
-
-Me: Municipal buildings, public facilities, and local infrastructure.
-
-@gov_parks_land_facilities
-title: Protected lands, visitor facilities, and conservation equipment
-view if sector = "public_service"
-on-arrival: physicalresources = "Protected lands, visitor facilities, and conservation equipment"
-tags: physical_resources
-
-Me: Protected lands, visitor facilities, and conservation equipment.
-
-@health_hospital_facilities_equipment
-title: Hospital buildings, medical equipment, and healthcare facilities
-view if sector = "public_service"
-on-arrival: physicalresources = "Hospital buildings, medical equipment, and healthcare facilities"
-tags: physical_resources
-
-Me: Hospital buildings, medical equipment, and healthcare facilities.
-
-@health_public_clinics_equipment
-title: Public health clinics, medical equipment, and community health facilities
-view if sector = "public_service"
-on-arrival: physicalresources = "Public health clinics, medical equipment, and community health facilities"
-tags: physical_resources
-
-Me: Public health clinics, medical equipment, and community health facilities.
-
-@industry_construction_equipment_sites
-title: Construction equipment, work sites, and building materials
-view if sector = "industry"
-on-arrival: physicalresources = "Construction equipment, work sites, and building materials"
-tags: physical_resources
-
-Me: Construction equipment, work sites, and building materials.
-
-@industry_logging_equipment_forests
-title: Logging equipment, forest concessions, and processing facilities
-view if sector = "industry"
-on-arrival: physicalresources = "Logging equipment, forest concessions, and processing facilities"
-tags: physical_resources
-
-Me: Logging equipment, forest concessions, and processing facilities.
-
-@media_newsroom_equipment_facilities
-title: Newsroom facilities, printing equipment, and broadcasting infrastructure
+@cul_newsroom_prcs
+title: Media facilities and broadcasting equipment
 view if sector = "culture"
-on-arrival: physicalresources = "Newsroom facilities, printing equipment, and broadcasting infrastructure"
+on-arrival: physicalresources = "Media facilities and broadcasting equipment"
 tags: physical_resources
 
-Me: Newsroom facilities, printing equipment, and broadcasting infrastructure.
+Me: Media facilities and broadcasting equipment.
 
-@media_broadcast_studios_equipment
-title: Broadcasting studios, transmission equipment, and production facilities
-view if sector = "culture"
-on-arrival: physicalresources = "Broadcasting studios, transmission equipment, and production facilities"
-tags: physical_resources
+# Education
 
-Me: Broadcasting studios, transmission equipment, and production facilities.
-
-@nonprofit_service_facilities_equipment
-title: Service facilities, program equipment, and community centers
-view if sector = "nonprofit"
-on-arrival: physicalresources = "Service facilities, program equipment, and community centers"
-tags: physical_resources
-
-Me: Service facilities, program equipment, and community centers.
-
-@nonprofit_advocacy_offices_equipment
-title: Office facilities, research equipment, and campaign materials
-view if sector = "nonprofit"
-on-arrival: physicalresources = "Office facilities, research equipment, and campaign materials"
-tags: physical_resources
-
-Me: Office facilities, research equipment, and campaign materials.
-
-@education_kindergarten_facilities_equipment
-title: Kindergarten buildings, playground equipment, and educational materials
+@edu_kindergarten_prcs
+title: Kindergarten buildings and playground equipment
 view if sector = "education"
-on-arrival: physicalresources = "Kindergarten buildings, playground equipment, and educational materials"
+on-arrival: physicalresources = "Kindergarten buildings and playground equipment"
 tags: physical_resources
 
-Me: Kindergarten buildings, playground equipment, and educational materials.
+Me: Kindergarten buildings and playground equipment.
+
+@edu_school_prcs
+title: School buildings and educational equipment
+view if sector = "education"
+on-arrival: physicalresources = "School buildings and educational equipment"
+tags: physical_resources
+
+Me: School buildings and educational equipment.
+
+@edu_university_prcs
+title: University campus and research facilities
+view if sector = "education"
+on-arrival: physicalresources = "University campus and research facilities"
+tags: physical_resources
+
+Me: University campus and research facilities.
+
+# Industry
+
+@ind_factory_prcs
+title: Factory buildings and production machinery
+view if sector = "industry"
+on-arrival: physicalresources = "Factory buildings and production machinery"
+tags: physical_resources
+
+Me: Factory buildings and production machinery.
+
+@ind_construction_prcs
+title: Construction equipment and building materials
+view if sector = "industry"
+on-arrival: physicalresources = "Construction equipment and building materials"
+tags: physical_resources
+
+Me: Construction equipment and building materials.
+
+@ind_logging_prcs
+title: Logging equipment and processing facilities
+view if sector = "industry"
+on-arrival: physicalresources = "Logging equipment and processing facilities"
+tags: physical_resources
+
+Me: Logging equipment and processing facilities.
+
+# Nonprofit
+
+@non_service_prcs
+title: Service facilities and community centers
+view if sector = "nonprofit"
+on-arrival: physicalresources = "Service facilities and community centers"
+tags: physical_resources
+
+Me: Service facilities and community centers.
+
+@non_advocacy_prcs
+title: Office facilities and campaign materials
+view if sector = "nonprofit"
+on-arrival: physicalresources = "Office facilities and campaign materials"
+tags: physical_resources
+
+Me: Office facilities and campaign materials.
+
+@non_climate_prcs
+title: Research facilities and conservation equipment
+view if sector = "nonprofit"
+on-arrival: physicalresources = "Research facilities and conservation equipment"
+tags: physical_resources
+
+Me: Research facilities and conservation equipment.
+
+# Public service
+
+@pub_health_prcs
+title: Hospital buildings and medical equipment
+view if sector = "publicservice"
+on-arrival: physicalresources = "Hospital buildings and medical equipment"
+tags: physical_resources
+
+Me: Hospital buildings and medical equipment.
+
+@pub_service_prcs
+title: Government buildings and public infrastructure
+view if sector = "publicservice"
+on-arrival: physicalresources = "Government buildings and public infrastructure"
+tags: physical_resources
+
+Me: Government buildings and public infrastructure.
+
+@pub_parks_prcs
+title: Protected lands and conservation equipment
+view if sector = "publicservice"
+on-arrival: physicalresources = "Protected lands and conservation equipment"
+tags: physical_resources
+
+Me: Protected lands and conservation equipment.
+
+# Policymaking
+
+@pol_policy_prcs
+title: Government buildings and national assets
+view if sector = "policymaking"
+on-arrival: physicalresources = "Government buildings and national assets"
+tags: physical_resources
+
+Me: Government buildings and national assets.
+
+@pol_city_prcs
+title: City hall and municipal facilities
+view if sector = "policymaking"
+on-arrival: physicalresources = "City hall and municipal facilities"
+tags: physical_resources
+
+Me: City hall and municipal facilities.
+
+@pol_intl_prcs
+title: Embassies and diplomatic facilities
+view if sector = "policymaking"
+on-arrival: physicalresources = "Embassies and diplomatic facilities"
+tags: physical_resources
+
+Me: Embassies and diplomatic facilities.
