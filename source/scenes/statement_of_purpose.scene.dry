@@ -113,7 +113,7 @@ Facilyn: Which purpose fits your organisation best?
 
 @agr_farm_stmnt
 title: We produce food to nourish communities
-view-if sector = "agriculture"
+view-if: sector = "agriculture"
 on-arrival: purpose = "We produce food to nourish communities"
 tags: st_purpose
 
@@ -121,7 +121,7 @@ Me: We produce food to nourish communities
 
 @agr_coop_stmnt
 title: We support farmers and strengthen rural communities
-view-if sector = "agriculture"
+view-if: sector = "agriculture"
 on-arrival: purpose = "We support farmers and strengthen rural communities"
 tags: st_purpose
 
@@ -129,7 +129,7 @@ Me: We support farmers and strengthen rural communities
 
 @agr_ranch_stmnt
 title: We steward the land for future generations
-view-if sector = "agriculture"
+view-if: sector = "agriculture"
 on-arrival: purpose = "We steward the land for future generations"
 tags: st_purpose
 
@@ -139,7 +139,7 @@ Me: We steward the land for future generations
 
 @bus_store_stmnt
 title: We make life more convenient and efficient
-view-if sector = "business"
+view-if: sector = "business"
 on-arrival: purpose = "We make life more convenient and efficient"
 tags: st_purpose
 
@@ -147,7 +147,7 @@ Me: We make life more convenient and efficient
 
 @bus_insurance_stmnt
 title: We protect people and organisations from financial risk so they can thrive
-view-if sector = "business"
+view-if: sector = "business"
 on-arrival: purpose = "We protect people and organisations from financial risk so they can thrive"
 tags: st_purpose
 
@@ -155,7 +155,7 @@ Me: We protect people and organisations from financial risk so they can thrive
 
 @bus_train_stmnt
 title: We connect people and places with reliable railway services
-view-if sector = "business"
+view-if: sector = "business"
 on-arrival: purpose = "We connect people and places with reliable railway services"
 tags: st_purpose
 
@@ -165,7 +165,7 @@ Me: We connect people and places with reliable railway services
 
 @cul_arts_stmnt
 title: We foster cultural expression and creativity
-view-if sector = "culture"
+view-if: sector = "culture"
 on-arrival: purpose = "We foster cultural expression and creativity"
 tags: st_purpose
 
@@ -173,7 +173,7 @@ Me: We foster cultural expression and creativity
 
 @cul_heritage_stmnt
 title: We preserve and share cultural heritage
-view-if sector = "culture"
+view-if: sector = "culture"
 on-arrival: purpose = "We preserve and share cultural heritage"
 tags: st_purpose
 
@@ -181,7 +181,7 @@ Me: We preserve and share cultural heritage
 
 @cul_newsroom_stmnt
 title: We inform the public with accurate, independent reporting
-view-if sector = "culture"
+view-if: sector = "culture"
 on-arrival: purpose = "We inform the public with accurate, independent reporting"
 tags: st_purpose
 
@@ -191,7 +191,7 @@ Me: We inform the public with accurate, independent reporting
 
 @edu_kindergarten_stmnt
 title: We provide a safe, nurturing environment where young children can learn and grow
-view-if sector = "education"
+view-if: sector = "education"
 on-arrival: purpose = "We provide a safe, nurturing environment where young children can learn and grow"
 tags: st_purpose
 
@@ -199,7 +199,7 @@ Me: We provide a safe, nurturing environment where young children can learn and 
 
 @edu_school_stmnt
 title: We prepare students for their future and help them reach their potential
-view-if sector = "education"
+view-if: sector = "education"
 on-arrival: purpose = "We prepare students for their future and help them reach their potential"
 tags: st_purpose
 
@@ -207,7 +207,7 @@ Me: We prepare students for their future and help them reach their potential
 
 @edu_university_stmnt
 title: We advance knowledge through research and prepare leaders for tomorrow
-view-if sector = "education"
+view-if: sector = "education"
 on-arrival: purpose = "We advance knowledge through research and prepare leaders for tomorrow"
 tags: st_purpose
 
@@ -217,7 +217,7 @@ Me: We advance knowledge through research and prepare leaders for tomorrow
 
 @ind_factory_stmnt
 title: We make useful products that improve people's lives
-view-if sector = "industry"
+view-if: sector = "industry"
 on-arrival: purpose = "We make useful products that improve people's lives"
 tags: st_purpose
 
@@ -225,7 +225,7 @@ Me: We make useful products that improve people's lives
 
 @ind_construction_stmnt
 title: We create safe, durable structures and infrastructure that serve communities
-view-if sector = "industry"
+view-if: sector = "industry"
 on-arrival: purpose = "We create safe, durable structures and infrastructure that serve communities"
 tags: st_purpose
 
@@ -233,7 +233,7 @@ Me: We create safe, durable structures and infrastructure that serve communities
 
 @ind_logging_stmnt
 title: We provide timber resources responsibly to meet society's needs
-view-if sector = "industry"
+view-if: sector = "industry"
 on-arrival: purpose = "We provide timber resources responsibly to meet society's needs"
 tags: st_purpose
 
@@ -243,7 +243,7 @@ Me: We provide timber resources responsibly to meet society's needs
 
 @non_service_stmnt
 title: We address community needs and social challenges
-view-if sector = "nonprofit"
+view-if: sector = "nonprofit"
 on-arrival: purpose = "We address community needs and social challenges"
 tags: st_purpose
 
@@ -251,7 +251,7 @@ Me: We address community needs and social challenges
 
 @non_advocacy_stmnt
 title: We advocate for positive change and social justice
-view-if sector = "nonprofit"
+view-if: sector = "nonprofit"
 on-arrival: purpose = "We advocate for positive change and social justice"
 tags: st_purpose
 
@@ -259,7 +259,7 @@ Me: We advocate for positive change and social justice
 
 @non_climate_stmnt
 title: We protect the environment and fight climate change
-view-if sector = "nonprofit"
+view-if: sector = "nonprofit"
 on-arrival: purpose = "We protect the environment and fight climate change"
 tags: st_purpose
 
@@ -269,7 +269,7 @@ Me: We protect the environment and fight climate change
 
 @pub_health_stmnt
 title: We heal, prevent illness, and restore health
-view-if sector = "publicservice"
+view-if: sector = "publicservice"
 on-arrival: purpose = "We heal, prevent illness, and restore health"
 tags: st_purpose
 
@@ -277,7 +277,7 @@ Me: We heal, prevent illness, and restore health
 
 @pub_service_stmnt
 title: We serve the public interest and common good
-view-if sector = "publicservice"
+view-if: sector = "publicservice"
 on-arrival: purpose = "We serve the public interest and common good"
 tags: st_purpose
 
@@ -285,7 +285,7 @@ Me: We serve the public interest and common good
 
 @pub_parks_stmnt
 title: We protect and share our natural heritage for current and future generations
-view-if sector = "publicservice"
+view-if: sector = "publicservice"
 on-arrival: purpose = "We protect and share our natural heritage for current and future generations"
 tags: st_purpose
 
@@ -295,7 +295,7 @@ Me: We protect and share our natural heritage for current and future generations
 
 @pol_policy_stmnt
 title: We represent citizens and shape public policy for the common good
-view-if sector = "policymaking"
+view-if: sector = "policymaking"
 on-arrival: purpose = "We represent citizens and shape public policy for the common good"
 tags: st_purpose
 
@@ -303,7 +303,7 @@ Me: We represent citizens and shape public policy for the common good
 
 @pol_city_stmnt
 title: We govern local communities and provide municipal services
-view-if sector = "policymaking"
+view-if: sector = "policymaking"
 on-arrival: purpose = "We govern local communities and provide municipal services"
 tags: st_purpose
 
@@ -311,7 +311,7 @@ Me: We govern local communities and provide municipal services
 
 @pol_intl_stmnt
 title: We promote international cooperation and diplomacy
-view-if sector = "policymaking"
+view-if: sector = "policymaking"
 on-arrival: purpose = "We promote international cooperation and diplomacy"
 tags: st_purpose
 
@@ -320,7 +320,7 @@ Me: We promote international cooperation and diplomacy
 @stakeholders
 title: Getting Everyone Involved
 subtitle: Bringing Stakeholders to the Table
-view-if part_of = "organisation"
+view-if: part_of = "organisation"
 
 Facilyn: Now that we're clear about your organization's purpose, there's something crucial to understand: this framework works best when everyone who's making decisions in your entity is involved in this conversation.
 

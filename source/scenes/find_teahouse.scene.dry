@@ -211,7 +211,7 @@ Facilyn: Would you like to start with the framework?
 @organization_start
 title: Assignment  
 subtitle: Sent to learn 
-view-if part_of = "organisation"
+view-if: part_of = "organisation"
 go-to: statement_of_purpose 
 tags: start_frmwrk
 
@@ -219,7 +219,7 @@ Me: Yes, let's start
 
 @group_start
 title: 
-view-if part_of = "group"
+view-if: part_of = "group"
 go-to: decision_makers
 tags: start_frmwrk
 
@@ -227,7 +227,7 @@ Me: Yes, let's start
 
 @individual_start
 title: 
-view-if part_of = "individual"
+view-if: part_of = "individual"
 go-to: decision_makers
 tags: start_frmwrk
 
