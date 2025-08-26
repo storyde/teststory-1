@@ -1,7 +1,5 @@
 title: Monetary Resources
 subtitle: Money Available to You
-view if part_of = "organisation"
-new-page: true
 
 Facilyn: Now let's identify the money available to you. This includes all forms of financial resources - cash, credit, investments, grants, or any other monetary assets you can access for your operations.
 

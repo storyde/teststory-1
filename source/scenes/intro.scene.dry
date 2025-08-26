@@ -37,7 +37,7 @@ You’re here to catch up with an old friend you haven’t seen in years.
 @for_organization
 title: On behalf of your organisation
 subtitle: Learn something new
-on-arrival: part_of = "organization"
+on-arrival: part_of = "organisation"
 go-to: find_teahouse
 
 Your organisation suggested you to come here to learn about a new management method.  

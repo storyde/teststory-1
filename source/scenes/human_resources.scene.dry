@@ -1,7 +1,5 @@
 title: Human Resources
 subtitle: People with influence on management decisions
-view if part_of = "organisation"
-new-page: true
 
 Facilyn: Now make a list of the categories of people who can/will influence or be influenced by the management decisions you make, but won't have the power to veto or alter them.
 
