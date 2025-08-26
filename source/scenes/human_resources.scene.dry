@@ -3,14 +3,11 @@ subtitle: People with influence on management decisions
 
 Facilyn: Now make a list of the categories of people who can/will influence or be influenced by the management decisions you make, but won't have the power to veto or alter them.
 
-[? if sector = "policymaking" : 
-
-Facilyn: If your organisation is involved in governing and policymaking for your community, your city, for your country or even on an international level, you need to make sure to invite citizens from various backgrounds. Otherwise, you risk that your context, that we are about to create in a minute, reflects only the priorities of your organisation or of the institutions you collaborate with, instead of reflecting the interests of the people you govern.
-?]
+[? if sector = "policymaking" : Facilyn: If your organisation is involved in governing and policymaking for your community, your city, for your country or even on an international level, you need to make sure to invite citizens from various backgrounds. Otherwise, you risk that your context, that we are about to create in a minute, reflects only the priorities of your organisation or of the institutions you collaborate with, instead of reflecting the interests of the people you govern. ?]
 
 Facilyn: These people are no less important than the decision makers. In fact, they are often vitally important to your whole even though they do not make management decisions within it. You wouldn't be in business without the clients or customers who buy your products, for instance.
 
-- #human_resources
+- #human_rcs
 
 # Agriculture
 
@@ -18,7 +15,7 @@ Facilyn: These people are no less important than the decision makers. In fact, t
 title: Agricultural suppliers and local community members
 view-if: sector = "agriculture"
 on-arrival: humanresources = "Agricultural suppliers and local community members"
-tags: human_resources
+tags: human_rcs
 
 Me: Agricultural suppliers and local community members.
 
@@ -26,7 +23,7 @@ Me: Agricultural suppliers and local community members.
 title: Cooperative members and agricultural advisors
 view-if: sector = "agriculture"
 on-arrival: humanresources = "Cooperative members and agricultural advisors"
-tags: human_resources
+tags: human_rcs
 
 Me: Cooperative members and agricultural advisors.
 
@@ -34,7 +31,7 @@ Me: Cooperative members and agricultural advisors.
 title: Veterinarians and land stewards
 view-if: sector = "agriculture"
 on-arrival: humanresources = "Veterinarians and land stewards"
-tags: human_resources
+tags: human_rcs
 
 Me: Veterinarians and land stewards.
 
@@ -44,7 +41,7 @@ Me: Veterinarians and land stewards.
 title: Customers and suppliers
 view-if: sector = "business"
 on-arrival: humanresources = "Customers and suppliers"
-tags: human_resources
+tags: human_rcs
 
 Me: Customers and suppliers.
 
@@ -52,7 +49,7 @@ Me: Customers and suppliers.
 title: Customers and regulators
 view-if: sector = "business"
 on-arrival: humanresources = "Customers and regulators"
-tags: human_resources
+tags: human_rcs
 
 Me: Customers and regulators.
 
@@ -60,7 +57,7 @@ Me: Customers and regulators.
 title: Passengers and transportation authorities
 view-if: sector = "business"
 on-arrival: humanresources = "Passengers and transportation authorities"
-tags: human_resources
+tags: human_rcs
 
 Me: Passengers and transportation authorities.
 
@@ -70,7 +67,7 @@ Me: Passengers and transportation authorities.
 title: Audience representatives and funders
 view-if: sector = "culture"
 on-arrival: humanresources = "Audience representatives and funders"
-tags: human_resources
+tags: human_rcs
 
 Me: Audience representatives and funders.
 
@@ -78,7 +75,7 @@ Me: Audience representatives and funders.
 title: Community representatives and cultural stakeholders
 view-if: sector = "culture"
 on-arrival: humanresources = "Community representatives and cultural stakeholders"
-tags: human_resources
+tags: human_rcs
 
 Me: Community representatives and cultural stakeholders.
 
@@ -86,7 +83,7 @@ Me: Community representatives and cultural stakeholders.
 title: Audience representatives and legal counsel
 view-if: sector = "culture"
 on-arrival: humanresources = "Audience representatives and legal counsel"
-tags: human_resources
+tags: human_rcs
 
 Me: Audience representatives and legal counsel.
 
@@ -96,7 +93,7 @@ Me: Audience representatives and legal counsel.
 title: Parents and early childhood specialists
 view-if: sector = "education"
 on-arrival: humanresources = "Parents and early childhood specialists"
-tags: human_resources
+tags: human_rcs
 
 Me: Parents and early childhood specialists.
 
@@ -104,7 +101,7 @@ Me: Parents and early childhood specialists.
 title: Parents and ministry of education
 view-if: sector = "education"
 on-arrival: humanresources = "Parents and ministry of education"
-tags: human_resources
+tags: human_rcs
 
 Me: Parents and ministry of education.
 
@@ -112,7 +109,7 @@ Me: Parents and ministry of education.
 title: Students, alumni and academic community
 view-if: sector = "education"
 on-arrival: humanresources = "Students, alumni and academic community"
-tags: human_resources
+tags: human_rcs
 
 Me: Students, alumni and academic community.
 
@@ -122,7 +119,7 @@ Me: Students, alumni and academic community.
 title: Workers and union representatives
 view-if: sector = "industry"
 on-arrival: humanresources = "Workers and union representatives"
-tags: human_resources
+tags: human_rcs
 
 Me: Workers and union representatives.
 
@@ -130,7 +127,7 @@ Me: Workers and union representatives.
 title: Clients and local residents
 view-if: sector = "industry"
 on-arrival: humanresources = "Clients and local residents"
-tags: human_resources
+tags: human_rcs
 
 Me: Clients and local residents.
 
@@ -138,7 +135,7 @@ Me: Clients and local residents.
 title: Environmental officers and local communities
 view-if: sector = "industry"
 on-arrival: humanresources = "Environmental officers and local communities"
-tags: human_resources
+tags: human_rcs
 
 Me: Environmental officers and local communities.
 
@@ -148,7 +145,7 @@ Me: Environmental officers and local communities.
 title: Beneficiaries and donors
 view-if: sector = "nonprofit"
 on-arrival: humanresources = "Beneficiaries and donors"
-tags: human_resources
+tags: human_rcs
 
 Me: Beneficiaries and donors.
 
@@ -156,7 +153,7 @@ Me: Beneficiaries and donors.
 title: Supporters and opponents
 view-if: sector = "nonprofit"
 on-arrival: humanresources = "Supporters and opponents"
-tags: human_resources
+tags: human_rcs
 
 Me: Supporters and opponents.
 
@@ -164,7 +161,7 @@ Me: Supporters and opponents.
 title: Environmental scientists and activists.
 view-if: sector = "nonprofit"
 on-arrival: humanresources = "Environmental scientists and activists"
-tags: human_resources
+tags: human_rcs
 
 Me: Environmental scientists and activists.
 
@@ -174,7 +171,7 @@ Me: Environmental scientists and activists.
 title: Patients and carers
 view-if: sector = "publicservice"
 on-arrival: humanresources = "Patients and carers"
-tags: human_resources
+tags: human_rcs
 
 Me: Patients and carers.
 
@@ -182,7 +179,7 @@ Me: Patients and carers.
 title: Citizens and community representatives.
 view-if: sector = "publicservice"
 on-arrival: humanresources = "Citizens and community representatives"
-tags: human_resources
+tags: human_rcs
 
 Me: Citizens and community representatives.
 
@@ -190,7 +187,7 @@ Me: Citizens and community representatives.
 title: Local communities and visitors
 view-if: sector = "publicservice"
 on-arrival: humanresources = "Local communities and visitors"
-tags: human_resources
+tags: human_rcs
 
 Me: Local communities and visitors.
 
@@ -200,7 +197,7 @@ Me: Local communities and visitors.
 title: Citizens and stakeholder representatives
 view-if: sector = "policymaking"
 on-arrival: humanresources = "Citizens and stakeholder representatives"
-tags: human_resources
+tags: human_rcs
 
 Me: Citizens and stakeholder representatives.
 
@@ -208,7 +205,7 @@ Me: Citizens and stakeholder representatives.
 title: Local residents and business representatives
 view-if: sector = "policymaking"
 on-arrival: humanresources = "Local residents and business representatives"
-tags: human_resources
+tags: human_rcs
 
 Me: Local residents and business representatives.
 
@@ -216,6 +213,6 @@ Me: Local residents and business representatives.
 title: Citizens and diplomatic counterparts
 view-if: sector = "policymaking"
 on-arrival: humanresources = "Citizens and diplomatic counterparts"
-tags: human_resources
+tags: human_rcs
 
 Me: Citizens and diplomatic counterparts.
