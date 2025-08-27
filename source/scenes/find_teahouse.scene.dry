@@ -1,39 +1,40 @@
 title: Find the teahouse  
 subtitle: On the way to the Teahouse  
-new-page: true  
+new-page: true 
+on-arrival: poly-what = 1
+on-departure: poly-what = 0
 tags: intro  
 
 You step into a wide plaza.
-Info screens alternate with small shops.
 
-A drone wobbles on the ground, scattering crumbs to a flock of pigeons.
-It seems stuck.
+Info screens alternate with small shops. 
+A delivery drone circles overhead, searching for the best angle to take a selfie.  
 
 On the horizon, a dust storm gathers, its grit already scratching at your throat.
 
-Nearby, someone mutters something about the polycrisis…
+Nearby, someone mutters something about the polycrisis...
 
-- @poly_what: The poly-what?  
-- @info_screen: Read the info-screen  
-- @directions_scene: Ask for directions to the teahouse
-- @drone_scene: Help the drone
-- @vendor_scene: Buy water from a vendor
+- #plaza
 
 @poly_what  
 title: The poly-what?  
 subtitle: Isn’t a normal crisis bad enough already?  
+view-if: poly-what = 1
+tags: plaza
 
 Me: The poly-what?  
 
 The stranger eyes you, amused.  
-Stranger: When crises stop lining up one by one… and start crashing down together.  
 
-- @ask_teahouse_directions
-- @drone_scene: Watch the rogue drone  
+Stranger: The polycrisis is when social, economic, and environmental challenges stop lining up one by one... and start crashing down together.  
 
-@ask_teahouse_directions
-title: Asking for Directions
-subtitle: The stranger might know the way
+- @stranger_teahouse_directions
+- @vendor_scene: Buy water from a vendor
+- @info_screen: Read the info-screen  
+
+@stranger_teahouse_directions
+title: Ask for directions to the teahouse
+on-arrival: know_sidestreet = 1 
 
 Me: Hey, before you go, could you tell me how to get to the teahouse?
 
@@ -41,12 +42,12 @@ Stranger: Sure, it's that way. Just follow the red banners; they'll lead you str
 
 They point to a sidestreet, then disappear into the crowd.
 
-- @drone_scene: Watch the rogue drone
-- @teahouse_arrival: Head to the teahouse
+- #plaza
 
 @info_screen  
-title: Polycrisis Alerts  
-subtitle: A glimpse of cascading disasters  
+title: Read the info-screen
+tags: plaza
+max-visits: 1
 
 You step closer to one of the info-screens. Images flicker: last week’s megafires, famine zones, heatwaves, and protests.
 
@@ -57,29 +58,12 @@ Headline1: Blackouts expected to continue.
 Headline2: Global harvests at record low.  
 Headline3: Water shortages intensifying.  
 
-- @drone_scene: Watch the rogue drone  
-- @directions_scene: Ask someone for directions to the teahouse
-
-@drone_scene  
-title: Help the drone
-
-You crouch and carefully pick it up.  
-
-Me: Let’s see… sensors misaligned.  
-
-You switch off the drone, adjust its optics, check the battery and switch it back on again.  
-
-The drone lifts off, circling briefly before palling again with the birds. 
-
-Maybe its behavior doesn’t need fixing. 
-Something about its behavior makes you smile—machines doing their own thing now.  
-
-- @info_screen: Check the flickering info-screen  
-- @directions_scene: Ask for directions to the teahouse
+- #plaza
 
 @vendor_scene  
-title: Thirst  
-subtitle: Water, but at a price  
+title: Buy water from a vendor  
+tags: plaza
+max-visits: 1
 
 A vendor waves a cracked purifier bottle at you.  
 
@@ -94,7 +78,7 @@ subtitle: Last coin spent
 
 You hand over your last bit of crypto. The water tastes metallic, but eases your throat.  
 
-- @ask_vendor_teahouse: Ask for the tea house  
+- @vendor_teahouse_directions
 
 @haggle_vendor  
 title: Negotiation  
@@ -106,11 +90,11 @@ Vendor: Fine. Half. You’ll wish you’d bought more.
 
 The water is thin but cool. Enough to ease your tongue.  
 
-- @ask_vendor_teahouse: Ask for the tea house  
+- @vendor_teahouse_directions 
 
-@ask_vendor_teahouse
+@vendor_teahouse_directions
 title: Ask for the teahouse
-subtitle: Quick directions
+on-arrival: know_sidestreet = 1 
 
 Me: Do you know where the teahouse is?
 
@@ -118,118 +102,68 @@ The vendor points down a side street.
 
 Vendor: Follow the red banners. You can’t miss it.  
 
-- @teahouse_arrival: Head to the teahouse  
+- #plaza
 
-@directions_scene  
+@people_teahouse_directions
 title: Ask for directions to the teahouse
-subtitle:  
+tags: plaza
+max-visits: 1
 
-You see some young people scratching shapes into the dust.  
+You see some people with their kids scratching shapes into the dust.  
 As you get closer, you recognize the logos of NASA, WHO, WWF and other organizations.  
 
-You ask them:  
-
-- @why_drawing: Why do you draw these?  
-- @ask_for_teahouse: Do you know where the teahouse is?  
+- @why_drawing  
+- @people_teahouse_directions
 
 @why_drawing  
-title: Participating  
-subtitle: Hands-on learning  
+title: Ask them why they draw these
 
 Me: Why do you draw these?  
-Youn: So we remember who tries to fix what, even if it doesn’t last.  
+Drawer: So we remember who tries to fix what, even if it doesn’t last.  
 
-The dust from the nearby farms blows the drawings away.  
+The dust from the nearby farms blows the drawings away. 
+
 It’s a quiet reminder: Without functioning agriculture, most organizations would not even exist.  
 
-- @ask_for_teahouse: Do you know where the teahouse is?  
+- @people_teahouse_directions
 
-@ask_for_teahouse  
-title: Do you know where the teahouse is?  
-subtitle: Ask for directions
+@people_teahouse_directions
+title: Ask them where the teahouse is
+on-arrival: know_sidestreet = 1 
 
 Me: Do you know where the teahouse is?
 
-The young person points down a side street.  
-Youn: Follow the red banners. You can’t miss it.  
+One points down a side street.  
+Drawer: Follow the red banners. You can’t miss it.  
 
-- @teahouse_arrival: Head to the teahouse  
+- #plaza
 
-@teahouse_arrival
-title: Head to the teahouse  
-go-to: @individual_welcome if part_of = "individual"; @group_welcome if part_of = "group"; @organization_welcome if part_of = "organisation"
+@side-street
+title: Head to the teahouse
+view-if: know_sidestreet = 1 
+tags: plaza
 
-You stumble through the side street, dust stinging your face.  
-The paper lanterns of the old teahouse sway in the wind, welcoming you into dim light and quiet warmth as the storm closes in.
+You stumble through the side street, dust stinging your face. 
 
-Inside, the air is still, scented faintly of herbs. People sit at low tables.  
-A person waves at you as you enter.  
+On the sidewalk, a drone hovers in place, dropping crumbs to a swarm of eager pigeons. Then it falters, topples, and lies struggling on the ground.
 
-@individual_welcome
-title: Recommendation  
-subtitle: Following a lead
-go-to: statement_of_purpose 
+The paper lanterns of the old teahouse sway in the wind, welcoming you into dim light. 
 
-As you take a seat on her table, she says:
+- #th_arrival
 
-Facilyn: Nice to meet you.
+@drone_scene  
+title: Help the drone
+max-visits: 1
+tags: th_arrival
 
-Me: So, you can help me understand... another way of managing?  
+You crouch and carefully pick it up.  
 
-Facilyn: Sure. Would you like to start with the framework?
+Me: Let’s see... sensors misaligned.  
 
-- #start_frmwrk
+You switch off the drone, adjust its optics, check the battery and switch it back on again.  
 
-@group_welcome
-title: Reunion  
-subtitle: Familiar faces in unfamiliar times  
+The drone lifts off, circling briefly before palling again with the birds. 
 
-It is Facilyn.
+Something about its behavior makes you smile...
 
-Facilyn: It’s been a while. I wondered if you’d really come.  
-
-Her smile softens the sharp edge of the storm outside.  
-
-Me: I almost didn’t recognize this place. 
-
-Facilyn: Would you like to start with the framework?
-
-- #start_frmwrk
-
-@organization_welcome
-title: Assignment  
-subtitle: Sent to learn 
-go-to: statement_of_purpose 
-
-As you take a seat on her table, she says:
-
-Facilyn: Welcome, I'm Facilyn. I was asked to help you and your organisation. 
-
-Facilyn: Would you like to start with the framework?
-
-- #start_frmwrk
-
-@organization_start
-title: Assignment  
-subtitle: Sent to learn 
-view-if: part_of = "organisation"
-go-to: statement_of_purpose 
-tags: start_frmwrk
-
-Me: Yes, let's start
-
-@group_start
-title: group title
-view-if: part_of = "group"
-go-to: decision_makers
-tags: start_frmwrk
-
-Me: Yes, let's start
-
-@individual_start
-title: individual title
-view-if: part_of = "individual"
-go-to: decision_makers
-tags: start_frmwrk
-
-Me: Yes, let's start with the framework
+- #th_arrival

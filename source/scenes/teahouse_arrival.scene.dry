@@ -1,4 +1,20 @@
-An older model of a food delivery drone crashes into a tree, its sensors corrupted by the heat and dust. A small crowd gathers to salvage the packages.
+title: Enter the teahouse
+tags: th_arrival
+
+Inside, the air is still, scented faintly of herbs. People sit at low tables.  
+
+A person waves at you as you enter. It is Facilyn.
+
+Facilyn: It’s been a while. I wondered if you’d really come.  
+
+Her smile softens the sharp edge of the storm outside.  
+
+[? if part_of = "individual" : Me: Took me forever to find this place. Thought I’d be wandering alleys forever. ?]
+
+[? if part_of != "individual" : Me: Took us forever to find this place. Thought we’d be wandering alleys forever. ?]
+
+Facilyn: That’s the city for you. It hides its good corners.  
+
 
 
 
@@ -6,6 +22,7 @@ An older model of a food delivery drone crashes into a tree, its sensors corrupt
 
 title: Ask what she has been up to
 tags:
+
 Me: So, what have you been up to?  
 
 Facilyn: I was traveling a lot since the last time we saw each other. And in most places, what I saw was the same: Good meaning people trying their best, and yet the problems were getting more, not less.
@@ -63,3 +80,54 @@ Facilyn: You don't manage complexity by controlling it. You manage it by not loo
 
 @accept_shelter
 
+
+
+
+
+
+
+@th_welcome_individual
+title: Enter the teahouse
+view-if: part_of = "individual"
+tags: th_arrival
+
+
+
+@th_welcome_group
+title: Enter the teahouse
+view-if: part_of = "group"
+tags: th_arrival
+
+
+
+@th_welcome_organization
+title: Enter the teahouse
+view-if: part_of = "organisation"
+tags: th_arrival
+
+
+
+@organization_start
+title: Assignment  
+subtitle: Sent to learn 
+view-if: part_of = "organisation"
+go-to: statement_of_purpose 
+tags: start_frmwrk
+
+Me: Yes, let's start
+
+@group_start
+title: group title
+view-if: part_of = "group"
+go-to: decision_makers
+tags: start_frmwrk
+
+Me: Yes, let's start
+
+@individual_start
+title: individual title
+view-if: part_of = "individual"
+go-to: decision_makers
+tags: start_frmwrk
+
+Me: Yes, let's start 

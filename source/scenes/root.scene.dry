@@ -1,10 +1,8 @@
 title: Root Scene
-on-arrival: time = 0; abstract_level = 1; degradation = 5; pollution = 5; social_unrest = 5; hunger = 5; thirst = 5; economic_instability = 5
-new-page: true
 
-= Test story
+= Managing Complexity
 
-In a time not so far into the future, our world grapples with the symptoms of the polycrisis—a complex web of social, economic, and environmental challenges.
+Get a taste of how our world is managed into crisis — and learn a framework to prevent it.
 
 - @start_game: Start game
 - @go_to_credits: Credits

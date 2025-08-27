@@ -2,42 +2,39 @@ title: Intro Scene
 subtitle: The Beginning of Understanding  
 new-page: true  
 
-= Welcome to the near future...  
+= In the not so distant future...  
 
-...where social fractures deepen, the economy spirals into freefall, and floods and droughts have replaced the seasons.
+...our world grapples with the symptoms of the polycrisis.
 
-Also, the robots are doing their own thing now.  
+And the robots? They are doing their own thing now.
 
-You arrive in the middle of it all, searching for the teahouse in the old quarter. 
-
-A delivery drone circles overhead, searching for the best angle to take a selfie.  
+You arrive in the middle of it all, searching for the teahouse to catch up with an old friend. 
 
 You came here:  
 
-- @by_yourself: On your own 
-- @with_group: With family or friends
-- @for_organization: On behalf of your organisation
+- @by_yourself
+- @with_group
+- @for_organization
 
 @by_yourself
-title: On your own 
-subtitle: Following a recommendation
+title: On my own 
+subtitle: Currently without company
 on-arrival: part_of = "individual"
 go-to: find_teahouse
 
-A friend recommended this place, saying you could learn a new way to make decisions.
+Me: On my own. My friend invited me to learn about a new management framework.
 
 @with_group
 title: With family or friends
-subtitle: Meeting an old friend
 on-arrival: part_of = "group"
 go-to: find_teahouse
 
-You’re here to catch up with an old friend you haven’t seen in years.  
+Me: As a group. Our friend invited us to learn about a new management framework.
 
 @for_organization
 title: On behalf of your organisation
-subtitle: Learn something new
+subtitle: Or with your colleagues
 on-arrival: part_of = "organisation"
 go-to: find_teahouse
 
-Your organisation suggested you to come here to learn about a new management method.  
+Me: On behalf of our organisation. Our friend invited us to learn about a new management framework.
