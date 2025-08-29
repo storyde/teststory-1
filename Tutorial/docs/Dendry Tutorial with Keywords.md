@@ -1,3 +1,120 @@
+### A short Dendry syntax reference:
+
+All of these are elements that can be used in the body text.
+
+```    *some words* - emphasis
+
+    **some words** - strong emphasis
+
+    > paragraph - quotation
+
+    >> paragraph - attribution
+
+    = paragraph - heading
+
+    // + <newline> - manual line break
+
+    <blank line> - paragraph break
+
+    --- - horizontal rule / break
+
+    [some words] - hidable section
+
+    [+ foo : bar +] - insert quality value with optional qdisplay
+
+    [? if condition: text ?] - conditional display of text
+
+    {!<span class="foo">aaa</span>!} - raw html
+
+    #comment - comment
+
+```
+
+### Examples
+
+Displaying variables in text: [+ var +]
+
+Varying text based on a condition: [? if var = 1 : something ?]
+
+Basic scene example:
+
+```title: scene0
+
+go-to: scene1
+
+# this is the start of the .scene.dry file.
+
+@scene1
+
+title: Scene
+
+subtitle: subtitle of the scene
+
+unavailable-subtitle: scene cannot be selected
+
+view-if: var1 = 1 and (var2 = 2 or var3 = 3)
+
+choose-if: var4 = 4
+
+on-arrival: v2 = 1; v3 = 3; vs = "abc"
+
+tags: start, tag1, tag2
+
+new-page: true
+
+max-visits: 2
+
+Content goes here.
+
+var1: [+ var1 +]
+
+vs: [+ vs +]
+
+[? if var1 = 1 : aaaaa ?]
+
+# these are links
+
+- @scene2: Choice 1
+
+- @scene3: Choice 2
+
+@scene2
+
+Content for scene2 goes here.
+
+@scene3
+
+Content for scene3 goes here.
+
+```
+
+Including javascript in on-arrival: {! Q['var1'] = Math.cos(Math.PI/4); !}
+
+Including javascript in view-if: {! return ((Q['a'] || 0)===(Q['b'] || 0)); !}
+
+
+
+
+
+This game will help users to experience and apply Holistic Management in an entertaining way.
+
+The focus is on a facilitation session in a chat like style, in which the player develops his holistic context. The player will be guided by the questions of the facilitator. The player can also learn some background information in side-conversations or side-branches.
+
+The process is similar to a choose-your-own-adventure game, in which the user is asked a question and is being offered several possible answers. 
+
+The story should be engaging and interesting for a broad audience and should branch in a meaningful way.
+
+Narration should be kept to a minimum. Instead, there should be direct speech with other characters in the game and by the facilitator, and meaningful options for the player to choose from. 
+
+
+
+
+
+
+
+
+
+
 # Getting started with Dendry
 
 Dendry is a choice-based storylet-native narrative engine. 

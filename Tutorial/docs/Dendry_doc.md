@@ -264,3 +264,173 @@ _Experimental_
 ## priority
 
 ## frequency
+
+
+
+
+" Vim syntax file
+" Language: Dendry scenes
+" Maintainer: Autumn Chen
+" Latest Revision: 23 Feb 2021
+
+if exists("b:current_syntax")
+  finish
+endif
+
+syn match todo 'TODO'
+
+syn match scene_id '^@[a-zA-Z0-9\-_]*$'
+syn match link_line '^-\s*[@#][a-zA-Z0-9\-_]*' contains=link_id
+syn match link_id contained '@[a-zA-Z0-9\-_]*'
+syn match link_id contained '#[a-zA-Z0-9\-_]*'
+
+syn match if_statement contained 'if' nextgroup=colon skipwhite
+syn match plaintext contained '[a-zA-Z0-9.?,]*'
+syn match colon contained ':' nextgroup=plaintext skipwhite
+
+syn match scene_title contained ' .*$'
+syn match boolean contained '[tT]rue'
+syn match boolean contained '[fF]alse'
+syn match command '^title: .*$' contains=scene_title
+syn match command '^subtitle: .*$' contains=scene_title
+syn match command '^unavailable-subtitle: .*$' contains=scene_title
+syn match command '^new-page: .*$' contains=boolean
+syn match command '^is-special: .*$' contains=boolean
+syn match command '^view-if:'
+syn match command '^choose-if:'
+syn match command '^on-arrival:' nextgroup=jsBrackets,jsRegion skipwhite
+syn match command '^on-display:' nextgroup=jsBrackets,jsRegion skipwhite
+syn match command '^on-departure:' nextgroup=jsBrackets,jsRegion skipwhite
+syn match command '^go-to:'
+syn match command '^tags:'
+syn match command '^max-visits:'
+syn match command '^min-choices:'
+syn match command '^max-choices:'
+syn match command '^order:'
+syn match command '^priority:'
+syn match command '^frequency:'
+syn match command '^signal:'
+syn match command '^set-bg:'
+syn match command '^set-jump:'
+syn match command '^game-over:'
+syn match command '^is-card:'
+syn match command '^is-hand:'
+syn match command '^audio:'
+syn match command '^go-to-ref:'
+syn match command '^card-image:'
+
+
+syn match comment '^#.*$'
+
+syn match var_name contained '\w*'
+syn match var_replace '\[+\s*\w*\s*+\]' contains=var_name
+
+syn region conditional matchgroup=brackets start='\[?' end='?\]' contains=if_statement,colon,plaintext
+
+syn include @js syntax/javascript.vim
+syn include @html syntax/html.vim
+syn region jsRegion matchgroup=jsBrackets start='{!' end='!}' fold transparent contains=@js
+syn region htmlRegion matchgroup=htmlBrackets start='{!' end='!}' fold transparent contains=@html
+
+hi def link scene_id        Identifier
+hi def link scene_title     None
+hi def link command         Statement
+hi def link boolean         Boolean
+hi def link comment         Comment
+hi def link link_id         Identifier
+hi def link var_name        Identifier
+hi def link var_replace     Statement
+
+hi def link brackets        Statement
+hi def link if_statement    Statement
+hi def link colon           Statement
+
+hi def link jsBrackets      Statement
+hi def link htmlBrackets    Statement
+
+
+
+
+
+# Dry files can have lines beginning with hash for comments. Note
+# that, unlike many file formats comments can only be complete lines,
+# you can't comment a property (say) by putting a hash at the end of
+# the value, followed by some text. In that case, the hash sign will
+# be considered part of the property. A dry file is split into
+# sections, each of which can begin with some properties:
+title: A Title
+# Properties are separated from values by a colon.
+author: Ms A Uthor
+# Different properties may be subject to their own syntax
+# requirements.
+tags: top-level, bright, silly
+# Properties may not contain spaces, and have words separated by a
+# hyphen.
+view-if: sunny > 1
+# Properties may run over multiple lines, but the second and
+# successive lines must be indented. Consequently property names
+# cannot be indented.
+choose-if: sunny > 1 and last-rain < 2 or
+   cares-about-weather = 0
+# Properties are separated from content by a double blank line.
+
+This is now content. Each section of a dry file can have unlimited
+amounts of content. When the dry file is parsed, the content is
+accumulated and placed into a 'content' property. For this reason,
+'content' is not a valid property name.
+
+# A new section of content is begun with an id started by an at
+# symbol. The id is placed in the content's properties, so again 'id'
+# is not a valid property name.
+@new-id
+# There should be no gap between an id and its properties, otherwise,
+# the properties will be interpreted as content.
+title: A New Section
+
+This is content for the @new-id section. The top-level content doesn't
+have a specific id, its id is generated from the part of the filename
+before any period, so in this case, the id of the top level content is
+'parse-test'. All sections are wrapped into a list in the 'sections'
+property. So 'sections' is another reserved word that can't be used
+for user-defined properties.
+
+The last bit of content for dry files is an option block. They are
+only required in interactive content, and are invalid in any other
+context. There can be only one option block per section, and it must
+be the last thing in the section, it is illegal to add more content
+after an option block. The option block, if it is present is compiled
+and added to a 'options' property, making 'options' another reserved
+word.
+
+# An option block:  option blocks start each line with a hyphen
+- @new-id: The title of this link.
+# lines starting with an at sign indicate a link to a named id, the
+# text after the colon is the title that will be displayed to overrule
+# the title of that section, if any.
+- min: 4
+# lines starting with just a hyphen declare a property, properties
+# belong to the previous link.
+- max: 9
+- min-priority: 3
+- @other-id
+# lines starting with a hash indicate a tag, links corresponding to
+# that tag will be added. Because this can have multiple links, titles
+# aren't allowed.
+- #tag
+- @new-id3: This option has continuation in its title. These should be
+            handled properly.
+
+# Some more specific cases:
+
+@no-properties
+
+This section goes right from id to content, without a property list.
+
+@no-content
+description: This section has no content, but goes right to options.
+
+- @no-properties: The no properties section.
+
+@only-options
+
+- @no-properties: This section has only options.
