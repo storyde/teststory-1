@@ -152,7 +152,7 @@ Facilyn: You manage it by not loosing sight of the whole under your management. 
 title: Let's start with the framework
 view-if: part_of = "individual"
 go-to: decision_makers
-tags: start_frmwrk
+tags: start-frmwrk
 
 Me: Let's start with the framework
 
@@ -161,7 +161,7 @@ Me: Let's start with the framework
 title: Let's start with the framework
 view-if: part_of = "group"
 go-to: decision_makers
-tags: start_frmwrk
+tags: start-frmwrk
 
 Me: Let's start with the framework
 
@@ -171,6 +171,6 @@ Me: Let's start with the framework
 title: Let's start with the framework
 view-if: part_of = "organisation"
 go-to: statement_of_purpose 
-tags: start_frmwrk
+tags: start-frmwrk
 
 Me: Let's start with the framework
