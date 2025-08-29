@@ -141,12 +141,7 @@ Me: So, how do you manage complexity?
 
 Facilyn: You manage it by not loosing sight of the whole under your management. And by filtering your management decisions against your holistic context. To help with that, we developed this framework. Let me walk you through it.
 
-- #start_frmwrk
-
-
-
-
-
+- #start-frmwrk
 
 @individual_start
 title: Let's start with the framework
@@ -156,7 +151,6 @@ tags: start-frmwrk
 
 Me: Let's start with the framework
 
-
 @group_start
 title: Let's start with the framework
 view-if: part_of = "group"
@@ -164,8 +158,6 @@ go-to: decision_makers
 tags: start-frmwrk
 
 Me: Let's start with the framework
-
-
 
 @organization_start
 title: Let's start with the framework
